@@ -1,0 +1,30 @@
+.wikitable {
+  background: #563224;
+  border-color: #3c211d;
+  color: #e6e6e6;
+  margin: 1em 0;
+  border: 1px solid var(#3c211d, #a2a9b1);
+  border-collapse: collapse;
+  font-family: "sans-serif", "Roboto", monospace;
+}
+table {
+  text-indent: initial;
+}
+
+p {
+  margin: 0;
+}
+
+th {
+  background-color: #45281c;
+  text-align: center;
+}
+
+table,
+th,
+tr,
+td {
+  padding: 8px;
+  border: solid 1.5px #3c211d;
+  border-spacing: 2px;
+}
