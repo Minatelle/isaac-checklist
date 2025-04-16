@@ -7,8 +7,9 @@
         <th>Hard Mode</th>
         <th>Associated Boss</th>
         <th *ngFor="let character of characters">
-          <img *ngIf="character.icon" [src]="character.icon" width="20" height="20" [alt]="character.name" />
-          {{ character.name }}<br />Unlock
+          <img *ngIf="character.icon" [src]="character.icon" width="20" height="20" [alt]="character.name" /><br />
+          {{ character.name }}<br />
+          Unlock
         </th>
       </tr>
     </thead>
