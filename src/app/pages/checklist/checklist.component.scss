@@ -1,19 +1,21 @@
+@use '../../../assets/styles/colors.scss';
+
 .wikitable {
-  background: #563224;
-  border-color: #3c211d;
-  color: #e6e6e6;
+  background: colors.$background;
+  border-color: colors.$border;
+  color: colors.$white;
   margin: 1em 0;
-  border: 1px solid var(#3c211d, #a2a9b1);
+  border: 1px solid colors.$border;
   border-collapse: collapse;
-  font-family: "sans-serif", "Roboto", monospace;
+  font-family: 'sans-serif', 'Roboto', monospace;
 }
 
-.completion-mark{
-  background-color: #e6e6e6;
+.completion-mark {
+  background-color: colors.$white;
 }
 
-.empty-cell{
-  color: #ab7e69;
+.empty-cell {
+  color: colors.$accent;
 }
 
 table {
@@ -25,7 +27,7 @@ p {
 }
 
 th {
-  background-color: #45281c;
+  background-color: colors.$header;
   text-align: center;
 }
 
@@ -34,6 +36,6 @@ th,
 tr,
 td {
   padding: 8px;
-  border: solid 1.5px #3c211d;
+  border: solid 1.5px colors.$border;
   border-spacing: 2px;
 }

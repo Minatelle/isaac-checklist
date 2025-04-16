@@ -7,13 +7,7 @@
         <th>Hard Mode</th>
         <th>Associated Boss</th>
         <th *ngFor="let character of characters">
-          <img
-            *ngIf="character.icon"
-            [src]="character.icon"
-            width="20"
-            height="20"
-            [alt]="character.name"
-          />
+          <img *ngIf="character.icon" [src]="character.icon" width="20" height="20" [alt]="character.name" />
           {{ character.name }}<br />Unlock
         </th>
       </tr>
@@ -23,48 +17,27 @@
         <td>{{ achievement.name }}</td>
         <ng-container *ngIf="achievement.icon.hard; else mergedCell">
           <td class="completion-mark">
-            <img
-              [src]="achievement.icon.normal"
-              width="50"
-              height="50"
-              alt="Completion Mark"
-            />
+            <img [src]="achievement.icon.normal" width="50" height="50" alt="Completion Mark" />
           </td>
           <td class="completion-mark">
-            <img
-              [src]="achievement.icon.hard"
-              width="50"
-              height="50"
-              alt="Completion Mark Hard Mode"
-            />
+            <img [src]="achievement.icon.hard" width="50" height="50" alt="Completion Mark Hard Mode" />
           </td>
         </ng-container>
         <ng-template #mergedCell>
           <td class="completion-mark" colspan="2">
-            <img
-              [src]="achievement.icon.normal"
-              width="50"
-              height="50"
-              alt="Completion Mark"
-            />
+            <img [src]="achievement.icon.normal" width="50" height="50" alt="Completion Mark" />
           </td>
         </ng-template>
         <td>
           <p *ngFor="let boss of achievement.boss">{{ boss }}</p>
         </td>
         <td *ngFor="let unlock of achievement.unlocks">
-          <img
-            *ngIf="unlock.icon"
-            [src]="unlock.icon"
-            width="45"
-            height="45"
-            [alt]="unlock.name"
-          />
+          <img *ngIf="unlock.icon" [src]="unlock.icon" width="45" height="45" [alt]="unlock.name" />
           <p *ngIf="!unlock.icon">{{ unlock.name }}</p>
         </td>
         <ng-container *ngFor="let _ of [].constructor(getExtraCells(achievement.unlocks.length))">
           <td class="empty-cell"><p>None</p></td>
-        </ng-container>        
+        </ng-container>
       </tr>
     </tbody>
   </table>

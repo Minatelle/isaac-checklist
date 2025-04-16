@@ -1,4 +1,6 @@
+@use './assets/styles/colors.scss';
+
 /* You can add global styles to this file, and also import other style files */
 body {
-    background-color: #563224;
+    background-color: colors.$background;
 }

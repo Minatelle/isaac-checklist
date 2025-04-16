@@ -6,7 +6,7 @@ import checklistData from './checklist-data.json';
   selector: 'app-checklist',
   imports: [NgFor, NgIf],
   templateUrl: './checklist.component.html',
-  styleUrl: './checklist.component.scss',
+  styleUrl: './checklist.component.scss'
 })
 export class ChecklistComponent {
   public characters = checklistData.characters;
