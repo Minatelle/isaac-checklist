@@ -1,0 +1,1182 @@
+{
+  "characters": [
+    {
+      "name": "Isaac",
+      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a9/Character_Isaac_icon.png/20px-Character_Isaac_icon.png?79604e"
+    },
+    {
+      "name": "Magdalene",
+      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/47/Character_Magdalene_icon.png/20px-Character_Magdalene_icon.png?b103f8"
+    },
+    {
+      "name": "Cain",
+      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/44/Character_Cain_icon.png/20px-Character_Cain_icon.png?cd8f61"
+    },
+    {
+      "name": "Judas",
+      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/13/Character_Judas_icon.png/20px-Character_Judas_icon.png?843879"
+    },
+    {
+      "name": "???",
+      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/39/Character_%3F%3F%3F_icon.png/20px-Character_%3F%3F%3F_icon.png?2e0e7f"
+    },
+    {
+      "name": "Eve",
+      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/e1/Character_Eve_icon.png/20px-Character_Eve_icon.png?64c1b4"
+    },
+    {
+      "name": "Samson",
+      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/dc/Character_Samson_icon.png/20px-Character_Samson_icon.png?9995bf"
+    },
+    {
+      "name": "Azazel",
+      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3d/Character_Azazel_icon.png/20px-Character_Azazel_icon.png?588259"
+    },
+    {
+      "name": "Lazarus",
+      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/ca/Character_Lazarus_icon.png/20px-Character_Lazarus_icon.png?87cf73"
+    },
+    {
+      "name": "Eden",
+      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a5/Character_Eden_icon.png/20px-Character_Eden_icon.png?d4bc86"
+    },
+    {
+      "name": "The Lost",
+      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/55/Character_The_Lost_icon.png/20px-Character_The_Lost_icon.png?55205b"
+    },
+    {
+      "name": "Lilith",
+      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/d7/Character_Lilith_icon.png/20px-Character_Lilith_icon.png?299e6c"
+    },
+    {
+      "name": "Keeper",
+      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/12/Character_Keeper_icon.png/20px-Character_Keeper_icon.png?ca2e18"
+    },
+    {
+      "name": "Apollyon",
+      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/32/Character_Apollyon_icon.png/20px-Character_Apollyon_icon.png?2be142"
+    },
+    {
+      "name": "The Forgotten",
+      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f6/Character_The_Forgotten_icon.png/20px-Character_The_Forgotten_icon.png?44c4e5"
+    },
+    {
+      "name": "Bethany",
+      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a2/Character_Bethany_icon.png/20px-Character_Bethany_icon.png?220fe1"
+    },
+    {
+      "name": "Jacob and Esau",
+      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/fa/Character_Jacob_and_Esau_icon.png/20px-Character_Jacob_and_Esau_icon.png?ad2790"
+    },
+    {
+      "name": "All Non-Tainted Characters",
+      "icon": null
+    },
+    {
+      "name": "All Characters",
+      "icon": null
+    }
+  ],
+  "achievements": [
+    {
+      "name": "Heart",
+      "icon": {
+        "normal": "https://bindingofisaacrebirth.wiki.gg/images/f/f8/Completion_Heart.png?4e4ce4",
+        "hard": "https://bindingofisaacrebirth.wiki.gg/images/a/a2/Completion_Heart_Hard.png?b736e7"
+      },
+      "boss": ["Mom's Heart", "It Lives!"],
+      "unlocks": [
+        {
+          "name": "Lost Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/6d/Achievement_Lost_Baby_icon.png/45px-Achievement_Lost_Baby_icon.png?681b5f"
+        },
+        {
+          "name": "Cute Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/2f/Achievement_Cute_Baby_icon.png/45px-Achievement_Cute_Baby_icon.png?f70dc3"
+        },
+        {
+          "name": "Glass Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/4f/Achievement_Glass_Baby_icon.png/45px-Achievement_Glass_Baby_icon.png?e87652"
+        },
+        {
+          "name": "Shadow Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3b/Achievement_Shadow_Baby_icon.png/45px-Achievement_Shadow_Baby_icon.png?ccd33b"
+        },
+        {
+          "name": "Dead Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/21/Achievement_Dead_Baby_icon.png/45px-Achievement_Dead_Baby_icon.png?d095e0"
+        },
+        {
+          "name": "Crow Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/ff/Achievement_Crow_Baby_icon.png/45px-Achievement_Crow_Baby_icon.png?6af9d9"
+        },
+        {
+          "name": "Fighting Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/62/Achievement_Fighting_Baby_icon.png/45px-Achievement_Fighting_Baby_icon.png?b3aec9"
+        },
+        {
+          "name": "Begotten Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/4c/Achievement_Begotten_Baby_icon.png/45px-Achievement_Begotten_Baby_icon.png?e11223"
+        },
+        {
+          "name": "Wrapped Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f1/Achievement_Wrapped_Baby_icon.png/45px-Achievement_Wrapped_Baby_icon.png?a9b761"
+        },
+        {
+          "name": "Glitch Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/17/Achievement_Glitch_Baby_icon.png/45px-Achievement_Glitch_Baby_icon.png?7a6e1b"
+        },
+        {
+          "name": "-0- Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f9/Achievement_-0-_Baby_icon.png/45px-Achievement_-0-_Baby_icon.png?23a69b"
+        },
+        {
+          "name": "Goat Head Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a7/Achievement_Goat_Head_Baby_icon.png/45px-Achievement_Goat_Head_Baby_icon.png?76d592"
+        },
+        {
+          "name": "Super Greed Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/fb/Achievement_Super_Greed_Baby_icon.png/45px-Achievement_Super_Greed_Baby_icon.png?1697b2"
+        },
+        {
+          "name": "Smelter",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f5/Achievement_Smelter_icon.png/45px-Achievement_Smelter_icon.png?5e7a4d"
+        },
+        {
+          "name": "Marrow",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/73/Achievement_Marrow_icon.png/45px-Achievement_Marrow_icon.png?cf8f2a"
+        },
+        {
+          "name": "Wisp Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/9/98/Achievement_Wisp_Baby_icon.png/45px-Achievement_Wisp_Baby_icon.png?6a7e66"
+        },
+        {
+          "name": "Double Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a1/Achievement_Double_Baby_icon.png/45px-Achievement_Double_Baby_icon.png?d77d8f"
+        }
+      ]
+    },
+    {
+      "name": "Cross",
+      "icon": {
+        "normal": "https://bindingofisaacrebirth.wiki.gg/images/b/bb/Completion_Cathedral.png?e9a14a",
+        "hard": "https://bindingofisaacrebirth.wiki.gg/images/e/ee/Completion_Cathedral_Hard.png?62cbbd"
+      },
+      "boss": ["Isaac"],
+      "unlocks": [
+        {
+          "name": "Isaac's Tears",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/ac/Achievement_Isaac%27s_Tears_icon.png/45px-Achievement_Isaac%27s_Tears_icon.png?f2a225"
+        },
+        {
+          "name": "A Cross",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/8/86/Achievement_A_Cross_icon.png/45px-Achievement_A_Cross_icon.png?9c7dd0"
+        },
+        {
+          "name": "A Bag of Pennies",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/db/Achievement_A_Bag_of_Pennies_icon.png/45px-Achievement_A_Bag_of_Pennies_icon.png?805b0e"
+        },
+        {
+          "name": "Guillotine",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/29/Achievement_Guillotine_icon.png/45px-Achievement_Guillotine_icon.png?1af95c"
+        },
+        {
+          "name": "The D6",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/fe/Achievement_The_D6_icon.png/45px-Achievement_The_D6_icon.png?be62e4"
+        },
+        {
+          "name": "Eve's Bird Foot",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/47/Achievement_Eve%27s_Bird_Foot_icon.png/45px-Achievement_Eve%27s_Bird_Foot_icon.png?a19a98"
+        },
+        {
+          "name": "Bloody Lust",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/c9/Achievement_Bloody_Lust_icon.png/45px-Achievement_Bloody_Lust_icon.png?4ba105"
+        },
+        {
+          "name": "Satanic Bible",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f3/Achievement_Satanic_Bible_icon.png/45px-Achievement_Satanic_Bible_icon.png?685d36"
+        },
+        {
+          "name": "Lazarus' Rags",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3c/Achievement_Lazarus%27_Rags_icon.png/45px-Achievement_Lazarus%27_Rags_icon.png?696fa7"
+        },
+        {
+          "name": "Blank Card",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/ce/Achievement_Blank_Card_icon.png/45px-Achievement_Blank_Card_icon.png?a0adf0"
+        },
+        {
+          "name": "Isaac's Heart",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/1d/Achievement_Isaac%27s_Heart_icon.png/45px-Achievement_Isaac%27s_Heart_icon.png?a5dd27"
+        },
+        {
+          "name": "Rune Bag",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/0f/Achievement_Rune_Bag_icon.png/45px-Achievement_Rune_Bag_icon.png?cd139a"
+        },
+        {
+          "name": "Keeper holds Wooden Nickel",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/70/Achievement_Keeper_holds_Wooden_Nickel_icon.png/45px-Achievement_Keeper_holds_Wooden_Nickel_icon.png?93a54e"
+        },
+        {
+          "name": "Locust of Wrath",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/9/99/Achievement_Locust_of_Wrath_icon.png/45px-Achievement_Locust_of_Wrath_icon.png?3ce8d2"
+        },
+        {
+          "name": "Slipped Rib",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/71/Achievement_Slipped_Rib_icon.png/45px-Achievement_Slipped_Rib_icon.png?46cfea"
+        },
+        {
+          "name": "Book of Virtues",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/35/Achievement_Book_of_Virtues_icon.png/45px-Achievement_Book_of_Virtues_icon.png?8207d7"
+        },
+        {
+          "name": "The Stairway",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/d1/Achievement_The_Stairway_icon.png/45px-Achievement_The_Stairway_icon.png?405b7a"
+        }
+      ]
+    },
+    {
+      "name": "Polaroid",
+      "icon": {
+        "normal": "https://bindingofisaacrebirth.wiki.gg/images/c/c4/Completion_Chest.png?9633d7",
+        "hard": "https://bindingofisaacrebirth.wiki.gg/images/c/c4/Completion_Chest_Hard.png?ca8710"
+      },
+      "boss": ["???"],
+      "unlocks": [
+        {
+          "name": "The D20",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/6c/Achievement_The_D20_icon.png/45px-Achievement_The_D20_icon.png?5a6703"
+        },
+        {
+          "name": "Celtic Cross",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/0f/Achievement_Celtic_Cross_icon.png/45px-Achievement_Celtic_Cross_icon.png?8eb610"
+        },
+        {
+          "name": "Cain's Eye",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/04/Achievement_Cain%27s_Eye_icon.png/45px-Achievement_Cain%27s_Eye_icon.png?2f477c"
+        },
+        {
+          "name": "The Left Hand",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/42/Achievement_The_Left_Hand_icon.png/45px-Achievement_The_Left_Hand_icon.png?173536"
+        },
+        {
+          "name": "Fate",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/75/Achievement_Fate_icon.png/45px-Achievement_Fate_icon.png?c2b2be"
+        },
+        {
+          "name": "Sacrificial Dagger",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/53/Achievement_Sacrificial_Dagger_icon.png/45px-Achievement_Sacrificial_Dagger_icon.png?6e3a80"
+        },
+        {
+          "name": "Blood Penny",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/8/86/Achievement_Blood_Penny_icon.png/45px-Achievement_Blood_Penny_icon.png?9b74ac"
+        },
+        {
+          "name": "Abaddon",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/ca/Achievement_Abaddon_icon.png/45px-Achievement_Abaddon_icon.png?9200fd"
+        },
+        {
+          "name": "Store Credit",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/71/Achievement_Store_Credit_icon.png/45px-Achievement_Store_Credit_icon.png?95d3f2"
+        },
+        {
+          "name": "Mysterious Paper",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/8/8a/Achievement_Mysterious_Paper_icon.png/45px-Achievement_Mysterious_Paper_icon.png?c4708c"
+        },
+        {
+          "name": "The Body",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/60/Achievement_The_Body_icon.png/45px-Achievement_The_Body_icon.png?b6397e"
+        },
+        {
+          "name": "Cambion Conception",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/8/8e/Achievement_Cambion_Conception_icon.png/45px-Achievement_Cambion_Conception_icon.png?ea3ee3"
+        },
+        {
+          "name": "Deep Pockets",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/9/9f/Achievement_Deep_Pockets_icon.png/45px-Achievement_Deep_Pockets_icon.png?1137b1"
+        },
+        {
+          "name": "Locust of Famine",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/7a/Achievement_Locust_of_Famine_icon.png/45px-Achievement_Locust_of_Famine_icon.png?505bd3"
+        },
+        {
+          "name": "Jaw Bone",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/44/Achievement_Jaw_Bone_icon.png/45px-Achievement_Jaw_Bone_icon.png?914124"
+        },
+        {
+          "name": "Blessed Penny",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/25/Achievement_Blessed_Penny_icon.png/45px-Achievement_Blessed_Penny_icon.png?faafae"
+        },
+        {
+          "name": "Birthright",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/9/9b/Achievement_Birthright_icon.png/45px-Achievement_Birthright_icon.png?69bdaf"
+        }
+      ]
+    },
+    {
+      "name": "Inverted Cross",
+      "icon": {
+        "normal": "https://bindingofisaacrebirth.wiki.gg/images/5/57/Completion_Sheol.png?5bfd0e",
+        "hard": "https://bindingofisaacrebirth.wiki.gg/images/d/d4/Completion_Sheol_Hard.png?c4c0f1"
+      },
+      "boss": ["Satan"],
+      "unlocks": [
+        {
+          "name": "Mom's Knife",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/ae/Achievement_Mom%27s_Knife_icon.png/45px-Achievement_Mom%27s_Knife_icon.png?a85b01"
+        },
+        {
+          "name": "Guardian Angel",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/1f/Achievement_Guardian_Angel_icon.png/45px-Achievement_Guardian_Angel_icon.png?46efa7"
+        },
+        {
+          "name": "A Bag of Bombs",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/61/Achievement_A_Bag_of_Bombs_icon.png/45px-Achievement_A_Bag_of_Bombs_icon.png?28e7c2"
+        },
+        {
+          "name": "Judas' Tongue",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/c8/Achievement_Judas%27_Tongue_icon.png/45px-Achievement_Judas%27_Tongue_icon.png?ac902b"
+        },
+        {
+          "name": "Forget Me Now",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/6a/Achievement_Forget_Me_Now_icon.png/45px-Achievement_Forget_Me_Now_icon.png?2015ca"
+        },
+        {
+          "name": "The Razor",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/76/Achievement_The_Razor_icon.png/45px-Achievement_The_Razor_icon.png?7bdd80"
+        },
+        {
+          "name": "Blood Rights",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b7/Achievement_Blood_Rights_icon.png/45px-Achievement_Blood_Rights_icon.png?5ccc6f"
+        },
+        {
+          "name": "Daemon's Tail",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a0/Achievement_Daemon%27s_Tail_icon.png/45px-Achievement_Daemon%27s_Tail_icon.png?ffd738"
+        },
+        {
+          "name": "Broken Ankh",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/23/Achievement_Broken_Ankh_icon.png/45px-Achievement_Broken_Ankh_icon.png?d34269"
+        },
+        {
+          "name": "Book of Secrets",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f6/Achievement_Book_of_Secrets_icon.png/45px-Achievement_Book_of_Secrets_icon.png?94a6c8"
+        },
+        {
+          "name": "The Mind",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/e1/Achievement_The_Mind_icon.png/45px-Achievement_The_Mind_icon.png?b59b0c"
+        },
+        {
+          "name": "Serpent's Kiss",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/6e/Achievement_Serpent%27s_Kiss_icon.png/45px-Achievement_Serpent%27s_Kiss_icon.png?ab0ef1"
+        },
+        {
+          "name": "Keeper holds Store Key",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b4/Achievement_Keeper_holds_Store_Key_icon.png/45px-Achievement_Keeper_holds_Store_Key_icon.png?55c1f0"
+        },
+        {
+          "name": "Locust of Pestilence",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/18/Achievement_Locust_of_Pestilence_icon.png/45px-Achievement_Locust_of_Pestilence_icon.png?6f47a9"
+        },
+        {
+          "name": "Pointy Rib",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/33/Achievement_Pointy_Rib_icon.png/45px-Achievement_Pointy_Rib_icon.png?e750db"
+        },
+        {
+          "name": "Urn of Souls",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/ba/Achievement_Urn_of_Souls_icon.png/45px-Achievement_Urn_of_Souls_icon.png?757cda"
+        },
+        {
+          "name": "Red Stew",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/5b/Achievement_Red_Stew_icon.png/45px-Achievement_Red_Stew_icon.png?f2db80"
+        }
+      ]
+    },
+    {
+      "name": "Negative",
+      "icon": {
+        "normal": "https://bindingofisaacrebirth.wiki.gg/images/d/d0/Completion_DarkRoom.png?94a6a5",
+        "hard": "https://bindingofisaacrebirth.wiki.gg/images/5/52/Completion_DarkRoom_Hard.png?d2d563"
+      },
+      "boss": ["The Lamb"],
+      "unlocks": [
+        {
+          "name": "Missing Poster",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3c/Achievement_Missing_Poster_icon.png/45px-Achievement_Missing_Poster_icon.png?81f269"
+        },
+        {
+          "name": "Maggy's Faith",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/9/92/Achievement_Maggy%27s_Faith_icon.png/45px-Achievement_Maggy%27s_Faith_icon.png?db05ec"
+        },
+        {
+          "name": "Abel",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/35/Achievement_Abel_icon.png/45px-Achievement_Abel_icon.png?80892b"
+        },
+        {
+          "name": "Curved Horn",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/9/97/Achievement_Curved_Horn_icon.png/45px-Achievement_Curved_Horn_icon.png?f7c13a"
+        },
+        {
+          "name": "???'s Soul",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f8/Achievement_Blue_Baby%27s_Soul_icon.png/45px-Achievement_Blue_Baby%27s_Soul_icon.png?a27531"
+        },
+        {
+          "name": "Black Lipstick",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/cd/Achievement_Black_Lipstick_icon.png/45px-Achievement_Black_Lipstick_icon.png?873897"
+        },
+        {
+          "name": "Samson's Lock",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/8/80/Achievement_Samson%27s_Lock_icon.png/45px-Achievement_Samson%27s_Lock_icon.png?7f59b9"
+        },
+        {
+          "name": "Demon Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/df/Achievement_Demon_Baby_icon.png/45px-Achievement_Demon_Baby_icon.png?147c59"
+        },
+        {
+          "name": "Pandora's Box",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a5/Achievement_Pandora%27s_Box_icon.png/45px-Achievement_Pandora%27s_Box_icon.png?a205e8"
+        },
+        {
+          "name": "Mystery Sack",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/14/Achievement_Mystery_Sack_icon.png/45px-Achievement_Mystery_Sack_icon.png?30eaa6"
+        },
+        {
+          "name": "The Soul",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a3/Achievement_The_Soul_icon.png/45px-Achievement_The_Soul_icon.png?d5c927"
+        },
+        {
+          "name": "Succubus",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/00/Achievement_Succubus_icon.png/45px-Achievement_Succubus_icon.png?713ca4"
+        },
+        {
+          "name": "Karma",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/79/Achievement_Karma_icon.png/45px-Achievement_Karma_icon.png?1b246a"
+        },
+        {
+          "name": "Locust of Death",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/0e/Achievement_Locust_of_Death_icon.png/45px-Achievement_Locust_of_Death_icon.png?42555b"
+        },
+        {
+          "name": "Brittle Bones",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/2b/Achievement_Brittle_Bones_icon.png/45px-Achievement_Brittle_Bones_icon.png?dfaecc"
+        },
+        {
+          "name": "Alabaster Box",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/5f/Achievement_Alabaster_Box_icon.png/45px-Achievement_Alabaster_Box_icon.png?392b67"
+        },
+        {
+          "name": "Damocles",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3e/Achievement_Damocles_icon.png/45px-Achievement_Damocles_icon.png?3ee4bb"
+        }
+      ]
+    },
+    {
+      "name": "Brimstone",
+      "icon": {
+        "normal": "https://bindingofisaacrebirth.wiki.gg/images/3/35/Completion_Brimstone.png?e5a150",
+        "hard": "https://bindingofisaacrebirth.wiki.gg/images/5/59/Completion_Brimstone_Hard.png?c3bb43"
+      },
+      "boss": ["Mega Satan"],
+      "unlocks": [
+        {
+          "name": "Cry Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/cb/Achievement_Cry_Baby_icon.png/45px-Achievement_Cry_Baby_icon.png?10cae4"
+        },
+        {
+          "name": "Red Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/0b/Achievement_Red_Baby_icon.png/45px-Achievement_Red_Baby_icon.png?ce7cdb"
+        },
+        {
+          "name": "Green Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/d2/Achievement_Green_Baby_icon.png/45px-Achievement_Green_Baby_icon.png?a43b9a"
+        },
+        {
+          "name": "Brown Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/2a/Achievement_Brown_Baby_icon.png/45px-Achievement_Brown_Baby_icon.png?9061f3"
+        },
+        {
+          "name": "Blue Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/fa/Achievement_Blue_Baby_icon.png/45px-Achievement_Blue_Baby_icon.png?71b4d2"
+        },
+        {
+          "name": "Lil' Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/27/Achievement_Lil%27_Baby_icon.png/45px-Achievement_Lil%27_Baby_icon.png?cf5090"
+        },
+        {
+          "name": "Rage Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/06/Achievement_Rage_Baby_icon.png/45px-Achievement_Rage_Baby_icon.png?6f6fe6"
+        },
+        {
+          "name": "Black Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/79/Achievement_Black_Baby_icon.png/45px-Achievement_Black_Baby_icon.png?ad8aa8"
+        },
+        {
+          "name": "Long Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/45/Achievement_Long_Baby_icon.png/45px-Achievement_Long_Baby_icon.png?a64638"
+        },
+        {
+          "name": "Yellow Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/72/Achievement_Yellow_Baby_icon.png/45px-Achievement_Yellow_Baby_icon.png?59f3aa"
+        },
+        {
+          "name": "White Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/41/Achievement_White_Baby_icon.png/45px-Achievement_White_Baby_icon.png?f763b9"
+        },
+        {
+          "name": "Big Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/cd/Achievement_Big_Baby_icon.png/45px-Achievement_Big_Baby_icon.png?65f9b8"
+        },
+        {
+          "name": "Noose Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/ab/Achievement_Noose_Baby_icon.png/45px-Achievement_Noose_Baby_icon.png?d0cae4"
+        },
+        {
+          "name": "Mort Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/78/Achievement_Mort_Baby_icon.png/45px-Achievement_Mort_Baby_icon.png?2120e2"
+        },
+        {
+          "name": "Bound Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/5a/Achievement_Bound_Baby_icon.png/45px-Achievement_Bound_Baby_icon.png?a1552b"
+        },
+        {
+          "name": "Glowing Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/27/Achievement_Glowing_Baby_icon.png/45px-Achievement_Glowing_Baby_icon.png?84a4d5"
+        },
+        {
+          "name": "Illusion Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/68/Achievement_Illusion_Baby_icon.png/45px-Achievement_Illusion_Baby_icon.png?6bae5c"
+        },
+        {
+          "name": "Mega",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a5/Achievement_Mega_icon.png/45px-Achievement_Mega_icon.png?c17cbd"
+        }
+      ]
+    },
+    {
+      "name": "Star",
+      "icon": {
+        "normal": "https://bindingofisaacrebirth.wiki.gg/images/9/98/Completion_BossRush.png?d71150",
+        "hard": "https://bindingofisaacrebirth.wiki.gg/images/f/f7/Completion_BossRush_Hard.png?22e9ea"
+      },
+      "boss": ["Boss Rush"],
+      "unlocks": [
+        {
+          "name": "Isaac's Head",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/10/Achievement_Isaac%27s_Head_icon.png/45px-Achievement_Isaac%27s_Head_icon.png?97b8d1"
+        },
+        {
+          "name": "Maggy's Bow",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/d4/Achievement_Maggy%27s_Bow_icon.png/45px-Achievement_Maggy%27s_Bow_icon.png?834ad6"
+        },
+        {
+          "name": "Cain's Other Eye",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/37/Achievement_Cain%27s_Other_Eye_icon.png/45px-Achievement_Cain%27s_Other_Eye_icon.png?d03425"
+        },
+        {
+          "name": "Judas' Shadow",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/56/Achievement_Judas%27_Shadow_icon.png/45px-Achievement_Judas%27_Shadow_icon.png?70e697"
+        },
+        {
+          "name": "???'s Only Friend",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/01/Achievement_Blue_Baby%27s_Only_Friend_icon.png/45px-Achievement_Blue_Baby%27s_Only_Friend_icon.png?c85dd9"
+        },
+        {
+          "name": "Eve's Mascara",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a3/Achievement_Eve%27s_Mascara_icon.png/45px-Achievement_Eve%27s_Mascara_icon.png?14d351"
+        },
+        {
+          "name": "Samson's Chains",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/1a/Achievement_Samson%27s_Chains_icon.png/45px-Achievement_Samson%27s_Chains_icon.png?4a9335"
+        },
+        {
+          "name": "The Nail",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/09/Achievement_The_Nail_icon.png/45px-Achievement_The_Nail_icon.png?2c3007"
+        },
+        {
+          "name": "Missing No.",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/aa/Achievement_Missing_No._icon.png/45px-Achievement_Missing_No._icon.png?84dcc8"
+        },
+        {
+          "name": "Undefined",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/c3/Achievement_Undefined_icon.png/45px-Achievement_Undefined_icon.png?bbf52e"
+        },
+        {
+          "name": "The D100",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f2/Achievement_The_D100_icon.png/45px-Achievement_The_D100_icon.png?b52173"
+        },
+        {
+          "name": "Immaculate Conception",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/56/Achievement_Immaculate_Conception_icon.png/45px-Achievement_Immaculate_Conception_icon.png?e2ce31"
+        },
+        {
+          "name": "Sticky Nickels",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/ad/Achievement_Sticky_Nickels_icon.png/45px-Achievement_Sticky_Nickels_icon.png?4be36d"
+        },
+        {
+          "name": "Locust of Conquest",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/19/Achievement_Locust_of_Conquest_icon.png/45px-Achievement_Locust_of_Conquest_icon.png?9b5305"
+        },
+        {
+          "name": "Divorce Papers",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/21/Achievement_Divorce_Papers_icon.png/45px-Achievement_Divorce_Papers_icon.png?c47da5"
+        },
+        {
+          "name": "Beth's Faith",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/af/Achievement_Beth%27s_Faith_icon.png/45px-Achievement_Beth%27s_Faith_icon.png?6af4ca"
+        },
+        {
+          "name": "Rock Bottom",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b9/Achievement_Rock_Bottom_icon.png/45px-Achievement_Rock_Bottom_icon.png?d6a563"
+        }
+      ]
+    },
+    {
+      "name": "Hush's Face",
+      "icon": {
+        "normal": "https://bindingofisaacrebirth.wiki.gg/images/2/27/Completion_BlueWomb.png?e6e0b4",
+        "hard": "https://bindingofisaacrebirth.wiki.gg/images/6/69/Completion_BlueWomb_Hard.png?52a5bf"
+      },
+      "boss": ["Hush"],
+      "unlocks": [
+        {
+          "name": "Fart Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/20/Achievement_Fart_Baby_icon.png/45px-Achievement_Fart_Baby_icon.png?eeeda8"
+        },
+        {
+          "name": "Purity",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/53/Achievement_Purity_icon.png/45px-Achievement_Purity_icon.png?e25ff8"
+        },
+        {
+          "name": "D12",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/49/Achievement_D12_icon.png/45px-Achievement_D12_icon.png?42e496"
+        },
+        {
+          "name": "Betrayal",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/29/Achievement_Betrayal_icon.png/45px-Achievement_Betrayal_icon.png?6c5e0c"
+        },
+        {
+          "name": "Fate's Reward",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/9/94/Achievement_Fate%27s_Reward_icon.png/45px-Achievement_Fate%27s_Reward_icon.png?6f78fc"
+        },
+        {
+          "name": "Athame",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/6d/Achievement_Athame_icon.png/45px-Achievement_Athame_icon.png?d0406c"
+        },
+        {
+          "name": "Blind Rage",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/8/85/Achievement_Blind_Rage_icon.png/45px-Achievement_Blind_Rage_icon.png?3040ea"
+        },
+        {
+          "name": "Maw of the Void",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3f/Achievement_Maw_of_the_Void_icon.png/45px-Achievement_Maw_of_the_Void_icon.png?f45356"
+        },
+        {
+          "name": "Empty Vessel",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/18/Achievement_Empty_Vessel_icon.png/45px-Achievement_Empty_Vessel_icon.png?7c7679"
+        },
+        {
+          "name": "Eden's Blessing",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/ee/Achievement_Eden%27s_Blessing_icon.png/45px-Achievement_Eden%27s_Blessing_icon.png?328083"
+        },
+        {
+          "name": "Sworn Protector",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/af/Achievement_Sworn_Protector_icon.png/45px-Achievement_Sworn_Protector_icon.png?b59c3d"
+        },
+        {
+          "name": "Incubus",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/1d/Achievement_Incubus_icon.png/45px-Achievement_Incubus_icon.png?2074ae"
+        },
+        {
+          "name": "Keeper now holds... A Penny!",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/fc/Achievement_Keeper_now_holds..._A_Penny%21_icon.png/45px-Achievement_Keeper_now_holds..._A_Penny%21_icon.png?6647b8"
+        },
+        {
+          "name": "Hushy",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/ec/Achievement_Hushy_icon.png/45px-Achievement_Hushy_icon.png?a52d10"
+        },
+        {
+          "name": "Hallowed Ground",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/fe/Achievement_Hallowed_Ground_icon.png/45px-Achievement_Hallowed_Ground_icon.png?6a0ac3"
+        },
+        {
+          "name": "Divine Intervention",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b5/Achievement_Divine_Intervention_icon.png/45px-Achievement_Divine_Intervention_icon.png?814777"
+        },
+        {
+          "name": "Vanishing Twin",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/48/Achievement_Vanishing_Twin_icon.png/45px-Achievement_Vanishing_Twin_icon.png?edd5dd"
+        }
+      ]
+    },
+    {
+      "name": "Cent Sign",
+      "icon": {
+        "normal": "https://bindingofisaacrebirth.wiki.gg/images/9/9a/Completion_Greed.png?2772fb",
+        "hard": null
+      },
+      "boss": ["Ultra Greed"],
+      "unlocks": [
+        {
+          "name": "Lil' Chest",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b0/Achievement_Lil%27_Chest_icon.png/45px-Achievement_Lil%27_Chest_icon.png?1cd722"
+        },
+        {
+          "name": "Censer",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/0e/Achievement_Censer_icon.png/45px-Achievement_Censer_icon.png?12cbec"
+        },
+        {
+          "name": "Evil Eye",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/6a/Achievement_Evil_Eye_icon.png/45px-Achievement_Evil_Eye_icon.png?62b0dd"
+        },
+        {
+          "name": "My Shadow",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3d/Achievement_My_Shadow_icon.png/45px-Achievement_My_Shadow_icon.png?14ceeb"
+        },
+        {
+          "name": "Cracked Dice",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/d4/Achievement_Cracked_Dice_icon.png/45px-Achievement_Cracked_Dice_icon.png?49c9f9"
+        },
+        {
+          "name": "Black Feather",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/e9/Achievement_Black_Feather_icon.png/45px-Achievement_Black_Feather_icon.png?1e88d3"
+        },
+        {
+          "name": "Lusty Blood",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a4/Achievement_Lusty_Blood_icon.png/45px-Achievement_Lusty_Blood_icon.png?b2ba0a"
+        },
+        {
+          "name": "Lilith",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/29/Achievement_Lilith_icon.png/45px-Achievement_Lilith_icon.png?727079"
+        },
+        {
+          "name": "Key Bum",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/da/Achievement_Key_Bum_icon.png/45px-Achievement_Key_Bum_icon.png?15066d"
+        },
+        {
+          "name": "GB Bug",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/ac/Achievement_GB_Bug_icon.png/45px-Achievement_GB_Bug_icon.png?201d35"
+        },
+        {
+          "name": "Zodiac",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/74/Achievement_Zodiac_icon.png/45px-Achievement_Zodiac_icon.png?9b3648"
+        },
+        {
+          "name": "Box of Friends",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/43/Achievement_Box_of_Friends_icon.png/45px-Achievement_Box_of_Friends_icon.png?e37aab"
+        },
+        {
+          "name": "Rib of Greed",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/c0/Achievement_Rib_of_Greed_icon.png/45px-Achievement_Rib_of_Greed_icon.png?eda609"
+        },
+        {
+          "name": "Brown Nugget",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/9/94/Achievement_Brown_Nugget_icon.png/45px-Achievement_Brown_Nugget_icon.png?69ba6f"
+        },
+        {
+          "name": "Finger Bone",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f1/Achievement_Finger_Bone_icon.png/45px-Achievement_Finger_Bone_icon.png?45731f"
+        },
+        {
+          "name": "Soul Locket",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/22/Achievement_Soul_Locket_icon.png/45px-Achievement_Soul_Locket_icon.png?3ed0dd"
+        },
+        {
+          "name": "Inner Child",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/9/95/Achievement_Inner_Child_icon.png/45px-Achievement_Inner_Child_icon.png?2b90c7"
+        }
+      ]
+    },
+    {
+      "name": "Cent Sign HardMode",
+      "icon": {
+        "normal": "https://bindingofisaacrebirth.wiki.gg/images/0/0b/Completion_Greed_Hard.png?1bce9f",
+        "hard": null
+      },
+      "boss": ["Ultra Greedier"],
+      "unlocks": [
+        {
+          "name": "D1",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3c/Achievement_D1_icon.png/45px-Achievement_D1_icon.png?e33995"
+        },
+        {
+          "name": "Glyph of Balance",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/6a/Achievement_Glyph_of_Balance_icon.png/45px-Achievement_Glyph_of_Balance_icon.png?5e025a"
+        },
+        {
+          "name": "Sack of Sacks",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/ff/Achievement_Sack_of_Sacks_icon.png/45px-Achievement_Sack_of_Sacks_icon.png?4ce4a2"
+        },
+        {
+          "name": "Eye of Belial",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/50/Achievement_Eye_of_Belial_icon.png/45px-Achievement_Eye_of_Belial_icon.png?d799e4"
+        },
+        {
+          "name": "Meconium",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/aa/Achievement_Meconium_icon.png/45px-Achievement_Meconium_icon.png?e6017e"
+        },
+        {
+          "name": "Crow Heart",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/33/Achievement_Crow_Heart_icon.png/45px-Achievement_Crow_Heart_icon.png?ca3293"
+        },
+        {
+          "name": "Stem Cell",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/47/Achievement_Stem_Cell_icon.png/45px-Achievement_Stem_Cell_icon.png?c9de3f"
+        },
+        {
+          "name": "Bat Wing",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b5/Achievement_Bat_Wing_icon.png/45px-Achievement_Bat_Wing_icon.png?1c308e"
+        },
+        {
+          "name": "Plan C",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/7d/Achievement_Plan_C_icon.png/45px-Achievement_Plan_C_icon.png?814334"
+        },
+        {
+          "name": "Metronome",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/c3/Achievement_Metronome_icon.png/45px-Achievement_Metronome_icon.png?a3d162"
+        },
+        {
+          "name": "Dad's Lost Coin",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/7f/Achievement_Dad%27s_Lost_Coin_icon.png/45px-Achievement_Dad%27s_Lost_Coin_icon.png?e18388"
+        },
+        {
+          "name": "Duality",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f5/Achievement_Duality_icon.png/45px-Achievement_Duality_icon.png?c5fb17"
+        },
+        {
+          "name": "Eye of Greed",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/fd/Achievement_Eye_of_Greed_icon.png/45px-Achievement_Eye_of_Greed_icon.png?a1fb11"
+        },
+        {
+          "name": "Black Rune",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/c3/Achievement_Black_Rune_icon.png/45px-Achievement_Black_Rune_icon.png?81379e"
+        },
+        {
+          "name": "Dad's Ring",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/26/Achievement_Dad%27s_Ring_icon.png/45px-Achievement_Dad%27s_Ring_icon.png?a6ff5d"
+        },
+        {
+          "name": "Vade Retro",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/ad/Achievement_Vade_Retro_icon.png/45px-Achievement_Vade_Retro_icon.png?c57bd0"
+        },
+        {
+          "name": "Genesis",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/10/Achievement_Genesis_icon.png/45px-Achievement_Genesis_icon.png?94b88d"
+        }
+      ]
+    },
+    {
+      "name": "Wrinkled Paper",
+      "icon": {
+        "normal": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/5c/Repentance_Completion_Void.png/50px-Repentance_Completion_Void.png?6a7558",
+        "hard": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/06/Repentance_Completion_Void_Hard.png/50px-Repentance_Completion_Void_Hard.png?42ee9d"
+      },
+      "boss": ["Delirium"],
+      "unlocks": [
+        {
+          "name": "D infinity",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/4c/Achievement_D_infinity_icon.png/45px-Achievement_D_infinity_icon.png?f98480"
+        },
+        {
+          "name": "Eucharist",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/d7/Achievement_Eucharist_icon.png/45px-Achievement_Eucharist_icon.png?bfafbb"
+        },
+        {
+          "name": "Silver Dollar",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/69/Achievement_Silver_Dollar_icon.png/45px-Achievement_Silver_Dollar_icon.png?c18060"
+        },
+        {
+          "name": "Shade",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/66/Achievement_Shade_icon.png/45px-Achievement_Shade_icon.png?41c6e7"
+        },
+        {
+          "name": "King Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/5e/Achievement_King_Baby_icon.png/45px-Achievement_King_Baby_icon.png?37e8e9"
+        },
+        {
+          "name": "Dull Razor",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/5a/Achievement_Dull_Razor_icon.png/45px-Achievement_Dull_Razor_icon.png?4f626a"
+        },
+        {
+          "name": "Bloody Crown",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/1f/Achievement_Bloody_Crown_icon.png/45px-Achievement_Bloody_Crown_icon.png?81b424"
+        },
+        {
+          "name": "Dark Prince's Crown",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/e5/Achievement_Dark_Prince%27s_Crown_icon.png/45px-Achievement_Dark_Prince%27s_Crown_icon.png?819a0d"
+        },
+        {
+          "name": "Compound Fracture",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/72/Achievement_Compound_Fracture_icon.png/45px-Achievement_Compound_Fracture_icon.png?2492c2"
+        },
+        {
+          "name": "Eden's Soul",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/24/Achievement_Eden%27s_Soul_icon.png/45px-Achievement_Eden%27s_Soul_icon.png?1ad4fd"
+        },
+        {
+          "name": "Holy Card",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b8/Achievement_Holy_Card_icon.png/45px-Achievement_Holy_Card_icon.png?e7fcf2"
+        },
+        {
+          "name": "Euthanasia",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/09/Achievement_Euthanasia_icon.png/45px-Achievement_Euthanasia_icon.png?425243"
+        },
+        {
+          "name": "Crooked Penny",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/c8/Achievement_Crooked_Penny_icon.png/45px-Achievement_Crooked_Penny_icon.png?448de3"
+        },
+        {
+          "name": "Void",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/ab/Achievement_Void_icon.png/45px-Achievement_Void_icon.png?a03d21"
+        },
+        {
+          "name": "Book of the Dead",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a7/Achievement_Book_of_the_Dead_icon.png/45px-Achievement_Book_of_the_Dead_icon.png?8a24c5"
+        },
+        {
+          "name": "Star of Bethlehem",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/ed/Achievement_Star_of_Bethlehem_icon.png/45px-Achievement_Star_of_Bethlehem_icon.png?567da9"
+        },
+        {
+          "name": "Suplex!",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b9/Achievement_Suplex%21_icon.png/45px-Achievement_Suplex%21_icon.png?893706"
+        }
+      ]
+    },
+    {
+      "name": "Knife",
+      "icon": {
+        "normal": "https://bindingofisaacrebirth.wiki.gg/images/8/83/Completion_Mother.png?9f997c",
+        "hard": "https://bindingofisaacrebirth.wiki.gg/images/1/11/Completion_Mother_Hard.png?1b3510"
+      },
+      "boss": ["Mother"],
+      "unlocks": [
+        {
+          "name": "Meat Cleaver",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/42/Achievement_Meat_Cleaver_icon.png/45px-Achievement_Meat_Cleaver_icon.png?fae67d"
+        },
+        {
+          "name": "Yuck Heart",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f1/Achievement_Yuck_Heart_icon.png/45px-Achievement_Yuck_Heart_icon.png?b62212"
+        },
+        {
+          "name": "Guppy's Eye",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/16/Achievement_Guppy%27s_Eye_icon.png/45px-Achievement_Guppy%27s_Eye_icon.png?698eeb"
+        },
+        {
+          "name": "Akeldama",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/0e/Achievement_Akeldama_icon.png/45px-Achievement_Akeldama_icon.png?6dc00b"
+        },
+        {
+          "name": "Eternal D6",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/10/Achievement_Eternal_D6_icon.png/45px-Achievement_Eternal_D6_icon.png?da94e9"
+        },
+        {
+          "name": "Bird Cage",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f0/Achievement_Bird_Cage_icon.png/45px-Achievement_Bird_Cage_icon.png?f02714"
+        },
+        {
+          "name": "Bloody Gust",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/40/Achievement_Bloody_Gust_icon.png/45px-Achievement_Bloody_Gust_icon.png?4b4f82"
+        },
+        {
+          "name": "Devil's Crown",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b8/Achievement_Devil%27s_Crown_icon.png/45px-Achievement_Devil%27s_Crown_icon.png?75ff8a"
+        },
+        {
+          "name": "Tinytoma",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/8/81/Achievement_Tinytoma_icon.png/45px-Achievement_Tinytoma_icon.png?94d56e"
+        },
+        {
+          "name": "'M",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/71/Achievement_%27M_icon.png/45px-Achievement_%27M_icon.png?96601b"
+        },
+        {
+          "name": "Lost Soul",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/01/Achievement_Lost_Soul_icon.png/45px-Achievement_Lost_Soul_icon.png?a0076e"
+        },
+        {
+          "name": "Blood Puppy",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/28/Achievement_Blood_Puppy_icon.png/45px-Achievement_Blood_Puppy_icon.png?3e3f43"
+        },
+        {
+          "name": "Keeper's Sack",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b4/Achievement_Keeper%27s_Sack_icon.png/45px-Achievement_Keeper%27s_Sack_icon.png?8d25b9"
+        },
+        {
+          "name": "Lil Portal",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/07/Achievement_Lil_Portal_icon.png/45px-Achievement_Lil_Portal_icon.png?69fc49"
+        },
+        {
+          "name": "Bone Spurs",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/59/Achievement_Bone_Spurs_icon.png/45px-Achievement_Bone_Spurs_icon.png?389177"
+        },
+        {
+          "name": "Revelation",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/4f/Achievement_Revelation_icon.png/45px-Achievement_Revelation_icon.png?1a8b91"
+        },
+        {
+          "name": "Magic Skin",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/01/Achievement_Magic_Skin_icon.png/45px-Achievement_Magic_Skin_icon.png?2dae2e"
+        }
+      ]
+    },
+    {
+      "name": "Dad's Note",
+      "icon": {
+        "normal": "https://bindingofisaacrebirth.wiki.gg/images/5/50/Completion_Beast.png?441d40",
+        "hard": "https://bindingofisaacrebirth.wiki.gg/images/a/af/Completion_Beast_Hard.png?38f996"
+      },
+      "boss": ["The Beast"],
+      "unlocks": [
+        {
+          "name": "Options?",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/51/Achievement_Options%3F_icon.png/45px-Achievement_Options%3F_icon.png?bb8ee2"
+        },
+        {
+          "name": "Candy Heart",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/6e/Achievement_Candy_Heart_icon.png/45px-Achievement_Candy_Heart_icon.png?701cb7"
+        },
+        {
+          "name": "A Pound of Flesh",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/d8/Achievement_A_Pound_of_Flesh_icon.png/45px-Achievement_A_Pound_of_Flesh_icon.png?dba8a0"
+        },
+        {
+          "name": "Redemption",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/56/Achievement_Redemption_icon.png/45px-Achievement_Redemption_icon.png?8bd5f9"
+        },
+        {
+          "name": "Montezuma's Revenge",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/e7/Achievement_Montezuma%27s_Revenge_icon.png/45px-Achievement_Montezuma%27s_Revenge_icon.png?95b115"
+        },
+        {
+          "name": "Cracked Orb",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/0a/Achievement_Cracked_Orb_icon.png/45px-Achievement_Cracked_Orb_icon.png?44c1a8"
+        },
+        {
+          "name": "Empty Heart",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/01/Achievement_Empty_Heart_icon.png/45px-Achievement_Empty_Heart_icon.png?3151fa"
+        },
+        {
+          "name": "Lil Abaddon",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/40/Achievement_Lil_Abaddon_icon.png/45px-Achievement_Lil_Abaddon_icon.png?736ef5"
+        },
+        {
+          "name": "Astral Projection",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/09/Achievement_Astral_Projection_icon.png/45px-Achievement_Astral_Projection_icon.png?bcd60a"
+        },
+        {
+          "name": "Everything Jar",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/d3/Achievement_Everything_Jar_icon.png/45px-Achievement_Everything_Jar_icon.png?14e0c2"
+        },
+        {
+          "name": "Hungry Soul",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/c5/Achievement_Hungry_Soul_icon.png/45px-Achievement_Hungry_Soul_icon.png?4a0276"
+        },
+        {
+          "name": "C Section",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/8/8e/Achievement_C_Section_icon.png/45px-Achievement_C_Section_icon.png?b88270"
+        },
+        {
+          "name": "Keeper's Box",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f5/Achievement_Keeper%27s_Box_icon.png/45px-Achievement_Keeper%27s_Box_icon.png?e7c214"
+        },
+        {
+          "name": "Worm Friend",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/03/Achievement_Worm_Friend_icon.png/45px-Achievement_Worm_Friend_icon.png?d4650f"
+        },
+        {
+          "name": "Spirit Shackles",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/76/Achievement_Spirit_Shackles_icon.png/45px-Achievement_Spirit_Shackles_icon.png?9b167e"
+        },
+        {
+          "name": "Jar of Wisps",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3a/Achievement_Jar_of_Wisps_icon.png/45px-Achievement_Jar_of_Wisps_icon.png?6ff772"
+        },
+        {
+          "name": "Friend Finder",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3e/Achievement_Friend_Finder_icon.png/45px-Achievement_Friend_Finder_icon.png?679945"
+        }
+      ]
+    },
+    {
+      "name": "All Hard Mode Marks",
+      "icon": {
+        "normal": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/1a/Repentance_Completion_Marks.png/75px-Repentance_Completion_Marks.png?baf6d6",
+        "hard": null
+      },
+      "boss": ["(All Above)"],
+      "unlocks": [
+        {
+          "name": "Budy Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3c/Achievement_Buddy_Baby_icon.png/45px-Achievement_Buddy_Baby_icon.png?b8a660"
+        },
+        {
+          "name": "Colorful Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/e5/Achievement_Colorful_Baby_icon.png/45px-Achievement_Colorful_Baby_icon.png?ff3fa6"
+        },
+        {
+          "name": "Picky Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/48/Achievement_Picky_Baby_icon.png/45px-Achievement_Picky_Baby_icon.png?f67cee"
+        },
+        {
+          "name": "Belial Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/63/Achievement_Belial_Baby_icon.png/45px-Achievement_Belial_Baby_icon.png?9adbc5"
+        },
+        {
+          "name": "Hive Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/eb/Achievement_Hive_Baby_icon.png/45px-Achievement_Hive_Baby_icon.png?1ac240"
+        },
+        {
+          "name": "Whore Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/fc/Achievement_Whore_Baby_icon.png/45px-Achievement_Whore_Baby_icon.png?a055a6"
+        },
+        {
+          "name": "Revenge Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/e2/Achievement_Revenge_Baby_icon.png/45px-Achievement_Revenge_Baby_icon.png?d2dc0f"
+        },
+        {
+          "name": "Sucky Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/42/Achievement_Sucky_Baby_icon.png/45px-Achievement_Sucky_Baby_icon.png?438263"
+        },
+        {
+          "name": "Dripping Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/22/Achievement_Dripping_Baby_icon.png/45px-Achievement_Dripping_Baby_icon.png?1f4bf8"
+        },
+        {
+          "name": "Cracked Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f3/Achievement_Cracked_Baby_icon.png/45px-Achievement_Cracked_Baby_icon.png?773b60"
+        },
+        {
+          "name": "Godhead",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/42/Achievement_Godhead_icon.png/45px-Achievement_Godhead_icon.png?8c1a20"
+        },
+        {
+          "name": "Dark Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/51/Achievement_Dark_Baby_icon.png/45px-Achievement_Dark_Baby_icon.png?6f970e"
+        },
+        {
+          "name": "Sale Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/c5/Achievement_Sale_Baby_icon.png/45px-Achievement_Sale_Baby_icon.png?af22b9"
+        },
+        {
+          "name": "Apollyon Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/19/Achievement_Apollyon_Baby_icon.png/45px-Achievement_Apollyon_Baby_icon.png?cca7f9"
+        },
+        {
+          "name": "Bone Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/d6/Achievement_Bone_Baby_icon.png/45px-Achievement_Bone_Baby_icon.png?96289e"
+        },
+        {
+          "name": "Hope Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/0a/Achievement_Hope_Baby_icon.png/45px-Achievement_Hope_Baby_icon.png?4c8265"
+        },
+        {
+          "name": "Solomon's Baby",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/e6/Achievement_Solomon%27s_Baby_icon.png/45px-Achievement_Solomon%27s_Baby_icon.png?7dd3c4"
+        },
+        {
+          "name": "Mega Mush",
+          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b2/Achievement_Mega_Mush_icon.png/45px-Achievement_Mega_Mush_icon.png?d9490d"
+        }
+      ]
+    }
+  ]
+}

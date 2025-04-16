@@ -7,6 +7,15 @@
   border-collapse: collapse;
   font-family: "sans-serif", "Roboto", monospace;
 }
+
+.completion-mark{
+  background-color: #e6e6e6;
+}
+
+.empty-cell{
+  color: #ab7e69;
+}
+
 table {
   text-indent: initial;
 }
