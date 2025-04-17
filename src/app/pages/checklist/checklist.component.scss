@@ -18,6 +18,11 @@
   color: colors.$accent;
 }
 
+.unlocked,.unlocked:hover  {
+  background: colors.$background;
+  filter: brightness(40%)
+}
+
 table {
   text-indent: initial;
 }
@@ -38,4 +43,9 @@ td {
   padding: 8px;
   border: solid 1.5px colors.$border;
   border-spacing: 2px;
+}
+
+td:hover{
+  background: colors.$background;
+  filter: brightness(70%)
 }
