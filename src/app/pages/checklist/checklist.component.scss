@@ -35,9 +35,10 @@
   left: 16px;
 }
 
-.unlocked,.unlocked:hover  {
+.unlocked,
+.unlocked:hover {
   background: colors.$background;
-  filter: brightness(40%)
+  filter: brightness(40%);
 }
 
 table {
@@ -62,7 +63,7 @@ td {
   border-spacing: 2px;
 }
 
-td:hover{
+td:hover {
   background: colors.$background;
-  filter: brightness(70%)
+  filter: brightness(70%);
 }
