@@ -1,8 +1,7 @@
 import { NgClass, NgFor, NgIf } from '@angular/common';
-import { Component, OnChanges, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import checklistData from './checklist-data.json';
 import checklistTaintedData from './checklist-tainted-data.json';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-checklist',
@@ -24,12 +23,12 @@ export class ChecklistComponent implements OnInit {
     this.setChecklistData();
   }
 
-  public getRowSpan(index: number):number{
-    if(!this.isTainted){
+  public getRowSpan(index: number): number {
+    if (!this.isTainted) {
       return 1;
-    } 
+    }
 
-    switch(index){
+    switch (index) {
       case 1:
         return 4;
       case 6:

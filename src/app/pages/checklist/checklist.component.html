@@ -41,6 +41,7 @@
           [ngClass]="{ unlocked: isUnlocked(unlock.name) }"
           *ngFor="let unlock of achievement.unlocks"
           (click)="this.lockUnlock(unlock.name)"
+          title="unlock.name"
         >
           <div class="unlock-container">
             <img

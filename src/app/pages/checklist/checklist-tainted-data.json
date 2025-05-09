@@ -610,7 +610,7 @@
         "hard": "https://bindingofisaacrebirth.wiki.gg/images/1/11/Completion_Mother_Hard.png?1b3510"
       },
       "boss": ["Mother"],
-     "unlocks": [
+      "unlocks": [
         {
           "name": "Dice_Bag",
           "tier": null,
