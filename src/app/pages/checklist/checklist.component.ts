@@ -20,6 +20,10 @@ export class ChecklistComponent implements OnInit {
     }
   }
 
+  public getTierImagePath(tier: number): string {
+    return `/assets/icons/quality_${tier}.png`;
+  }
+
   public getExtraCells(achievementsLength: number): number {
     return this.characters.length - achievementsLength;
   }

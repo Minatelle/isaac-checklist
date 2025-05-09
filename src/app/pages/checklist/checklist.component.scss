@@ -18,6 +18,23 @@
   color: colors.$accent;
 }
 
+.unlock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.unlock {
+  margin-top: -18px;
+}
+
+.tier {
+  position: relative;
+  z-index: 1;
+  bottom: 2px;
+  left: 16px;
+}
+
 .unlocked,.unlocked:hover  {
   background: colors.$background;
   filter: brightness(40%)
