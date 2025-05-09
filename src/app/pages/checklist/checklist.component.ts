@@ -12,7 +12,7 @@ import checklistTaintedData from './checklist-tainted-data.json';
 export class ChecklistComponent implements OnInit {
   public characters = checklistData.characters;
   public achievements = checklistData.achievements;
-  public isTainted: boolean = true;
+  public isTainted: boolean = false;
   private unlockedAchievements: string[] = [];
 
   ngOnInit(): void {
