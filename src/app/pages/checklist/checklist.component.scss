@@ -64,6 +64,12 @@ nav {
   border-bottom: solid 2px colors.$active;
 }
 
+.percent {
+  margin-left: 16px;
+  color: colors.$white;
+  font-family: 'sans-serif', 'Roboto', monospace;
+}
+
 table {
   text-indent: initial;
 }

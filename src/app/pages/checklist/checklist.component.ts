@@ -13,7 +13,7 @@ export class ChecklistComponent implements OnInit {
   public characters = checklistData.characters;
   public achievements = checklistData.achievements;
   public isTainted: boolean = false;
-  private unlockedAchievements: string[] = [];
+  public unlockedAchievements: string[] = [];
 
   ngOnInit(): void {
     const saved = localStorage.getItem('unlockedAchievements');
@@ -21,6 +21,14 @@ export class ChecklistComponent implements OnInit {
       this.unlockedAchievements = JSON.parse(saved);
     }
     this.setChecklistData();
+  }
+
+  public getTotalUnlocks(): number {
+    return this.achievements.flatMap(achievement => achievement.unlocks).length;
+  }
+
+  public getAchievedPercent(): string {
+    return ((this.unlockedAchievements.length / this.getTotalUnlocks()) * 100).toFixed(1);
   }
 
   public getRowSpan(index: number): number {
