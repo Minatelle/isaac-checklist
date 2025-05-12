@@ -28,7 +28,7 @@ export class ChecklistComponent implements OnInit {
   }
 
   public getTotalUnlocks(): number {
-    return this.getAllUnlockNames().size;
+    return this.getAllUnlockNames().length;
   }
 
   public getAchievedPercent(): string {
@@ -36,8 +36,8 @@ export class ChecklistComponent implements OnInit {
     return percent.toFixed(1);
   }
 
-  private getAllUnlockNames(): Set<string> {
-    return new Set(this.achievements.flatMap(achievement => achievement.unlocks.map(unlock => unlock.name)));
+  private getAllUnlockNames(): string[] {
+    return this.achievements.flatMap(achievement => achievement.unlocks.map(unlock => unlock.name));
   }
 
   public getRowSpan(index: number): number {
