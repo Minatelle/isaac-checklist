@@ -23,12 +23,21 @@ export class ChecklistComponent implements OnInit {
     this.setChecklistData();
   }
 
+  public getAchievedUnlocks(): number {
+    return this.unlockedAchievements.filter(name => this.getAllUnlockNames().has(name)).length;
+  }
+
   public getTotalUnlocks(): number {
-    return this.achievements.flatMap(achievement => achievement.unlocks).length;
+    return this.getAllUnlockNames().size;
   }
 
   public getAchievedPercent(): string {
-    return ((this.unlockedAchievements.length / this.getTotalUnlocks()) * 100).toFixed(1);
+    const percent = (this.getAchievedUnlocks() / this.getTotalUnlocks()) * 100;
+    return percent.toFixed(1);
+  }
+
+  private getAllUnlockNames(): Set<string> {
+    return new Set(this.achievements.flatMap(achievement => achievement.unlocks.map(unlock => unlock.name)));
   }
 
   public getRowSpan(index: number): number {

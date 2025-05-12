@@ -1,7 +1,7 @@
 <nav>
   <button class="tab" [ngClass]="{ active: !isTainted }" (click)="this.setTainted(false)">Regular Characters</button>
   <button class="tab" [ngClass]="{ active: isTainted }" (click)="this.setTainted(true)">Tainted Characters</button>
-  <span class="percent">{{ unlockedAchievements.length }}/{{ getTotalUnlocks() }} achieved ({{ getAchievedPercent() }}%)</span>
+  <span class="percent">{{ getAchievedUnlocks() }}/{{ getTotalUnlocks() }} achieved ({{ getAchievedPercent() }}%)</span>
 </nav>
 <div style="overflow: auto">
   <table class="wiki-table" style="text-align: center">
