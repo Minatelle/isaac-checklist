@@ -24,7 +24,7 @@ export class ChecklistComponent implements OnInit {
   }
 
   public getAchievedUnlocks(): number {
-    return this.unlockedAchievements.filter(name => this.getAllUnlockNames().has(name)).length;
+    return this.unlockedAchievements.filter(name => this.getAllUnlockNames().includes(name)).length;
   }
 
   public getTotalUnlocks(): number {
