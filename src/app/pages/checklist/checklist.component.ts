@@ -55,8 +55,8 @@ export class ChecklistComponent implements OnInit {
     }
   }
 
-  public getTierImagePath(tier: number): string {
-    return `/assets/icons/quality_${tier}.png`;
+  public getImagePath(folder: string, icon: string): string {
+    return `/assets/icons/${folder}/${icon}.png`;
   }
 
   public getExtraCells(achievementsLength: number, index: number): number {

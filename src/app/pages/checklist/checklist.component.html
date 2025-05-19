@@ -12,7 +12,13 @@
         <th>Hard Mode</th>
         <th>Associated Boss</th>
         <th *ngFor="let character of characters">
-          <img *ngIf="character.icon" [src]="character.icon" width="20" height="20" [alt]="character.name" /><br />
+          <img
+            *ngIf="character.icon"
+            [src]="getImagePath('characters', character.icon)"
+            width="20"
+            height="20"
+            [alt]="character.name"
+          /><br />
           {{ character.name }}<br />
           Unlock
         </th>
@@ -23,15 +29,15 @@
         <td>{{ achievement.name }}</td>
         <ng-container *ngIf="achievement.icon.hard; else mergedCell">
           <td class="completion-mark">
-            <img [src]="achievement.icon.normal" width="50" height="50" alt="Completion Mark" />
+            <img [src]="getImagePath('marks', achievement.icon.normal)" width="50" height="50" alt="Completion Mark" />
           </td>
           <td class="completion-mark">
-            <img [src]="achievement.icon.hard" width="50" height="50" alt="Completion Mark Hard Mode" />
+            <img [src]="getImagePath('marks', achievement.icon.hard)" width="50" height="50" alt="Completion Mark Hard Mode" />
           </td>
         </ng-container>
         <ng-template #mergedCell>
           <td class="completion-mark" colspan="2">
-            <img [src]="achievement.icon.normal" width="50" height="50" alt="Completion Mark" />
+            <img [src]="getImagePath('marks', achievement.icon.normal)" width="50" height="50" alt="Completion Mark" />
           </td>
         </ng-template>
         <td>
@@ -48,7 +54,7 @@
             <img
               class="tier"
               *ngIf="unlock.tier != null"
-              [src]="getTierImagePath(unlock.tier)"
+              [src]="getImagePath('quality', unlock.tier.toString())"
               width="18"
               height="18"
               [alt]="unlock.tier"
@@ -56,7 +62,7 @@
             <img
               [ngClass]="{ unlock: unlock.tier != null }"
               *ngIf="unlock.icon"
-              [src]="unlock.icon"
+              [src]="getImagePath('achievements', unlock.icon)"
               width="45"
               height="45"
               [alt]="unlock.name"

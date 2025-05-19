@@ -2,71 +2,71 @@
   "characters": [
     {
       "name": "Isaac",
-      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a9/Character_Isaac_icon.png/20px-Character_Isaac_icon.png?79604e"
+      "icon": "Character_Isaac"
     },
     {
       "name": "Magdalene",
-      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/47/Character_Magdalene_icon.png/20px-Character_Magdalene_icon.png?b103f8"
+      "icon": "Character_Magdalene"
     },
     {
       "name": "Cain",
-      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/44/Character_Cain_icon.png/20px-Character_Cain_icon.png?cd8f61"
+      "icon": "Character_Cain"
     },
     {
       "name": "Judas",
-      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/13/Character_Judas_icon.png/20px-Character_Judas_icon.png?843879"
+      "icon": "Character_Judas"
     },
     {
       "name": "???",
-      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/39/Character_%3F%3F%3F_icon.png/20px-Character_%3F%3F%3F_icon.png?2e0e7f"
+      "icon": "Character_Blue"
     },
     {
       "name": "Eve",
-      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/e1/Character_Eve_icon.png/20px-Character_Eve_icon.png?64c1b4"
+      "icon": "Character_Eve"
     },
     {
       "name": "Samson",
-      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/dc/Character_Samson_icon.png/20px-Character_Samson_icon.png?9995bf"
+      "icon": "Character_Samson"
     },
     {
       "name": "Azazel",
-      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3d/Character_Azazel_icon.png/20px-Character_Azazel_icon.png?588259"
+      "icon": "Character_Azazel"
     },
     {
       "name": "Lazarus",
-      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/ca/Character_Lazarus_icon.png/20px-Character_Lazarus_icon.png?87cf73"
+      "icon": "Character_Lazarus"
     },
     {
       "name": "Eden",
-      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a5/Character_Eden_icon.png/20px-Character_Eden_icon.png?d4bc86"
+      "icon": "Character_Eden"
     },
     {
       "name": "The Lost",
-      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/55/Character_The_Lost_icon.png/20px-Character_The_Lost_icon.png?55205b"
+      "icon": "Character_The_Lost"
     },
     {
       "name": "Lilith",
-      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/d7/Character_Lilith_icon.png/20px-Character_Lilith_icon.png?299e6c"
+      "icon": "Character_Lilith"
     },
     {
       "name": "Keeper",
-      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/12/Character_Keeper_icon.png/20px-Character_Keeper_icon.png?ca2e18"
+      "icon": "Character_Keeper"
     },
     {
       "name": "Apollyon",
-      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/32/Character_Apollyon_icon.png/20px-Character_Apollyon_icon.png?2be142"
+      "icon": "Character_Apollyon"
     },
     {
       "name": "The Forgotten",
-      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f6/Character_The_Forgotten_icon.png/20px-Character_The_Forgotten_icon.png?44c4e5"
+      "icon": "Character_The_Forgotten"
     },
     {
       "name": "Bethany",
-      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a2/Character_Bethany_icon.png/20px-Character_Bethany_icon.png?220fe1"
+      "icon": "Character_Bethany"
     },
     {
       "name": "Jacob and Esau",
-      "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/fa/Character_Jacob_and_Esau_icon.png/20px-Character_Jacob_and_Esau_icon.png?ad2790"
+      "icon": "Character_Jacob_and_Esau"
     },
     {
       "name": "All Non-Tainted Characters",
@@ -81,772 +81,772 @@
     {
       "name": "Heart",
       "icon": {
-        "normal": "https://bindingofisaacrebirth.wiki.gg/images/f/f8/Completion_Heart.png?4e4ce4",
-        "hard": "https://bindingofisaacrebirth.wiki.gg/images/a/a2/Completion_Heart_Hard.png?b736e7"
+        "normal": "Completion_Heart",
+        "hard": "Completion_Heart_Hard"
       },
       "boss": ["Mom's Heart", "It Lives!"],
       "unlocks": [
         {
           "name": "Lost Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/6d/Achievement_Lost_Baby_icon.png/45px-Achievement_Lost_Baby_icon.png?681b5f"
+          "icon": "Lost_Baby"
         },
         {
           "name": "Cute Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/2f/Achievement_Cute_Baby_icon.png/45px-Achievement_Cute_Baby_icon.png?f70dc3"
+          "icon": "Cute_Baby"
         },
         {
           "name": "Glass Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/4f/Achievement_Glass_Baby_icon.png/45px-Achievement_Glass_Baby_icon.png?e87652"
+          "icon": "Glass_Baby"
         },
         {
           "name": "Shadow Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3b/Achievement_Shadow_Baby_icon.png/45px-Achievement_Shadow_Baby_icon.png?ccd33b"
+          "icon": "Shadow_Baby"
         },
         {
           "name": "Dead Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/21/Achievement_Dead_Baby_icon.png/45px-Achievement_Dead_Baby_icon.png?d095e0"
+          "icon": "Dead_Baby"
         },
         {
           "name": "Crow Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/ff/Achievement_Crow_Baby_icon.png/45px-Achievement_Crow_Baby_icon.png?6af9d9"
+          "icon": "Crow_Baby"
         },
         {
           "name": "Fighting Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/62/Achievement_Fighting_Baby_icon.png/45px-Achievement_Fighting_Baby_icon.png?b3aec9"
+          "icon": "Fighting_Baby"
         },
         {
           "name": "Begotten Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/4c/Achievement_Begotten_Baby_icon.png/45px-Achievement_Begotten_Baby_icon.png?e11223"
+          "icon": "Begotten_Baby"
         },
         {
           "name": "Wrapped Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f1/Achievement_Wrapped_Baby_icon.png/45px-Achievement_Wrapped_Baby_icon.png?a9b761"
+          "icon": "Wrapped_Baby"
         },
         {
           "name": "Glitch Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/17/Achievement_Glitch_Baby_icon.png/45px-Achievement_Glitch_Baby_icon.png?7a6e1b"
+          "icon": "Glitch_Baby"
         },
         {
           "name": "-0- Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f9/Achievement_-0-_Baby_icon.png/45px-Achievement_-0-_Baby_icon.png?23a69b"
+          "icon": "-0-_Baby"
         },
         {
           "name": "Goat Head Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a7/Achievement_Goat_Head_Baby_icon.png/45px-Achievement_Goat_Head_Baby_icon.png?76d592"
+          "icon": "Goat_Head_Baby"
         },
         {
           "name": "Super Greed Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/fb/Achievement_Super_Greed_Baby_icon.png/45px-Achievement_Super_Greed_Baby_icon.png?1697b2"
+          "icon": "Super_Greed_Baby"
         },
         {
           "name": "Smelter",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f5/Achievement_Smelter_icon.png/45px-Achievement_Smelter_icon.png?5e7a4d"
+          "icon": "Smelter"
         },
         {
           "name": "Marrow",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/73/Achievement_Marrow_icon.png/45px-Achievement_Marrow_icon.png?cf8f2a"
+          "icon": "Marrow"
         },
         {
           "name": "Wisp Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/9/98/Achievement_Wisp_Baby_icon.png/45px-Achievement_Wisp_Baby_icon.png?6a7e66"
+          "icon": "Wisp_Baby"
         },
         {
           "name": "Double Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a1/Achievement_Double_Baby_icon.png/45px-Achievement_Double_Baby_icon.png?d77d8f"
+          "icon": "Double_Baby"
         }
       ]
     },
     {
       "name": "Cross",
       "icon": {
-        "normal": "https://bindingofisaacrebirth.wiki.gg/images/b/bb/Completion_Cathedral.png?e9a14a",
-        "hard": "https://bindingofisaacrebirth.wiki.gg/images/e/ee/Completion_Cathedral_Hard.png?62cbbd"
+        "normal": "Completion_Cathedral",
+        "hard": "Completion_Cathedral_Hard"
       },
       "boss": ["Isaac"],
       "unlocks": [
         {
           "tier": 1,
           "name": "Isaac's Tears",
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/ac/Achievement_Isaac%27s_Tears_icon.png/45px-Achievement_Isaac%27s_Tears_icon.png?f2a225"
+          "icon": "Isaacs_Tears"
         },
         {
           "name": "A Cross",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/8/86/Achievement_A_Cross_icon.png/45px-Achievement_A_Cross_icon.png?9c7dd0"
+          "icon": "A_Cross"
         },
         {
           "name": "A Bag of Pennies",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/db/Achievement_A_Bag_of_Pennies_icon.png/45px-Achievement_A_Bag_of_Pennies_icon.png?805b0e"
+          "icon": "A_Bag_of_Pennies"
         },
         {
           "name": "Guillotine",
           "tier": 0,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/29/Achievement_Guillotine_icon.png/45px-Achievement_Guillotine_icon.png?1af95c"
+          "icon": "Guillotine"
         },
         {
           "name": "The D6",
           "tier": 4,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/fe/Achievement_The_D6_icon.png/45px-Achievement_The_D6_icon.png?be62e4"
+          "icon": "The_D6"
         },
         {
           "name": "Eve's Bird Foot",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/47/Achievement_Eve%27s_Bird_Foot_icon.png/45px-Achievement_Eve%27s_Bird_Foot_icon.png?a19a98"
+          "icon": "Eves_Bird_Foot"
         },
         {
           "name": "Bloody Lust",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/c9/Achievement_Bloody_Lust_icon.png/45px-Achievement_Bloody_Lust_icon.png?4ba105"
+          "icon": "Bloody_Lust"
         },
         {
           "name": "Satanic Bible",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f3/Achievement_Satanic_Bible_icon.png/45px-Achievement_Satanic_Bible_icon.png?685d36"
+          "icon": "Satanic_Bible"
         },
         {
           "name": "Lazarus' Rags",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3c/Achievement_Lazarus%27_Rags_icon.png/45px-Achievement_Lazarus%27_Rags_icon.png?696fa7"
+          "icon": "Lazarus_Rags"
         },
         {
           "name": "Blank Card",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/ce/Achievement_Blank_Card_icon.png/45px-Achievement_Blank_Card_icon.png?a0adf0"
+          "icon": "Blank_Card"
         },
         {
           "name": "Isaac's Heart",
           "tier": 0,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/1d/Achievement_Isaac%27s_Heart_icon.png/45px-Achievement_Isaac%27s_Heart_icon.png?a5dd27"
+          "icon": "Isaacs_Heart"
         },
         {
           "name": "Rune Bag",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/0f/Achievement_Rune_Bag_icon.png/45px-Achievement_Rune_Bag_icon.png?cd139a"
+          "icon": "Rune_Bag"
         },
         {
           "name": "Keeper holds Wooden Nickel",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/70/Achievement_Keeper_holds_Wooden_Nickel_icon.png/45px-Achievement_Keeper_holds_Wooden_Nickel_icon.png?93a54e"
+          "icon": "Keeper_holds_Wooden_Nickel"
         },
         {
           "name": "Locust of Wrath",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/9/99/Achievement_Locust_of_Wrath_icon.png/45px-Achievement_Locust_of_Wrath_icon.png?3ce8d2"
+          "icon": "Locust_of_Wrath"
         },
         {
           "name": "Slipped Rib",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/71/Achievement_Slipped_Rib_icon.png/45px-Achievement_Slipped_Rib_icon.png?46cfea"
+          "icon": "Slipped_Rib"
         },
         {
           "name": "Book of Virtues",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/35/Achievement_Book_of_Virtues_icon.png/45px-Achievement_Book_of_Virtues_icon.png?8207d7"
+          "icon": "Book_of_Virtues"
         },
         {
           "name": "The Stairway",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/d1/Achievement_The_Stairway_icon.png/45px-Achievement_The_Stairway_icon.png?405b7a"
+          "icon": "The_Stairway"
         }
       ]
     },
     {
       "name": "Polaroid",
       "icon": {
-        "normal": "https://bindingofisaacrebirth.wiki.gg/images/c/c4/Completion_Chest.png?9633d7",
-        "hard": "https://bindingofisaacrebirth.wiki.gg/images/c/c4/Completion_Chest_Hard.png?ca8710"
+        "normal": "Completion_Chest",
+        "hard": "Completion_Chest_Hard"
       },
       "boss": ["???"],
       "unlocks": [
         {
           "name": "The D20",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/6c/Achievement_The_D20_icon.png/45px-Achievement_The_D20_icon.png?5a6703"
+          "icon": "The_D20"
         },
         {
           "name": "Celtic Cross",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/0f/Achievement_Celtic_Cross_icon.png/45px-Achievement_Celtic_Cross_icon.png?8eb610"
+          "icon": "Celtic_Cross"
         },
         {
           "name": "Cain's Eye",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/04/Achievement_Cain%27s_Eye_icon.png/45px-Achievement_Cain%27s_Eye_icon.png?2f477c"
+          "icon": "Cains_Eye"
         },
         {
           "name": "The Left Hand",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/42/Achievement_The_Left_Hand_icon.png/45px-Achievement_The_Left_Hand_icon.png?173536"
+          "icon": "The_Left_Hand"
         },
         {
           "name": "Fate",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/75/Achievement_Fate_icon.png/45px-Achievement_Fate_icon.png?c2b2be"
+          "icon": "Fate"
         },
         {
           "name": "Sacrificial Dagger",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/53/Achievement_Sacrificial_Dagger_icon.png/45px-Achievement_Sacrificial_Dagger_icon.png?6e3a80"
+          "icon": "Sacrificial_Dagger"
         },
         {
           "name": "Blood Penny",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/8/86/Achievement_Blood_Penny_icon.png/45px-Achievement_Blood_Penny_icon.png?9b74ac"
+          "icon": "Blood_Penny"
         },
         {
           "name": "Abaddon",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/ca/Achievement_Abaddon_icon.png/45px-Achievement_Abaddon_icon.png?9200fd"
+          "icon": "Abaddon"
         },
         {
           "name": "Store Credit",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/71/Achievement_Store_Credit_icon.png/45px-Achievement_Store_Credit_icon.png?95d3f2"
+          "icon": "Store_Credit"
         },
         {
           "name": "Mysterious Paper",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/8/8a/Achievement_Mysterious_Paper_icon.png/45px-Achievement_Mysterious_Paper_icon.png?c4708c"
+          "icon": "Mysterious_Paper"
         },
         {
           "name": "The Body",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/60/Achievement_The_Body_icon.png/45px-Achievement_The_Body_icon.png?b6397e"
+          "icon": "The_Body"
         },
         {
           "name": "Cambion Conception",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/8/8e/Achievement_Cambion_Conception_icon.png/45px-Achievement_Cambion_Conception_icon.png?ea3ee3"
+          "icon": "Cambion_Conception"
         },
         {
           "name": "Deep Pockets",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/9/9f/Achievement_Deep_Pockets_icon.png/45px-Achievement_Deep_Pockets_icon.png?1137b1"
+          "icon": "Deep_Pockets"
         },
         {
           "name": "Locust of Famine",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/7a/Achievement_Locust_of_Famine_icon.png/45px-Achievement_Locust_of_Famine_icon.png?505bd3"
+          "icon": "Locust_of_Famine"
         },
         {
           "name": "Jaw Bone",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/44/Achievement_Jaw_Bone_icon.png/45px-Achievement_Jaw_Bone_icon.png?914124"
+          "icon": "Jaw_Bone"
         },
         {
           "name": "Blessed Penny",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/25/Achievement_Blessed_Penny_icon.png/45px-Achievement_Blessed_Penny_icon.png?faafae"
+          "icon": "Blessed_Penny"
         },
         {
           "name": "Birthright",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/9/9b/Achievement_Birthright_icon.png/45px-Achievement_Birthright_icon.png?69bdaf"
+          "icon": "Birthright"
         }
       ]
     },
     {
       "name": "Inverted Cross",
       "icon": {
-        "normal": "https://bindingofisaacrebirth.wiki.gg/images/5/57/Completion_Sheol.png?5bfd0e",
-        "hard": "https://bindingofisaacrebirth.wiki.gg/images/d/d4/Completion_Sheol_Hard.png?c4c0f1"
+        "normal": "Completion_Sheol",
+        "hard": "Completion_Sheol_Hard"
       },
       "boss": ["Satan"],
       "unlocks": [
         {
           "name": "Mom's Knife",
           "tier": 4,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/ae/Achievement_Mom%27s_Knife_icon.png/45px-Achievement_Mom%27s_Knife_icon.png?a85b01"
+          "icon": "Moms_Knife"
         },
         {
           "name": "Guardian Angel",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/1f/Achievement_Guardian_Angel_icon.png/45px-Achievement_Guardian_Angel_icon.png?46efa7"
+          "icon": "Guardian_Angel"
         },
         {
           "name": "A Bag of Bombs",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/61/Achievement_A_Bag_of_Bombs_icon.png/45px-Achievement_A_Bag_of_Bombs_icon.png?28e7c2"
+          "icon": "A_Bag_of_Bombs"
         },
         {
           "name": "Judas' Tongue",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/c8/Achievement_Judas%27_Tongue_icon.png/45px-Achievement_Judas%27_Tongue_icon.png?ac902b"
+          "icon": "Judas_Tongue"
         },
         {
           "name": "Forget Me Now",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/6a/Achievement_Forget_Me_Now_icon.png/45px-Achievement_Forget_Me_Now_icon.png?2015ca"
+          "icon": "Forget_Me_Now"
         },
         {
           "name": "The Razor",
           "tier": 0,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/76/Achievement_The_Razor_icon.png/45px-Achievement_The_Razor_icon.png?7bdd80"
+          "icon": "The_Razor"
         },
         {
           "name": "Blood Rights",
           "tier": 0,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b7/Achievement_Blood_Rights_icon.png/45px-Achievement_Blood_Rights_icon.png?5ccc6f"
+          "icon": "Blood_Rights"
         },
         {
           "name": "Daemon's Tail",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a0/Achievement_Daemon%27s_Tail_icon.png/45px-Achievement_Daemon%27s_Tail_icon.png?ffd738"
+          "icon": "Daemons_Tail"
         },
         {
           "name": "Broken Ankh",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/23/Achievement_Broken_Ankh_icon.png/45px-Achievement_Broken_Ankh_icon.png?d34269"
+          "icon": "Broken_Ankh"
         },
         {
           "name": "Book of Secrets",
           "tier": 0,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f6/Achievement_Book_of_Secrets_icon.png/45px-Achievement_Book_of_Secrets_icon.png?94a6c8"
+          "icon": "Book_of_Secrets"
         },
         {
           "name": "The Mind",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/e1/Achievement_The_Mind_icon.png/45px-Achievement_The_Mind_icon.png?b59b0c"
+          "icon": "The_Mind"
         },
         {
           "name": "Serpent's Kiss",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/6e/Achievement_Serpent%27s_Kiss_icon.png/45px-Achievement_Serpent%27s_Kiss_icon.png?ab0ef1"
+          "icon": "Serpents_Kiss"
         },
         {
           "name": "Keeper holds Store Key",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b4/Achievement_Keeper_holds_Store_Key_icon.png/45px-Achievement_Keeper_holds_Store_Key_icon.png?55c1f0"
+          "icon": "Keeper_holds_Store_Key"
         },
         {
           "name": "Locust of Pestilence",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/18/Achievement_Locust_of_Pestilence_icon.png/45px-Achievement_Locust_of_Pestilence_icon.png?6f47a9"
+          "icon": "Locust_of_Pestilence"
         },
         {
           "name": "Pointy Rib",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/33/Achievement_Pointy_Rib_icon.png/45px-Achievement_Pointy_Rib_icon.png?e750db"
+          "icon": "Pointy_Rib"
         },
         {
           "name": "Urn of Souls",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/ba/Achievement_Urn_of_Souls_icon.png/45px-Achievement_Urn_of_Souls_icon.png?757cda"
+          "icon": "Urn_of_Souls"
         },
         {
           "name": "Red Stew",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/5b/Achievement_Red_Stew_icon.png/45px-Achievement_Red_Stew_icon.png?f2db80"
+          "icon": "Red_Stew"
         }
       ]
     },
     {
       "name": "Negative",
       "icon": {
-        "normal": "https://bindingofisaacrebirth.wiki.gg/images/d/d0/Completion_DarkRoom.png?94a6a5",
-        "hard": "https://bindingofisaacrebirth.wiki.gg/images/5/52/Completion_DarkRoom_Hard.png?d2d563"
+        "normal": "Completion_DarkRoom",
+        "hard": "Completion_DarkRoom_Hard"
       },
       "boss": ["The Lamb"],
       "unlocks": [
         {
           "name": "Missing Poster",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3c/Achievement_Missing_Poster_icon.png/45px-Achievement_Missing_Poster_icon.png?81f269"
+          "icon": "Missing_Poster"
         },
         {
           "name": "Maggy's Faith",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/9/92/Achievement_Maggy%27s_Faith_icon.png/45px-Achievement_Maggy%27s_Faith_icon.png?db05ec"
+          "icon": "Maggys_Faith"
         },
         {
           "name": "Abel",
           "tier": 0,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/35/Achievement_Abel_icon.png/45px-Achievement_Abel_icon.png?80892b"
+          "icon": "Abel"
         },
         {
           "name": "Curved Horn",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/9/97/Achievement_Curved_Horn_icon.png/45px-Achievement_Curved_Horn_icon.png?f7c13a"
+          "icon": "Curved_Horn"
         },
         {
           "name": "???'s Soul",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f8/Achievement_Blue_Baby%27s_Soul_icon.png/45px-Achievement_Blue_Baby%27s_Soul_icon.png?a27531"
+          "icon": "Blue_Babys_Soul"
         },
         {
           "name": "Black Lipstick",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/cd/Achievement_Black_Lipstick_icon.png/45px-Achievement_Black_Lipstick_icon.png?873897"
+          "icon": "Black_Lipstick"
         },
         {
           "name": "Samson's Lock",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/8/80/Achievement_Samson%27s_Lock_icon.png/45px-Achievement_Samson%27s_Lock_icon.png?7f59b9"
+          "icon": "Samsons_Lock"
         },
         {
           "name": "Demon Baby",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/df/Achievement_Demon_Baby_icon.png/45px-Achievement_Demon_Baby_icon.png?147c59"
+          "icon": "Demon_Baby"
         },
         {
           "name": "Pandora's Box",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a5/Achievement_Pandora%27s_Box_icon.png/45px-Achievement_Pandora%27s_Box_icon.png?a205e8"
+          "icon": "Pandoras_Box"
         },
         {
           "name": "Mystery Sack",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/14/Achievement_Mystery_Sack_icon.png/45px-Achievement_Mystery_Sack_icon.png?30eaa6"
+          "icon": "Mystery_Sack"
         },
         {
           "name": "The Soul",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a3/Achievement_The_Soul_icon.png/45px-Achievement_The_Soul_icon.png?d5c927"
+          "icon": "The_Soul"
         },
         {
           "name": "Succubus",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/00/Achievement_Succubus_icon.png/45px-Achievement_Succubus_icon.png?713ca4"
+          "icon": "Succubus"
         },
         {
           "name": "Karma",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/79/Achievement_Karma_icon.png/45px-Achievement_Karma_icon.png?1b246a"
+          "icon": "Karma"
         },
         {
           "name": "Locust of Death",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/0e/Achievement_Locust_of_Death_icon.png/45px-Achievement_Locust_of_Death_icon.png?42555b"
+          "icon": "Locust_of_Death"
         },
         {
           "name": "Brittle Bones",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/2b/Achievement_Brittle_Bones_icon.png/45px-Achievement_Brittle_Bones_icon.png?dfaecc"
+          "icon": "Brittle_Bones"
         },
         {
           "name": "Alabaster Box",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/5f/Achievement_Alabaster_Box_icon.png/45px-Achievement_Alabaster_Box_icon.png?392b67"
+          "icon": "Alabaster_Box"
         },
         {
           "name": "Damocles",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3e/Achievement_Damocles_icon.png/45px-Achievement_Damocles_icon.png?3ee4bb"
+          "icon": "Damocles"
         }
       ]
     },
     {
       "name": "Brimstone",
       "icon": {
-        "normal": "https://bindingofisaacrebirth.wiki.gg/images/3/35/Completion_Brimstone.png?e5a150",
-        "hard": "https://bindingofisaacrebirth.wiki.gg/images/5/59/Completion_Brimstone_Hard.png?c3bb43"
+        "normal": "Completion_Brimstone",
+        "hard": "Completion_Brimstone_Hard"
       },
       "boss": ["Mega Satan"],
       "unlocks": [
         {
           "name": "Cry Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/cb/Achievement_Cry_Baby_icon.png/45px-Achievement_Cry_Baby_icon.png?10cae4"
+          "icon": "Cry_Baby"
         },
         {
           "name": "Red Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/0b/Achievement_Red_Baby_icon.png/45px-Achievement_Red_Baby_icon.png?ce7cdb"
+          "icon": "Red_Baby"
         },
         {
           "name": "Green Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/d2/Achievement_Green_Baby_icon.png/45px-Achievement_Green_Baby_icon.png?a43b9a"
+          "icon": "Green_Baby"
         },
         {
           "name": "Brown Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/2a/Achievement_Brown_Baby_icon.png/45px-Achievement_Brown_Baby_icon.png?9061f3"
+          "icon": "Brown_Baby"
         },
         {
           "name": "Blue Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/fa/Achievement_Blue_Baby_icon.png/45px-Achievement_Blue_Baby_icon.png?71b4d2"
+          "icon": "Blue_Baby"
         },
         {
           "name": "Lil' Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/27/Achievement_Lil%27_Baby_icon.png/45px-Achievement_Lil%27_Baby_icon.png?cf5090"
+          "icon": "Lil_Baby"
         },
         {
           "name": "Rage Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/06/Achievement_Rage_Baby_icon.png/45px-Achievement_Rage_Baby_icon.png?6f6fe6"
+          "icon": "Rage_Baby"
         },
         {
           "name": "Black Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/79/Achievement_Black_Baby_icon.png/45px-Achievement_Black_Baby_icon.png?ad8aa8"
+          "icon": "Black_Baby"
         },
         {
           "name": "Long Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/45/Achievement_Long_Baby_icon.png/45px-Achievement_Long_Baby_icon.png?a64638"
+          "icon": "Long_Baby"
         },
         {
           "name": "Yellow Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/72/Achievement_Yellow_Baby_icon.png/45px-Achievement_Yellow_Baby_icon.png?59f3aa"
+          "icon": "Yellow_Baby"
         },
         {
           "name": "White Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/41/Achievement_White_Baby_icon.png/45px-Achievement_White_Baby_icon.png?f763b9"
+          "icon": "White_Baby"
         },
         {
           "name": "Big Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/cd/Achievement_Big_Baby_icon.png/45px-Achievement_Big_Baby_icon.png?65f9b8"
+          "icon": "Big_Baby"
         },
         {
           "name": "Noose Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/ab/Achievement_Noose_Baby_icon.png/45px-Achievement_Noose_Baby_icon.png?d0cae4"
+          "icon": "Noose_Baby"
         },
         {
           "name": "Mort Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/78/Achievement_Mort_Baby_icon.png/45px-Achievement_Mort_Baby_icon.png?2120e2"
+          "icon": "Mort_Baby"
         },
         {
           "name": "Bound Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/5a/Achievement_Bound_Baby_icon.png/45px-Achievement_Bound_Baby_icon.png?a1552b"
+          "icon": "Bound_Baby"
         },
         {
           "name": "Glowing Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/27/Achievement_Glowing_Baby_icon.png/45px-Achievement_Glowing_Baby_icon.png?84a4d5"
+          "icon": "Glowing_Baby"
         },
         {
           "name": "Illusion Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/68/Achievement_Illusion_Baby_icon.png/45px-Achievement_Illusion_Baby_icon.png?6bae5c"
+          "icon": "Illusion_Baby"
         },
         {
           "name": "Mega",
           "tier": 4,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a5/Achievement_Mega_icon.png/45px-Achievement_Mega_icon.png?c17cbd"
+          "icon": "Mega"
         }
       ]
     },
     {
       "name": "Star",
       "icon": {
-        "normal": "https://bindingofisaacrebirth.wiki.gg/images/9/98/Completion_BossRush.png?d71150",
-        "hard": "https://bindingofisaacrebirth.wiki.gg/images/f/f7/Completion_BossRush_Hard.png?22e9ea"
+        "normal": "Completion_BossRush",
+        "hard": "Completion_BossRush_Hard"
       },
       "boss": ["Boss Rush"],
       "unlocks": [
         {
           "name": "Isaac's Head",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/10/Achievement_Isaac%27s_Head_icon.png/45px-Achievement_Isaac%27s_Head_icon.png?97b8d1"
+          "icon": "Isaacs_Head"
         },
         {
           "name": "Maggy's Bow",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/d4/Achievement_Maggy%27s_Bow_icon.png/45px-Achievement_Maggy%27s_Bow_icon.png?834ad6"
+          "icon": "Maggys_Bow"
         },
         {
           "name": "Cain's Other Eye",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/37/Achievement_Cain%27s_Other_Eye_icon.png/45px-Achievement_Cain%27s_Other_Eye_icon.png?d03425"
+          "icon": "Cains_Other_Eye"
         },
         {
           "name": "Judas' Shadow",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/56/Achievement_Judas%27_Shadow_icon.png/45px-Achievement_Judas%27_Shadow_icon.png?70e697"
+          "icon": "Judas_Shadow"
         },
         {
           "name": "???'s Only Friend",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/01/Achievement_Blue_Baby%27s_Only_Friend_icon.png/45px-Achievement_Blue_Baby%27s_Only_Friend_icon.png?c85dd9"
+          "icon": "Blue_Babys_Only_Friend"
         },
         {
           "name": "Eve's Mascara",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a3/Achievement_Eve%27s_Mascara_icon.png/45px-Achievement_Eve%27s_Mascara_icon.png?14d351"
+          "icon": "Eves_Mascara"
         },
         {
           "name": "Samson's Chains",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/1a/Achievement_Samson%27s_Chains_icon.png/45px-Achievement_Samson%27s_Chains_icon.png?4a9335"
+          "icon": "Samsons_Chains"
         },
         {
           "name": "The Nail",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/09/Achievement_The_Nail_icon.png/45px-Achievement_The_Nail_icon.png?2c3007"
+          "icon": "The_Nail"
         },
         {
           "name": "Missing No.",
           "tier": 0,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/aa/Achievement_Missing_No._icon.png/45px-Achievement_Missing_No._icon.png?84dcc8"
+          "icon": "Missing_No"
         },
         {
           "name": "Undefined",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/c3/Achievement_Undefined_icon.png/45px-Achievement_Undefined_icon.png?bbf52e"
+          "icon": "Undefined"
         },
         {
           "name": "The D100",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f2/Achievement_The_D100_icon.png/45px-Achievement_The_D100_icon.png?b52173"
+          "icon": "The_D100"
         },
         {
           "name": "Immaculate Conception",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/56/Achievement_Immaculate_Conception_icon.png/45px-Achievement_Immaculate_Conception_icon.png?e2ce31"
+          "icon": "Immaculate_Conception"
         },
         {
           "name": "Sticky Nickels",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/ad/Achievement_Sticky_Nickels_icon.png/45px-Achievement_Sticky_Nickels_icon.png?4be36d"
+          "icon": "Sticky_Nickels"
         },
         {
           "name": "Locust of Conquest",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/19/Achievement_Locust_of_Conquest_icon.png/45px-Achievement_Locust_of_Conquest_icon.png?9b5305"
+          "icon": "Locust_of_Conquest"
         },
         {
           "name": "Divorce Papers",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/21/Achievement_Divorce_Papers_icon.png/45px-Achievement_Divorce_Papers_icon.png?c47da5"
+          "icon": "Divorce_Papers"
         },
         {
           "name": "Beth's Faith",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/af/Achievement_Beth%27s_Faith_icon.png/45px-Achievement_Beth%27s_Faith_icon.png?6af4ca"
+          "icon": "Beths_Faith"
         },
         {
           "name": "Rock Bottom",
           "tier": 4,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b9/Achievement_Rock_Bottom_icon.png/45px-Achievement_Rock_Bottom_icon.png?d6a563"
+          "icon": "Rock_Bottom"
         }
       ]
     },
     {
       "name": "Hush's Face",
       "icon": {
-        "normal": "https://bindingofisaacrebirth.wiki.gg/images/2/27/Completion_BlueWomb.png?e6e0b4",
-        "hard": "https://bindingofisaacrebirth.wiki.gg/images/6/69/Completion_BlueWomb_Hard.png?52a5bf"
+        "normal": "Completion_BlueWomb",
+        "hard": "Completion_BlueWomb_Hard"
       },
       "boss": ["Hush"],
       "unlocks": [
         {
           "name": "Fart Baby",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/20/Achievement_Fart_Baby_icon.png/45px-Achievement_Fart_Baby_icon.png?eeeda8"
+          "icon": "Fart_Baby"
         },
         {
           "name": "Purity",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/53/Achievement_Purity_icon.png/45px-Achievement_Purity_icon.png?e25ff8"
+          "icon": "Purity"
         },
         {
           "name": "D12",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/49/Achievement_D12_icon.png/45px-Achievement_D12_icon.png?42e496"
+          "icon": "D12"
         },
         {
           "name": "Betrayal",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/29/Achievement_Betrayal_icon.png/45px-Achievement_Betrayal_icon.png?6c5e0c"
+          "icon": "Betrayal"
         },
         {
           "name": "Fate's Reward",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/9/94/Achievement_Fate%27s_Reward_icon.png/45px-Achievement_Fate%27s_Reward_icon.png?6f78fc"
+          "icon": "Fates_Reward"
         },
         {
           "name": "Athame",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/6d/Achievement_Athame_icon.png/45px-Achievement_Athame_icon.png?d0406c"
+          "icon": "Athame"
         },
         {
           "name": "Blind Rage",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/8/85/Achievement_Blind_Rage_icon.png/45px-Achievement_Blind_Rage_icon.png?3040ea"
+          "icon": "Blind_Rage"
         },
         {
           "name": "Maw of the Void",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3f/Achievement_Maw_of_the_Void_icon.png/45px-Achievement_Maw_of_the_Void_icon.png?f45356"
+          "icon": "Maw_of_the_Void"
         },
         {
           "name": "Empty Vessel",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/18/Achievement_Empty_Vessel_icon.png/45px-Achievement_Empty_Vessel_icon.png?7c7679"
+          "icon": "Empty_Vessel"
         },
         {
           "name": "Eden's Blessing",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/ee/Achievement_Eden%27s_Blessing_icon.png/45px-Achievement_Eden%27s_Blessing_icon.png?328083"
+          "icon": "Edens_Blessing"
         },
         {
           "name": "Sworn Protector",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/af/Achievement_Sworn_Protector_icon.png/45px-Achievement_Sworn_Protector_icon.png?b59c3d"
+          "icon": "Sworn_Protector"
         },
         {
           "name": "Incubus",
           "tier": 4,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/1d/Achievement_Incubus_icon.png/45px-Achievement_Incubus_icon.png?2074ae"
+          "icon": "Incubus"
         },
         {
           "name": "Keeper now holds... A Penny!",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/fc/Achievement_Keeper_now_holds..._A_Penny%21_icon.png/45px-Achievement_Keeper_now_holds..._A_Penny%21_icon.png?6647b8"
+          "icon": "Keeper_holds_A_Penny"
         },
         {
           "name": "Hushy",
           "tier": 0,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/ec/Achievement_Hushy_icon.png/45px-Achievement_Hushy_icon.png?a52d10"
+          "icon": "Hushy"
         },
         {
           "name": "Hallowed Ground",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/fe/Achievement_Hallowed_Ground_icon.png/45px-Achievement_Hallowed_Ground_icon.png?6a0ac3"
+          "icon": "Hallowed_Ground"
         },
         {
           "name": "Divine Intervention",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b5/Achievement_Divine_Intervention_icon.png/45px-Achievement_Divine_Intervention_icon.png?814777"
+          "icon": "Divine_Intervention"
         },
         {
           "name": "Vanishing Twin",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/48/Achievement_Vanishing_Twin_icon.png/45px-Achievement_Vanishing_Twin_icon.png?edd5dd"
+          "icon": "Vanishing_Twin"
         }
       ]
     },
     {
       "name": "Cent Sign",
       "icon": {
-        "normal": "https://bindingofisaacrebirth.wiki.gg/images/9/9a/Completion_Greed.png?2772fb",
+        "normal": "Completion_Greed",
         "hard": null
       },
       "boss": ["Ultra Greed"],
@@ -854,94 +854,94 @@
         {
           "name": "Lil' Chest",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b0/Achievement_Lil%27_Chest_icon.png/45px-Achievement_Lil%27_Chest_icon.png?1cd722"
+          "icon": "Lil_Chest"
         },
         {
           "name": "Censer",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/0e/Achievement_Censer_icon.png/45px-Achievement_Censer_icon.png?12cbec"
+          "icon": "Censer"
         },
         {
           "name": "Evil Eye",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/6a/Achievement_Evil_Eye_icon.png/45px-Achievement_Evil_Eye_icon.png?62b0dd"
+          "icon": "Evil_Eye"
         },
         {
           "name": "My Shadow",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3d/Achievement_My_Shadow_icon.png/45px-Achievement_My_Shadow_icon.png?14ceeb"
+          "icon": "My_Shadow"
         },
         {
           "name": "Cracked Dice",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/d4/Achievement_Cracked_Dice_icon.png/45px-Achievement_Cracked_Dice_icon.png?49c9f9"
+          "icon": "Cracked_Dice"
         },
         {
           "name": "Black Feather",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/e9/Achievement_Black_Feather_icon.png/45px-Achievement_Black_Feather_icon.png?1e88d3"
+          "icon": "Black_Feather"
         },
         {
           "name": "Lusty Blood",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a4/Achievement_Lusty_Blood_icon.png/45px-Achievement_Lusty_Blood_icon.png?b2ba0a"
+          "icon": "Lusty_Blood"
         },
         {
           "name": "Lilith",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/29/Achievement_Lilith_icon.png/45px-Achievement_Lilith_icon.png?727079"
+          "icon": "Lilith"
         },
         {
           "name": "Key Bum",
           "tier": 0,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/da/Achievement_Key_Bum_icon.png/45px-Achievement_Key_Bum_icon.png?15066d"
+          "icon": "Key_Bum"
         },
         {
           "name": "GB Bug",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/ac/Achievement_GB_Bug_icon.png/45px-Achievement_GB_Bug_icon.png?201d35"
+          "icon": "GB_Bug"
         },
         {
           "name": "Zodiac",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/74/Achievement_Zodiac_icon.png/45px-Achievement_Zodiac_icon.png?9b3648"
+          "icon": "Zodiac"
         },
         {
           "name": "Box of Friends",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/43/Achievement_Box_of_Friends_icon.png/45px-Achievement_Box_of_Friends_icon.png?e37aab"
+          "icon": "Box_of_Friends"
         },
         {
           "name": "Rib of Greed",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/c0/Achievement_Rib_of_Greed_icon.png/45px-Achievement_Rib_of_Greed_icon.png?eda609"
+          "icon": "Rib_of_Greed"
         },
         {
           "name": "Brown Nugget",
           "tier": 0,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/9/94/Achievement_Brown_Nugget_icon.png/45px-Achievement_Brown_Nugget_icon.png?69ba6f"
+          "icon": "Brown_Nugget"
         },
         {
           "name": "Finger Bone",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f1/Achievement_Finger_Bone_icon.png/45px-Achievement_Finger_Bone_icon.png?45731f"
+          "icon": "Finger_Bone"
         },
         {
           "name": "Soul Locket",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/22/Achievement_Soul_Locket_icon.png/45px-Achievement_Soul_Locket_icon.png?3ed0dd"
+          "icon": "Soul_Locket"
         },
         {
           "name": "Inner Child",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/9/95/Achievement_Inner_Child_icon.png/45px-Achievement_Inner_Child_icon.png?2b90c7"
+          "icon": "Inner_Child"
         }
       ]
     },
     {
       "name": "Cent Sign HardMode",
       "icon": {
-        "normal": "https://bindingofisaacrebirth.wiki.gg/images/0/0b/Completion_Greed_Hard.png?1bce9f",
+        "normal": "Completion_Greed_Hard",
         "hard": null
       },
       "boss": ["Ultra Greedier"],
@@ -949,379 +949,379 @@
         {
           "name": "D1",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3c/Achievement_D1_icon.png/45px-Achievement_D1_icon.png?e33995"
+          "icon": "D1"
         },
         {
           "name": "Glyph of Balance",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/6a/Achievement_Glyph_of_Balance_icon.png/45px-Achievement_Glyph_of_Balance_icon.png?5e025a"
+          "icon": "Glyph_of_Balance"
         },
         {
           "name": "Sack of Sacks",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/ff/Achievement_Sack_of_Sacks_icon.png/45px-Achievement_Sack_of_Sacks_icon.png?4ce4a2"
+          "icon": "Sack_of_Sacks"
         },
         {
           "name": "Eye of Belial",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/50/Achievement_Eye_of_Belial_icon.png/45px-Achievement_Eye_of_Belial_icon.png?d799e4"
+          "icon": "Eye_of_Belial"
         },
         {
           "name": "Meconium",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/aa/Achievement_Meconium_icon.png/45px-Achievement_Meconium_icon.png?e6017e"
+          "icon": "Meconium"
         },
         {
           "name": "Crow Heart",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/33/Achievement_Crow_Heart_icon.png/45px-Achievement_Crow_Heart_icon.png?ca3293"
+          "icon": "Crow_Heart"
         },
         {
           "name": "Stem Cell",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/47/Achievement_Stem_Cell_icon.png/45px-Achievement_Stem_Cell_icon.png?c9de3f"
+          "icon": "Stem_Cell"
         },
         {
           "name": "Bat Wing",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b5/Achievement_Bat_Wing_icon.png/45px-Achievement_Bat_Wing_icon.png?1c308e"
+          "icon": "Bat_Wing"
         },
         {
           "name": "Plan C",
           "tier": 0,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/7d/Achievement_Plan_C_icon.png/45px-Achievement_Plan_C_icon.png?814334"
+          "icon": "Plan_C"
         },
         {
           "name": "Metronome",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/c3/Achievement_Metronome_icon.png/45px-Achievement_Metronome_icon.png?a3d162"
+          "icon": "Metronome"
         },
         {
           "name": "Dad's Lost Coin",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/7f/Achievement_Dad%27s_Lost_Coin_icon.png/45px-Achievement_Dad%27s_Lost_Coin_icon.png?e18388"
+          "icon": "Dads_Lost_Coin"
         },
         {
           "name": "Duality",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f5/Achievement_Duality_icon.png/45px-Achievement_Duality_icon.png?c5fb17"
+          "icon": "Duality"
         },
         {
           "name": "Eye of Greed",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/fd/Achievement_Eye_of_Greed_icon.png/45px-Achievement_Eye_of_Greed_icon.png?a1fb11"
+          "icon": "Eye_of_Greed"
         },
         {
           "name": "Black Rune",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/c3/Achievement_Black_Rune_icon.png/45px-Achievement_Black_Rune_icon.png?81379e"
+          "icon": "Black_Rune"
         },
         {
           "name": "Dad's Ring",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/26/Achievement_Dad%27s_Ring_icon.png/45px-Achievement_Dad%27s_Ring_icon.png?a6ff5d"
+          "icon": "Dads_Ring"
         },
         {
           "name": "Vade Retro",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/ad/Achievement_Vade_Retro_icon.png/45px-Achievement_Vade_Retro_icon.png?c57bd0"
+          "icon": "Vade_Retro"
         },
         {
           "name": "Genesis",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/10/Achievement_Genesis_icon.png/45px-Achievement_Genesis_icon.png?94b88d"
+          "icon": "Genesis"
         }
       ]
     },
     {
       "name": "Wrinkled Paper",
       "icon": {
-        "normal": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/5c/Repentance_Completion_Void.png/50px-Repentance_Completion_Void.png?6a7558",
-        "hard": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/06/Repentance_Completion_Void_Hard.png/50px-Repentance_Completion_Void_Hard.png?42ee9d"
+        "normal": "Completion_Void",
+        "hard": "Completion_Void_Hard"
       },
       "boss": ["Delirium"],
       "unlocks": [
         {
           "name": "D infinity",
           "tier": 4,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/4c/Achievement_D_infinity_icon.png/45px-Achievement_D_infinity_icon.png?f98480"
+          "icon": "D_infinity"
         },
         {
           "name": "Eucharist",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/d7/Achievement_Eucharist_icon.png/45px-Achievement_Eucharist_icon.png?bfafbb"
+          "icon": "Eucharist"
         },
         {
           "name": "Silver Dollar",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/69/Achievement_Silver_Dollar_icon.png/45px-Achievement_Silver_Dollar_icon.png?c18060"
+          "icon": "Silver_Dollar"
         },
         {
           "name": "Shade",
           "tier": 0,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/66/Achievement_Shade_icon.png/45px-Achievement_Shade_icon.png?41c6e7"
+          "icon": "Shade"
         },
         {
           "name": "King Baby",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/5e/Achievement_King_Baby_icon.png/45px-Achievement_King_Baby_icon.png?37e8e9"
+          "icon": "King_Baby"
         },
         {
           "name": "Dull Razor",
           "tier": 0,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/5a/Achievement_Dull_Razor_icon.png/45px-Achievement_Dull_Razor_icon.png?4f626a"
+          "icon": "Dull_Razor"
         },
         {
           "name": "Bloody Crown",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/1f/Achievement_Bloody_Crown_icon.png/45px-Achievement_Bloody_Crown_icon.png?81b424"
+          "icon": "Bloody_Crown"
         },
         {
           "name": "Dark Prince's Crown",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/e5/Achievement_Dark_Prince%27s_Crown_icon.png/45px-Achievement_Dark_Prince%27s_Crown_icon.png?819a0d"
+          "icon": "Dark_Princes_Crown"
         },
         {
           "name": "Compound Fracture",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/72/Achievement_Compound_Fracture_icon.png/45px-Achievement_Compound_Fracture_icon.png?2492c2"
+          "icon": "Compound_Fracture"
         },
         {
           "name": "Eden's Soul",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/24/Achievement_Eden%27s_Soul_icon.png/45px-Achievement_Eden%27s_Soul_icon.png?1ad4fd"
+          "icon": "Edens_Soul"
         },
         {
           "name": "Holy Card",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b8/Achievement_Holy_Card_icon.png/45px-Achievement_Holy_Card_icon.png?e7fcf2"
+          "icon": "Holy_Card"
         },
         {
           "name": "Euthanasia",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/09/Achievement_Euthanasia_icon.png/45px-Achievement_Euthanasia_icon.png?425243"
+          "icon": "Euthanasia"
         },
         {
           "name": "Crooked Penny",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/c8/Achievement_Crooked_Penny_icon.png/45px-Achievement_Crooked_Penny_icon.png?448de3"
+          "icon": "Crooked_Penny"
         },
         {
           "name": "Void",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/ab/Achievement_Void_icon.png/45px-Achievement_Void_icon.png?a03d21"
+          "icon": "Void"
         },
         {
           "name": "Book of the Dead",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/a/a7/Achievement_Book_of_the_Dead_icon.png/45px-Achievement_Book_of_the_Dead_icon.png?8a24c5"
+          "icon": "Book_of_the_Dead"
         },
         {
           "name": "Star of Bethlehem",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/ed/Achievement_Star_of_Bethlehem_icon.png/45px-Achievement_Star_of_Bethlehem_icon.png?567da9"
+          "icon": "Star_of_Bethlehem"
         },
         {
           "name": "Suplex!",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b9/Achievement_Suplex%21_icon.png/45px-Achievement_Suplex%21_icon.png?893706"
+          "icon": "Suplex"
         }
       ]
     },
     {
       "name": "Knife",
       "icon": {
-        "normal": "https://bindingofisaacrebirth.wiki.gg/images/8/83/Completion_Mother.png?9f997c",
-        "hard": "https://bindingofisaacrebirth.wiki.gg/images/1/11/Completion_Mother_Hard.png?1b3510"
+        "normal": "Completion_Mother",
+        "hard": "Completion_Mother_Hard"
       },
       "boss": ["Mother"],
       "unlocks": [
         {
           "name": "Meat Cleaver",
           "tier": 0,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/42/Achievement_Meat_Cleaver_icon.png/45px-Achievement_Meat_Cleaver_icon.png?fae67d"
+          "icon": "Meat_Cleaver"
         },
         {
           "name": "Yuck Heart",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f1/Achievement_Yuck_Heart_icon.png/45px-Achievement_Yuck_Heart_icon.png?b62212"
+          "icon": "Yuck_Heart"
         },
         {
           "name": "Guppy's Eye",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/16/Achievement_Guppy%27s_Eye_icon.png/45px-Achievement_Guppy%27s_Eye_icon.png?698eeb"
+          "icon": "Guppys_Eye"
         },
         {
           "name": "Akeldama",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/0e/Achievement_Akeldama_icon.png/45px-Achievement_Akeldama_icon.png?6dc00b"
+          "icon": "Akeldama"
         },
         {
           "name": "Eternal D6",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/10/Achievement_Eternal_D6_icon.png/45px-Achievement_Eternal_D6_icon.png?da94e9"
+          "icon": "Eternal_D6"
         },
         {
           "name": "Bird Cage",
           "tier": 0,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f0/Achievement_Bird_Cage_icon.png/45px-Achievement_Bird_Cage_icon.png?f02714"
+          "icon": "Bird_Cage"
         },
         {
           "name": "Bloody Gust",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/40/Achievement_Bloody_Gust_icon.png/45px-Achievement_Bloody_Gust_icon.png?4b4f82"
+          "icon": "Bloody_Gust"
         },
         {
           "name": "Devil's Crown",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b8/Achievement_Devil%27s_Crown_icon.png/45px-Achievement_Devil%27s_Crown_icon.png?75ff8a"
+          "icon": "Devils_Crown"
         },
         {
           "name": "Tinytoma",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/8/81/Achievement_Tinytoma_icon.png/45px-Achievement_Tinytoma_icon.png?94d56e"
+          "icon": "Tinytoma"
         },
         {
           "name": "'M",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/71/Achievement_%27M_icon.png/45px-Achievement_%27M_icon.png?96601b"
+          "icon": "M"
         },
         {
           "name": "Lost Soul",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/01/Achievement_Lost_Soul_icon.png/45px-Achievement_Lost_Soul_icon.png?a0076e"
+          "icon": "Lost_Soul"
         },
         {
           "name": "Blood Puppy",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/28/Achievement_Blood_Puppy_icon.png/45px-Achievement_Blood_Puppy_icon.png?3e3f43"
+          "icon": "Blood_Puppy"
         },
         {
           "name": "Keeper's Sack",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b4/Achievement_Keeper%27s_Sack_icon.png/45px-Achievement_Keeper%27s_Sack_icon.png?8d25b9"
+          "icon": "Keepers_Sack"
         },
         {
           "name": "Lil Portal",
           "tier": 0,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/07/Achievement_Lil_Portal_icon.png/45px-Achievement_Lil_Portal_icon.png?69fc49"
+          "icon": "Lil_Portal"
         },
         {
           "name": "Bone Spurs",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/59/Achievement_Bone_Spurs_icon.png/45px-Achievement_Bone_Spurs_icon.png?389177"
+          "icon": "Bone_Spurs"
         },
         {
           "name": "Revelation",
           "tier": 4,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/4f/Achievement_Revelation_icon.png/45px-Achievement_Revelation_icon.png?1a8b91"
+          "icon": "Revelation"
         },
         {
           "name": "Magic Skin",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/01/Achievement_Magic_Skin_icon.png/45px-Achievement_Magic_Skin_icon.png?2dae2e"
+          "icon": "Magic_Skin"
         }
       ]
     },
     {
       "name": "Dad's Note",
       "icon": {
-        "normal": "https://bindingofisaacrebirth.wiki.gg/images/5/50/Completion_Beast.png?441d40",
-        "hard": "https://bindingofisaacrebirth.wiki.gg/images/a/af/Completion_Beast_Hard.png?38f996"
+        "normal": "Completion_Beast",
+        "hard": "Completion_Beast_Hard"
       },
       "boss": ["The Beast"],
       "unlocks": [
         {
           "name": "Options?",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/51/Achievement_Options%3F_icon.png/45px-Achievement_Options%3F_icon.png?bb8ee2"
+          "icon": "Options"
         },
         {
           "name": "Candy Heart",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/6e/Achievement_Candy_Heart_icon.png/45px-Achievement_Candy_Heart_icon.png?701cb7"
+          "icon": "Candy_Heart"
         },
         {
           "name": "A Pound of Flesh",
           "tier": 0,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/d8/Achievement_A_Pound_of_Flesh_icon.png/45px-Achievement_A_Pound_of_Flesh_icon.png?dba8a0"
+          "icon": "A_Pound_of_Flesh"
         },
         {
           "name": "Redemption",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/56/Achievement_Redemption_icon.png/45px-Achievement_Redemption_icon.png?8bd5f9"
+          "icon": "Redemption"
         },
         {
           "name": "Montezuma's Revenge",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/e7/Achievement_Montezuma%27s_Revenge_icon.png/45px-Achievement_Montezuma%27s_Revenge_icon.png?95b115"
+          "icon": "Montezumas_Revenge"
         },
         {
           "name": "Cracked Orb",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/0a/Achievement_Cracked_Orb_icon.png/45px-Achievement_Cracked_Orb_icon.png?44c1a8"
+          "icon": "Cracked_Orb"
         },
         {
           "name": "Empty Heart",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/01/Achievement_Empty_Heart_icon.png/45px-Achievement_Empty_Heart_icon.png?3151fa"
+          "icon": "Empty_Heart"
         },
         {
           "name": "Lil Abaddon",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/40/Achievement_Lil_Abaddon_icon.png/45px-Achievement_Lil_Abaddon_icon.png?736ef5"
+          "icon": "Lil_Abaddon"
         },
         {
           "name": "Astral Projection",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/09/Achievement_Astral_Projection_icon.png/45px-Achievement_Astral_Projection_icon.png?bcd60a"
+          "icon": "Astral_Projection"
         },
         {
           "name": "Everything Jar",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/d3/Achievement_Everything_Jar_icon.png/45px-Achievement_Everything_Jar_icon.png?14e0c2"
+          "icon": "Everything_Jar"
         },
         {
           "name": "Hungry Soul",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/c5/Achievement_Hungry_Soul_icon.png/45px-Achievement_Hungry_Soul_icon.png?4a0276"
+          "icon": "Hungry_Soul"
         },
         {
           "name": "C Section",
           "tier": 4,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/8/8e/Achievement_C_Section_icon.png/45px-Achievement_C_Section_icon.png?b88270"
+          "icon": "C_Section"
         },
         {
           "name": "Keeper's Box",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f5/Achievement_Keeper%27s_Box_icon.png/45px-Achievement_Keeper%27s_Box_icon.png?e7c214"
+          "icon": "Keepers_Box"
         },
         {
           "name": "Worm Friend",
           "tier": 3,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/03/Achievement_Worm_Friend_icon.png/45px-Achievement_Worm_Friend_icon.png?d4650f"
+          "icon": "Worm_Friend"
         },
         {
           "name": "Spirit Shackles",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/7/76/Achievement_Spirit_Shackles_icon.png/45px-Achievement_Spirit_Shackles_icon.png?9b167e"
+          "icon": "Spirit_Shackles"
         },
         {
           "name": "Jar of Wisps",
           "tier": 1,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3a/Achievement_Jar_of_Wisps_icon.png/45px-Achievement_Jar_of_Wisps_icon.png?6ff772"
+          "icon": "Jar_of_Wisps"
         },
         {
           "name": "Friend Finder",
           "tier": 2,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3e/Achievement_Friend_Finder_icon.png/45px-Achievement_Friend_Finder_icon.png?679945"
+          "icon": "Friend_Finder"
         }
       ]
     },
     {
       "name": "All Hard Mode Marks",
       "icon": {
-        "normal": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/1a/Repentance_Completion_Marks.png/75px-Repentance_Completion_Marks.png?baf6d6",
+        "normal": "Completion_Marks",
         "hard": null
       },
       "boss": ["(All Above)"],
@@ -1329,97 +1329,97 @@
         {
           "name": "Budy Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/3/3c/Achievement_Buddy_Baby_icon.png/45px-Achievement_Buddy_Baby_icon.png?b8a660"
+          "icon": "Buddy_Baby"
         },
         {
           "name": "Colorful Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/e5/Achievement_Colorful_Baby_icon.png/45px-Achievement_Colorful_Baby_icon.png?ff3fa6"
+          "icon": "Colorful_Baby"
         },
         {
           "name": "Picky Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/48/Achievement_Picky_Baby_icon.png/45px-Achievement_Picky_Baby_icon.png?f67cee"
+          "icon": "Picky_Baby"
         },
         {
           "name": "Belial Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/6/63/Achievement_Belial_Baby_icon.png/45px-Achievement_Belial_Baby_icon.png?9adbc5"
+          "icon": "Belial_Baby"
         },
         {
           "name": "Hive Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/eb/Achievement_Hive_Baby_icon.png/45px-Achievement_Hive_Baby_icon.png?1ac240"
+          "icon": "Hive_Baby"
         },
         {
           "name": "Whore Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/fc/Achievement_Whore_Baby_icon.png/45px-Achievement_Whore_Baby_icon.png?a055a6"
+          "icon": "Whore_Baby"
         },
         {
           "name": "Revenge Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/e2/Achievement_Revenge_Baby_icon.png/45px-Achievement_Revenge_Baby_icon.png?d2dc0f"
+          "icon": "Revenge_Baby"
         },
         {
           "name": "Sucky Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/42/Achievement_Sucky_Baby_icon.png/45px-Achievement_Sucky_Baby_icon.png?438263"
+          "icon": "Sucky_Baby"
         },
         {
           "name": "Dripping Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/2/22/Achievement_Dripping_Baby_icon.png/45px-Achievement_Dripping_Baby_icon.png?1f4bf8"
+          "icon": "Dripping_Baby"
         },
         {
           "name": "Cracked Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/f/f3/Achievement_Cracked_Baby_icon.png/45px-Achievement_Cracked_Baby_icon.png?773b60"
+          "icon": "Cracked_Baby"
         },
         {
           "name": "Godhead",
           "tier": 4,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/4/42/Achievement_Godhead_icon.png/45px-Achievement_Godhead_icon.png?8c1a20"
+          "icon": "Godhead"
         },
         {
           "name": "Dark Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/5/51/Achievement_Dark_Baby_icon.png/45px-Achievement_Dark_Baby_icon.png?6f970e"
+          "icon": "Dark_Baby"
         },
         {
           "name": "Sale Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/c/c5/Achievement_Sale_Baby_icon.png/45px-Achievement_Sale_Baby_icon.png?af22b9"
+          "icon": "Sale_Baby"
         },
         {
           "name": "Apollyon Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/1/19/Achievement_Apollyon_Baby_icon.png/45px-Achievement_Apollyon_Baby_icon.png?cca7f9"
+          "icon": "Apollyon_Baby"
         },
         {
           "name": "Bone Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/d/d6/Achievement_Bone_Baby_icon.png/45px-Achievement_Bone_Baby_icon.png?96289e"
+          "icon": "Bone_Baby"
         },
         {
           "name": "Hope Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/0/0a/Achievement_Hope_Baby_icon.png/45px-Achievement_Hope_Baby_icon.png?4c8265"
+          "icon": "Hope_Baby"
         },
         {
           "name": "Solomon's Baby",
           "tier": null,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/e6/Achievement_Solomon%27s_Baby_icon.png/45px-Achievement_Solomon%27s_Baby_icon.png?7dd3c4"
+          "icon": "Solomons_Baby"
         },
         {
           "name": "Mega Mush",
           "tier": 4,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/b/b2/Achievement_Mega_Mush_icon.png/45px-Achievement_Mega_Mush_icon.png?d9490d"
+          "icon": "Mega_Mush"
         },
         {
           "name": "Death Certificate",
           "tier": 4,
-          "icon": "https://bindingofisaacrebirth.wiki.gg/images/thumb/e/e0/Achievement_Death_Certificate_icon.png/45px-Achievement_Death_Certificate_icon.png?b4eff3"
+          "icon": "Death_Certificate"
         }
       ]
     }
