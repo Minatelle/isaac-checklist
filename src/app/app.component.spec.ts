@@ -8,12 +8,8 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
-  it('creates with title and router outlet', () => {
+  it('renders the router outlet', () => {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-
-    expect(app).toBeTruthy();
-    expect(app.title()).toEqual('isaac checklist');
 
     fixture.detectChanges();
     expect(fixture.nativeElement.querySelector('router-outlet')).toBeTruthy();

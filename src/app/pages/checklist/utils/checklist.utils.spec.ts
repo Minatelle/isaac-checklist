@@ -1,0 +1,72 @@
+import {
+  buildEmptyCellIndices,
+  buildImagePath,
+  countAchievedUnlocks,
+  extractUnlockNames,
+  formatAchievedPercent,
+  getExtraCellCount,
+  getRowSpan,
+  toggleUnlockName
+} from './checklist.utils';
+
+describe('checklist.utils', () => {
+  const achievements = [
+    {
+      name: 'Heart',
+      icon: { normal: 'Completion_Heart', hard: 'Completion_Heart_Hard' },
+      boss: ["Mom's Heart"],
+      unlocks: [
+        { name: 'Lost Baby', tier: null, icon: 'Lost_Baby' },
+        { name: 'Cute Baby', tier: null, icon: 'Cute_Baby' }
+      ]
+    }
+  ] as const;
+
+  it('builds image asset paths', () => {
+    expect(buildImagePath('marks', 'Platinum_God')).toBe('/assets/icons/marks/Platinum_God.png');
+  });
+
+  it('extracts unlock names from achievements', () => {
+    expect(extractUnlockNames(achievements)).toEqual(['Lost Baby', 'Cute Baby']);
+  });
+
+  it('counts achieved unlocks against valid names only', () => {
+    expect(countAchievedUnlocks(['Lost Baby', 'Invalid'], ['Lost Baby', 'Cute Baby'])).toBe(1);
+  });
+
+  it.each([
+    { achieved: 1, total: 4, expected: '25.0' },
+    { achieved: 0, total: 0, expected: '0.0' }
+  ])('formats achieved percent ($achieved/$total => $expected)', ({ achieved, total, expected }) => {
+    expect(formatAchievedPercent(achieved, total)).toBe(expected);
+  });
+
+  it('toggles unlock names immutably', () => {
+    expect(toggleUnlockName([], 'Lost Baby')).toEqual(['Lost Baby']);
+    expect(toggleUnlockName(['Lost Baby'], 'Lost Baby')).toEqual([]);
+  });
+
+  it.each([
+    { tainted: false, index: 1, expected: 1 },
+    { tainted: true, index: 1, expected: 4 },
+    { tainted: true, index: 6, expected: 2 },
+    { tainted: true, index: 5, expected: 1 }
+  ])('getRowSpan(tainted=$tainted, index=$index) => $expected', ({ tainted, index, expected }) => {
+    expect(getRowSpan(index, tainted)).toBe(expected);
+  });
+
+  it.each([
+    { tainted: false, index: 0, achievementsLength: 1, characterCount: 5, expected: 4 },
+    { tainted: true, index: 0, achievementsLength: 1, characterCount: 5, expected: 4 },
+    { tainted: true, index: 5, achievementsLength: 1, characterCount: 5, expected: 1 }
+  ])(
+    'getExtraCellCount(tainted=$tainted, index=$index) => $expected',
+    ({ tainted, index, achievementsLength, characterCount, expected }) => {
+      expect(getExtraCellCount(achievementsLength, index, tainted, characterCount)).toBe(expected);
+    }
+  );
+
+  it('builds empty cell indices from count', () => {
+    expect(buildEmptyCellIndices(3)).toEqual([0, 1, 2]);
+  });
+});
