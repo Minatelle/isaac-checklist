@@ -1,57 +1,35 @@
-# Isaac
+# Isaac Checklist
 
-Checklist de completion marks para The Binding of Isaac, construído com [Angular CLI](https://github.com/angular/angular-cli) **22.0**.
+A personal progress tracker for **The Binding of Isaac: Repentance** completion marks. The app mirrors the wiki-style completion table so you can see, at a glance, which marks you have earned and which character unlocks you still need.
 
-## Requisitos
+## What it does
 
-- **Node.js** 22.12 ou superior
-- **TypeScript** 6.x
-- **npm** 10+
+Each row is a completion mark (Mom's Heart, Isaac, Satan, Boss Rush, and so on). Columns show every playable character and the item or unlock tied to that mark for them. You can:
 
-## Development server
+- **Switch between Regular and Tainted characters** — two separate checklists, one per character roster.
+- **Mark unlocks as done** — click a cell to toggle it; your progress is saved in the browser automatically.
+- **Track overall progress** — a counter at the top shows how many unlocks you have completed and your completion percentage.
 
-Para iniciar o servidor de desenvolvimento:
+Hard-mode marks, associated bosses, and completion mark icons are all shown in the same layout you would expect from the game wiki, so you can use this as a living checklist while grinding marks.
+
+## Getting started
 
 ```bash
 npm install
-ng serve
+npm start
 ```
 
-Abra o navegador em `http://localhost:4200/`. A aplicação recarrega automaticamente ao modificar os arquivos fonte.
+Open [http://localhost:4200](http://localhost:4200) in your browser.
 
-## Code scaffolding
+## Scripts
 
-Para gerar um novo componente:
+| Command | Description |
+|---------|-------------|
+| `npm start` | Run the app locally |
+| `npm run build` | Production build (`dist/isaac/`) |
+| `npm test` | Run unit tests |
+| `npm run test:coverage` | Run tests with coverage report |
 
-```bash
-ng generate component component-name
-```
+## License
 
-Para ver todos os schematics disponíveis:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-Para compilar o projeto:
-
-```bash
-ng build
-```
-
-Os artefatos de build ficam em `dist/isaac/`.
-
-## Running unit tests
-
-Para executar os testes unitários com [Karma](https://karma-runner.github.io):
-
-```bash
-ng test
-```
-
-## Additional Resources
-
-- [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli)
-- [Angular Update Guide](https://angular.dev/update-guide)
+[MIT](LICENSE)
