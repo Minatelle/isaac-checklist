@@ -1,4 +1,4 @@
-import { setupZoneTestEnv } from 'jest-preset-angular/setup-env/zone';
+import { setupZonelessTestEnv } from 'jest-preset-angular/setup-env/zoneless';
 
 Object.defineProperty(window, 'matchMedia', {
   writable: true,
@@ -30,4 +30,4 @@ if (!HTMLDialogElement.prototype.showModal) {
   };
 }
 
-setupZoneTestEnv();
+setupZonelessTestEnv();

@@ -29,7 +29,7 @@ describe('checklist.utils', () => {
   ] as const;
 
   it('builds image asset paths', () => {
-    expect(buildImagePath('marks', 'Platinum_God')).toBe('/assets/icons/marks/Platinum_God.png');
+    expect(buildImagePath('marks', 'Platinum_God')).toBe('/assets/icons/marks/Platinum_God.webp');
   });
 
   it('formats boss names on one line', () => {
