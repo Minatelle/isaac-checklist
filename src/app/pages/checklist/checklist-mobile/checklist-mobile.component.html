@@ -1,0 +1,194 @@
+<div class="character-nav">
+  <button
+    type="button"
+    class="character-nav__arrow"
+    (click)="selectPreviousCharacter()"
+    [disabled]="!canSelectPrevious()"
+    aria-label="Previous character"
+  >
+    ‹
+  </button>
+
+  <button
+    type="button"
+    class="character-nav__current"
+    (click)="openPicker()"
+    [attr.aria-label]="'Select character: ' + selectedCharacter().name"
+    aria-haspopup="dialog"
+    [attr.aria-expanded]="pickerOpen()"
+  >
+    @if (selectedCharacter().icon; as icon) {
+      <img
+        class="character-nav__icon"
+        [src]="getImagePath('characters', icon)"
+        width="32"
+        height="32"
+        [alt]="selectedCharacter().name"
+      />
+    } @else {
+      <span class="character-nav__fallback">{{ selectedCharacter().name.charAt(0) }}</span>
+    }
+
+    <span class="character-nav__details">
+      <span class="character-nav__name">{{ selectedCharacter().name }}</span>
+      <span class="character-nav__progress">
+        {{ characterProgress().achieved }}/{{ characterProgress().total }} unlocks
+      </span>
+    </span>
+
+    <span class="character-nav__chevron" aria-hidden="true">▾</span>
+  </button>
+
+  <button
+    type="button"
+    class="character-nav__arrow"
+    (click)="selectNextCharacter()"
+    [disabled]="!canSelectNext()"
+    aria-label="Next character"
+  >
+    ›
+  </button>
+</div>
+
+<dialog
+  #characterPicker
+  class="character-sheet"
+  aria-label="Select character"
+  (close)="onPickerClosed()"
+>
+  <button
+    type="button"
+    class="character-sheet__backdrop"
+    (click)="closePicker()"
+    aria-label="Close character picker"
+  ></button>
+
+  <div class="character-sheet__panel">
+    <header class="character-sheet__header">
+      <h2 class="character-sheet__title">Select character</h2>
+      <button type="button" class="character-sheet__close" (click)="closePicker()" aria-label="Close">
+        ×
+      </button>
+    </header>
+
+    <div class="character-sheet__grid">
+      @for (character of store.characters(); track character.name; let i = $index) {
+        <button
+          type="button"
+          class="character-sheet__option"
+          [class.active]="store.selectedCharacterIndex() === i"
+          (click)="selectCharacter(i)"
+        >
+          @if (character.icon; as icon) {
+            <img
+              [src]="getImagePath('characters', icon)"
+              width="36"
+              height="36"
+              [alt]="character.name"
+            />
+          } @else {
+            <span class="character-sheet__fallback">{{ character.name.charAt(0) }}</span>
+          }
+          <span class="character-sheet__name">{{ character.name }}</span>
+          <span class="character-sheet__progress">
+            {{ getCharacterProgress(i).achieved }}/{{ getCharacterProgress(i).total }}
+          </span>
+        </button>
+      }
+    </div>
+  </div>
+</dialog>
+
+<div
+  class="achievement-pages"
+  [class.achievement-pages--enter]="slidePhase() === 'enter'"
+  [class.achievement-pages--next]="slideDirection() === 'next'"
+  [class.achievement-pages--prev]="slideDirection() === 'prev'"
+>
+  <section #achievementList class="achievement-list">
+  @for (achievement of store.achievements(); track achievement.name; let i = $index) {
+    @let unlock = getUnlockForCharacter(i);
+    @if (unlock) {
+      <button
+        type="button"
+        class="achievement-row"
+        [class.unlocked]="store.isUnlocked(unlock.name)"
+        [class.achievement-row--pulse]="pulseRowName() === unlock.name"
+        (click)="toggleUnlock(unlock)"
+        [attr.aria-label]="getUnlockAriaLabel(unlock)"
+      >
+        <div class="achievement-row__marks">
+          <img
+            [src]="getImagePath('marks', achievement.icon.normal)"
+            width="40"
+            height="40"
+            [alt]="achievement.name + ' completion mark'"
+          />
+          @if (achievement.icon.hard) {
+            <img
+              [src]="getImagePath('marks', achievement.icon.hard)"
+              width="40"
+              height="40"
+              [alt]="achievement.name + ' hard mode completion mark'"
+            />
+          }
+        </div>
+
+        <div class="achievement-row__info">
+          <span class="achievement-row__name">{{ achievement.name }}</span>
+          <span class="achievement-row__boss">{{ formatBossNames(achievement.boss) }}</span>
+        </div>
+
+        <div class="achievement-row__unlock">
+          @if (unlock.tier != null) {
+            <img
+              class="achievement-row__tier"
+              [src]="getImagePath('quality', unlock.tier.toString())"
+              width="16"
+              height="16"
+              [alt]="'Quality tier ' + unlock.tier"
+            />
+          }
+          @if (unlock.icon) {
+            <img
+              class="achievement-row__unlock-icon"
+              [src]="getImagePath('achievements', unlock.icon)"
+              width="52"
+              height="52"
+              [alt]="unlock.name"
+            />
+          } @else {
+            <span class="achievement-row__unlock-fallback">{{ unlock.name }}</span>
+          }
+        </div>
+      </button>
+    } @else {
+      <div class="achievement-row achievement-row--empty">
+        <div class="achievement-row__marks">
+          <img
+            [src]="getImagePath('marks', achievement.icon.normal)"
+            width="40"
+            height="40"
+            [alt]="achievement.name + ' completion mark'"
+          />
+          @if (achievement.icon.hard) {
+            <img
+              [src]="getImagePath('marks', achievement.icon.hard)"
+              width="40"
+              height="40"
+              [alt]="achievement.name + ' hard mode completion mark'"
+            />
+          }
+        </div>
+
+        <div class="achievement-row__info">
+          <span class="achievement-row__name">{{ achievement.name }}</span>
+          <span class="achievement-row__boss">{{ formatBossNames(achievement.boss) }}</span>
+        </div>
+
+        <span class="achievement-row__empty-label">None</span>
+      </div>
+    }
+  }
+  </section>
+</div>

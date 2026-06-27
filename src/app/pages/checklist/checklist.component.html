@@ -1,96 +1,62 @@
-<nav>
-  <button class="tab" [class.active]="!store.isTainted()" (click)="store.setTainted(false)">Regular Characters</button>
-  <button class="tab" [class.active]="store.isTainted()" (click)="store.setTainted(true)">Tainted Characters</button>
-  <span class="percent">{{ store.achievedUnlocks() }}/{{ store.totalUnlocks() }} achieved ({{ store.achievedPercent() }}%)</span>
-</nav>
-<div style="overflow: auto">
-  <table class="wiki-table" style="text-align: center">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Mark</th>
-        <th>Hard Mode</th>
-        <th>Associated Boss</th>
-        @for (character of store.characters(); track character.name) {
-          <th>
-            @if (character.icon) {
-              <img
-                [src]="getImagePath('characters', character.icon)"
-                width="20"
-                height="20"
-                [alt]="character.name"
-              />
-            }<br />
-            {{ character.name }}<br />
-            Unlock
-          </th>
-        }
-      </tr>
-    </thead>
-    <tbody>
-      @for (achievement of store.achievements(); track achievement.name; let i = $index) {
-        <tr>
-          <td>{{ achievement.name }}</td>
-          @if (achievement.icon.hard) {
-            <td class="completion-mark">
-              <img [src]="getImagePath('marks', achievement.icon.normal)" width="50" height="50" alt="Completion Mark" />
-            </td>
-            <td class="completion-mark">
-              <img [src]="getImagePath('marks', achievement.icon.hard)" width="50" height="50" alt="Completion Mark Hard Mode" />
-            </td>
-          } @else {
-            <td class="completion-mark" colspan="2">
-              <img [src]="getImagePath('marks', achievement.icon.normal)" width="50" height="50" alt="Completion Mark" />
-            </td>
-          }
-          <td>
-            @for (boss of achievement.boss; track boss) {
-              <p>{{ boss }}</p>
-            }
-          </td>
-          @for (unlock of achievement.unlocks; track unlock.name) {
-            <td [attr.rowspan]="getRowSpan(i)" [class.unlocked]="store.isUnlocked(unlock.name)">
-              <button
-                type="button"
-                class="unlock-cell"
-                (click)="store.toggleUnlock(unlock.name)"
-                [title]="unlock.name"
-              >
-                <div class="unlock-container">
-                  @if (unlock.tier != null) {
-                    <img
-                      class="tier"
-                      [src]="getImagePath('quality', unlock.tier.toString())"
-                      width="18"
-                      height="18"
-                      [alt]="unlock.tier"
-                    />
-                  }
-                  @if (unlock.icon) {
-                    <img
-                      [class.unlock]="unlock.tier != null"
-                      [src]="getImagePath('achievements', unlock.icon)"
-                      width="45"
-                      height="45"
-                      [alt]="unlock.name"
-                    />
-                  }
-                  @if (!unlock.icon) {
-                    <p>{{ unlock.name }}</p>
-                  }
-                </div>
-              </button>
-            </td>
-          }
-          @for (cellIndex of getEmptyCellIndices(achievement.unlocks.length, i); track cellIndex) {
-            <td class="empty-cell">
-              <div class="unlock-container">
-                <p>None</p>
-              </div>
-            </td>
-          }
-        </tr>
-      }
-    </tbody>
-  </table>
+<header class="checklist-header">
+  @if (layout.isMobile()) {
+    <div class="segmented-control" role="tablist" aria-label="Character type">
+      <span
+        class="segmented-control__thumb"
+        [class.segmented-control__thumb--tainted]="store.isTainted()"
+        aria-hidden="true"
+      ></span>
+      <button
+        type="button"
+        class="segment"
+        role="tab"
+        [class.active]="!store.isTainted()"
+        [attr.aria-selected]="!store.isTainted()"
+        (click)="setTainted(false)"
+      >
+        Regular
+      </button>
+      <button
+        type="button"
+        class="segment"
+        role="tab"
+        [class.active]="store.isTainted()"
+        [attr.aria-selected]="store.isTainted()"
+        (click)="setTainted(true)"
+      >
+        Tainted
+      </button>
+    </div>
+    <div class="progress">
+      <div class="progress__bar" [style.width.%]="store.achievedPercent()"></div>
+    </div>
+    <span class="progress__label">
+      {{ store.achievedUnlocks() }}/{{ store.totalUnlocks() }} ({{ store.achievedPercent() }}%)
+    </span>
+  } @else {
+    <div class="tabs">
+      <button class="tab" [class.active]="!store.isTainted()" (click)="setTainted(false)">
+        Regular Characters
+      </button>
+      <button class="tab" [class.active]="store.isTainted()" (click)="setTainted(true)">
+        Tainted Characters
+      </button>
+    </div>
+    <span class="percent">
+      {{ store.achievedUnlocks() }}/{{ store.totalUnlocks() }} achieved ({{ store.achievedPercent() }}%)
+    </span>
+  }
+</header>
+
+<div
+  class="checklist-body"
+  [class.checklist-body--enter]="modeSlidePhase() === 'enter'"
+  [class.checklist-body--to-tainted]="modeSlideDirection() === 'to-tainted'"
+  [class.checklist-body--to-regular]="modeSlideDirection() === 'to-regular'"
+>
+  @if (layout.isMobile()) {
+    <app-checklist-mobile />
+  } @else {
+    <app-checklist-desktop />
+  }
 </div>

@@ -43,10 +43,18 @@ describe('ChecklistStore', () => {
 
     store.setTainted(true);
     expect(store.isTainted()).toBe(true);
+    expect(store.selectedCharacterIndex()).toBe(0);
     expect(store.characters()[0].name).toBe(checklistTaintedData.characters[0].name);
 
     store.setTainted(false);
     expect(store.characters()[0].name).toBe(checklistData.characters[0].name);
+  });
+
+  it('updates the selected character index', () => {
+    store.initialize();
+
+    store.setSelectedCharacter(2);
+    expect(store.selectedCharacterIndex()).toBe(2);
   });
 
   it('toggles achievement unlock state and persists to storage', () => {

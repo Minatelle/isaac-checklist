@@ -8,3 +8,5 @@ export const TAINTED_ROW_SPANS: Readonly<Record<number, number>> = {
 };
 
 export const ICON_BASE_PATH = '/assets/icons' as const;
+
+export const MOBILE_BREAKPOINT = '(max-width: 768px)' as const;

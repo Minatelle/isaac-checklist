@@ -1,5 +1,6 @@
 import {
   ICON_BASE_PATH,
+  MOBILE_BREAKPOINT,
   TAINTED_FULL_ROW_INDICES,
   TAINTED_ROW_SPANS,
   UNLOCKS_STORAGE_KEY
@@ -17,5 +18,9 @@ describe('checklist.constants', () => {
 
   it('defines the icon base path', () => {
     expect(ICON_BASE_PATH).toBe('/assets/icons');
+  });
+
+  it('defines the mobile breakpoint', () => {
+    expect(MOBILE_BREAKPOINT).toBe('(max-width: 768px)');
   });
 });

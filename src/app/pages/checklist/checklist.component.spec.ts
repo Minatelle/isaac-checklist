@@ -2,15 +2,16 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ChecklistComponent } from './checklist.component';
 import { ChecklistStore } from './services/checklist.store';
+import { LayoutService } from './services/layout.service';
 
 describe('ChecklistComponent', () => {
-  let component: ChecklistComponent;
   let fixture: ComponentFixture<ChecklistComponent>;
   let store: ChecklistStore;
   let view: ChecklistComponent & {
-    getImagePath(folder: string, icon: string): string;
-    getRowSpan(index: number): number;
-    getEmptyCellIndices(achievementsLength: number, achievementIndex: number): number[];
+    setTainted(isTainted: boolean): void;
+    modeSlidePhase(): 'idle' | 'enter';
+    modeSlideDirection(): 'to-regular' | 'to-tainted' | null;
+    isMobileShell: boolean;
   };
 
   beforeEach(async () => {
@@ -21,13 +22,22 @@ describe('ChecklistComponent', () => {
     }).compileComponents();
 
     fixture = TestBed.createComponent(ChecklistComponent);
-    component = fixture.componentInstance;
     store = TestBed.inject(ChecklistStore);
-    view = component as typeof view;
+    view = fixture.componentInstance as typeof view;
     fixture.detectChanges();
   });
 
   afterEach(() => {
+    jest.useRealTimers();
+    (window.matchMedia as jest.Mock).mockImplementation((query: string) => ({
+      matches: false,
+      media: query,
+      addEventListener: jest.fn(),
+      removeEventListener: jest.fn(),
+      addListener: jest.fn(),
+      removeListener: jest.fn(),
+      dispatchEvent: jest.fn()
+    }));
     localStorage.clear();
   });
 
@@ -35,33 +45,118 @@ describe('ChecklistComponent', () => {
     expect(store.totalUnlocks()).toBeGreaterThan(0);
   });
 
-  it('builds image asset paths', () => {
-    expect(view.getImagePath('marks', 'Platinum_God')).toBe('/assets/icons/marks/Platinum_God.png');
+  it('renders the mobile view when layout is mobile', () => {
+    TestBed.inject(LayoutService).isMobile.set(true);
+    fixture.detectChanges();
+
+    expect(fixture.nativeElement.querySelector('app-checklist-mobile')).toBeTruthy();
+    expect(fixture.nativeElement.querySelector('.segmented-control')).toBeTruthy();
+    expect(fixture.nativeElement.querySelector('.segmented-control__thumb')).toBeTruthy();
+    expect(fixture.nativeElement.querySelector('.progress__bar')).toBeTruthy();
+    expect(fixture.nativeElement.querySelector('app-checklist-desktop')).toBeFalsy();
+    expect(view.isMobileShell).toBe(true);
   });
 
-  it.each([
-    { tainted: false, index: 1, expected: 1 },
-    { tainted: true, index: 1, expected: 4 },
-    { tainted: true, index: 6, expected: 2 },
-    { tainted: true, index: 5, expected: 1 }
-  ])('getRowSpan(tainted=$tainted, index=$index) => $expected', ({ tainted, index, expected }) => {
-    store.setTainted(tainted);
-    expect(view.getRowSpan(index)).toBe(expected);
+  it('renders the desktop view when layout is not mobile', () => {
+    TestBed.inject(LayoutService).isMobile.set(false);
+    fixture.detectChanges();
+
+    expect(fixture.nativeElement.querySelector('app-checklist-desktop')).toBeTruthy();
+    expect(fixture.nativeElement.querySelector('app-checklist-mobile')).toBeFalsy();
+    expect(view.isMobileShell).toBe(false);
   });
 
-  it.each([
-    { tainted: false, index: 0, achievementsLength: 1 },
-    { tainted: true, index: 0, achievementsLength: 1 },
-    { tainted: true, index: 5, achievementsLength: 1 }
-  ])(
-    'getEmptyCellIndices(tainted=$tainted, index=$index) returns expected count',
-    ({ tainted, index, achievementsLength }) => {
-      store.setTainted(tainted);
-      const expected =
-        tainted && ![0, 8, 13].includes(index)
-          ? 1
-          : store.characters().length - achievementsLength;
-      expect(view.getEmptyCellIndices(achievementsLength, index)).toHaveLength(expected);
-    }
-  );
+  it('animates switching to tainted mode', () => {
+    jest.useFakeTimers();
+
+    view.setTainted(true);
+    fixture.detectChanges();
+
+    expect(store.isTainted()).toBe(true);
+    expect(view.modeSlidePhase()).toBe('enter');
+    expect(view.modeSlideDirection()).toBe('to-tainted');
+
+    const body = fixture.nativeElement.querySelector('.checklist-body');
+    expect(body.classList.contains('checklist-body--enter')).toBe(true);
+    expect(body.classList.contains('checklist-body--to-tainted')).toBe(true);
+
+    jest.advanceTimersByTime(340);
+    fixture.detectChanges();
+
+    expect(view.modeSlidePhase()).toBe('idle');
+    expect(view.modeSlideDirection()).toBeNull();
+  });
+
+  it('animates switching back to regular mode', () => {
+    jest.useFakeTimers();
+    store.setTainted(true);
+    fixture.detectChanges();
+
+    view.setTainted(false);
+    fixture.detectChanges();
+
+    expect(store.isTainted()).toBe(false);
+    expect(view.modeSlideDirection()).toBe('to-regular');
+
+    const body = fixture.nativeElement.querySelector('.checklist-body');
+    expect(body.classList.contains('checklist-body--to-regular')).toBe(true);
+
+    jest.advanceTimersByTime(340);
+    fixture.detectChanges();
+
+    expect(view.modeSlidePhase()).toBe('idle');
+  });
+
+  it('ignores redundant tainted changes while animating', () => {
+    jest.useFakeTimers();
+
+    view.setTainted(true);
+    view.setTainted(false);
+
+    expect(store.isTainted()).toBe(true);
+    expect(view.modeSlidePhase()).toBe('enter');
+  });
+
+  it('ignores selecting the mode that is already active', () => {
+    expect(store.isTainted()).toBe(false);
+
+    view.setTainted(false);
+
+    expect(view.modeSlidePhase()).toBe('idle');
+    expect(view.modeSlideDirection()).toBeNull();
+  });
+
+  it('switches mode instantly when reduced motion is preferred', () => {
+    const matchMedia = window.matchMedia as jest.Mock;
+    matchMedia.mockImplementation((query: string) => ({
+      matches: query === '(prefers-reduced-motion: reduce)',
+      media: query,
+      addEventListener: jest.fn(),
+      removeEventListener: jest.fn(),
+      addListener: jest.fn(),
+      removeListener: jest.fn(),
+      dispatchEvent: jest.fn()
+    }));
+
+    view.setTainted(true);
+
+    expect(store.isTainted()).toBe(true);
+    expect(view.modeSlidePhase()).toBe('idle');
+    expect(view.modeSlideDirection()).toBeNull();
+  });
+
+  it('switches mode from segmented control buttons on mobile', () => {
+    jest.useFakeTimers();
+    TestBed.inject(LayoutService).isMobile.set(true);
+    fixture.detectChanges();
+
+    const taintedButton = fixture.nativeElement.querySelectorAll('.segment')[1] as HTMLButtonElement;
+    taintedButton.click();
+    fixture.detectChanges();
+
+    expect(store.isTainted()).toBe(true);
+
+    const thumb = fixture.nativeElement.querySelector('.segmented-control__thumb');
+    expect(thumb.classList.contains('segmented-control__thumb--tainted')).toBe(true);
+  });
 });

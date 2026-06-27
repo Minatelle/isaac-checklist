@@ -16,6 +16,7 @@ export class ChecklistStore {
 
   readonly isTainted = signal(false);
   readonly unlockedAchievements = signal<string[]>([]);
+  readonly selectedCharacterIndex = signal(0);
 
   readonly characters = computed(() => this.dataService.getData(this.isTainted()).characters);
   readonly achievements = computed(() => this.dataService.getData(this.isTainted()).achievements);
@@ -38,6 +39,11 @@ export class ChecklistStore {
 
   setTainted(isTainted: boolean): void {
     this.isTainted.set(isTainted);
+    this.selectedCharacterIndex.set(0);
+  }
+
+  setSelectedCharacter(characterIndex: number): void {
+    this.selectedCharacterIndex.set(characterIndex);
   }
 
   isUnlocked(achievementName: string): boolean {

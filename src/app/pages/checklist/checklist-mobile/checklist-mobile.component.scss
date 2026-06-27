@@ -1,0 +1,548 @@
+@use '../../../../assets/styles/colors.scss';
+
+$motion-slide-duration: 0.34s;
+$motion-slide-easing: cubic-bezier(0.22, 1, 0.36, 1);
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+.character-nav {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) 44px;
+  gap: 6px;
+  flex-shrink: 0;
+  padding: 6px 8px 8px;
+  background: colors.$background;
+  border-bottom: 1px solid colors.$border;
+}
+
+.character-nav__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid colors.$border;
+  border-radius: 8px;
+  background: colors.$header;
+  color: colors.$active;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.character-nav__arrow:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.character-nav__current {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 6px 8px;
+  border: 1px solid colors.$border;
+  border-radius: 8px;
+  background: colors.$header;
+  color: colors.$white;
+  cursor: pointer;
+  text-align: left;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.character-nav__current:focus-visible,
+.character-nav__arrow:focus-visible {
+  outline: 2px solid colors.$active;
+  outline-offset: 1px;
+}
+
+.character-nav__icon,
+.character-nav__fallback {
+  flex-shrink: 0;
+}
+
+.character-nav__fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: colors.$background;
+  font-size: 16px;
+  font-weight: bold;
+  color: colors.$active;
+}
+
+.character-nav__details {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.character-nav__name {
+  font-family: 'sans-serif', 'Roboto', monospace;
+  font-size: 14px;
+  font-weight: bold;
+  color: colors.$active;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.character-nav__progress {
+  font-family: 'sans-serif', 'Roboto', monospace;
+  font-size: 11px;
+  color: colors.$white;
+}
+
+.character-nav__chevron {
+  flex-shrink: 0;
+  color: colors.$accent;
+  font-size: 14px;
+  transition: transform 0.28s ease;
+}
+
+.character-nav__current[aria-expanded='true'] .character-nav__chevron {
+  transform: rotate(180deg);
+}
+
+.character-sheet {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  overflow: visible;
+}
+
+.character-sheet[open] {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.character-sheet[open]::backdrop {
+  animation: sheet-backdrop-in 0.28s ease-out;
+}
+
+.character-sheet::backdrop {
+  background: rgb(0 0 0 / 55%);
+}
+
+.character-sheet__backdrop {
+  position: fixed;
+  inset: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.character-sheet__panel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-height: 70dvh;
+  padding: 12px 12px calc(12px + env(safe-area-inset-bottom));
+  border-top: 1px solid colors.$border;
+  border-radius: 16px 16px 0 0;
+  background: colors.$background;
+  overflow: hidden;
+}
+
+.character-sheet[open] .character-sheet__panel {
+  animation: sheet-panel-in $motion-slide-duration $motion-slide-easing;
+}
+
+.character-sheet__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.character-sheet__title {
+  margin: 0;
+  font-family: 'sans-serif', 'Roboto', monospace;
+  font-size: 16px;
+  font-weight: bold;
+  color: colors.$active;
+}
+
+.character-sheet__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid colors.$border;
+  border-radius: 8px;
+  background: colors.$header;
+  color: colors.$white;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.character-sheet__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  max-height: calc(70dvh - 64px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.character-sheet__option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-height: 96px;
+  padding: 8px 6px;
+  border: 2px solid colors.$border;
+  border-radius: 10px;
+  background: colors.$header;
+  color: colors.$white;
+  cursor: pointer;
+}
+
+.character-sheet[open] .character-sheet__option {
+  animation: sheet-option-in 0.36s ease backwards;
+}
+
+@for $i from 1 through 20 {
+  .character-sheet[open] .character-sheet__option:nth-child(#{$i}) {
+    animation-delay: #{0.04 + ($i * 0.02)}s;
+  }
+}
+
+.character-sheet__option.active {
+  border-color: colors.$active;
+  background: colors.$background;
+}
+
+.character-sheet__fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: colors.$background;
+  font-size: 16px;
+  font-weight: bold;
+  color: colors.$active;
+}
+
+.character-sheet__name {
+  width: 100%;
+  font-family: 'sans-serif', 'Roboto', monospace;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.character-sheet__progress {
+  font-family: 'sans-serif', 'Roboto', monospace;
+  font-size: 10px;
+  color: colors.$accent;
+}
+
+.achievement-pages {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  background: colors.$background;
+}
+
+.achievement-pages--enter.achievement-pages--next .achievement-list,
+.achievement-pages--enter.achievement-pages--prev .achievement-list {
+  will-change: transform, opacity;
+}
+
+.achievement-pages--enter.achievement-pages--next .achievement-list {
+  animation: page-slide-in-next $motion-slide-duration $motion-slide-easing;
+}
+
+.achievement-pages--enter.achievement-pages--prev .achievement-list {
+  animation: page-slide-in-prev $motion-slide-duration $motion-slide-easing;
+}
+
+.achievement-list {
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px 8px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.achievement-row {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  width: 100%;
+  min-height: 64px;
+  padding: 0;
+  border: 1px solid colors.$border;
+  border-radius: 10px;
+  background: colors.$header;
+  color: colors.$white;
+  font-family: 'sans-serif', 'Roboto', monospace;
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+  transition: filter 0.25s ease, transform 0.15s ease;
+}
+
+.achievement-row:active:not(.unlocked) {
+  transform: scale(0.985);
+}
+
+.achievement-row--pulse {
+  animation: row-toggle 0.4s ease;
+}
+
+.achievement-row--pulse .achievement-row__unlock {
+  animation: unlock-pop 0.4s ease;
+}
+
+.achievement-row:focus-visible {
+  outline: 2px solid colors.$active;
+  outline-offset: 2px;
+}
+
+.achievement-row.unlocked {
+  filter: brightness(40%);
+}
+
+.achievement-row--empty {
+  cursor: default;
+  opacity: 0.75;
+}
+
+.achievement-row__marks {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 98px;
+  width: 98px;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  padding: 8px;
+  background-color: colors.$white;
+  border-right: 1px solid colors.$border;
+}
+
+.achievement-row__marks img {
+  image-rendering: pixelated;
+}
+
+.achievement-row__info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  padding: 8px 10px;
+}
+
+.achievement-row__name {
+  font-size: 14px;
+  font-weight: bold;
+  color: colors.$active;
+  line-height: 1.2;
+}
+
+.achievement-row__boss {
+  font-size: 12px;
+  color: colors.$accent;
+  line-height: 1.3;
+}
+
+.achievement-row__unlock {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin: 8px 10px 8px 0;
+  border: 1px solid colors.$border;
+  border-radius: 4px;
+  background: colors.$background;
+}
+
+.achievement-row__tier {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.achievement-row__unlock-icon {
+  image-rendering: pixelated;
+}
+
+.achievement-row__unlock-fallback {
+  padding: 4px;
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: center;
+  color: colors.$active;
+}
+
+.achievement-row__empty-label {
+  flex-shrink: 0;
+  align-self: center;
+  width: 56px;
+  margin: 8px 10px 8px 0;
+  font-size: 11px;
+  text-align: center;
+  color: colors.$accent;
+}
+
+@keyframes page-slide-in-next {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes page-slide-in-prev {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes row-toggle {
+  0% {
+    transform: scale(1);
+  }
+
+  35% {
+    transform: scale(0.97);
+  }
+
+  70% {
+    transform: scale(1.01);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes unlock-pop {
+  0% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(1.12);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes sheet-backdrop-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sheet-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sheet-option-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .achievement-pages--enter .achievement-list,
+  .achievement-row--pulse,
+  .achievement-row--pulse .achievement-row__unlock,
+  .character-sheet[open]::backdrop,
+  .character-sheet[open] .character-sheet__panel,
+  .character-sheet[open] .character-sheet__option {
+    animation: none;
+  }
+
+  .character-nav__chevron {
+    transition: none;
+  }
+
+  .character-nav__current[aria-expanded='true'] .character-nav__chevron {
+    transform: none;
+  }
+
+  .achievement-row {
+    transition: none;
+  }
+
+  .achievement-row:active:not(.unlocked) {
+    transform: none;
+  }
+}

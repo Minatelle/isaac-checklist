@@ -1,11 +1,15 @@
 import {
+  buildCharacterUnlockCells,
   buildEmptyCellIndices,
   buildImagePath,
   countAchievedUnlocks,
+  countCharacterUnlockProgress,
   extractUnlockNames,
   formatAchievedPercent,
   getExtraCellCount,
   getRowSpan,
+  getUnlockForCharacterIndex,
+  getUnlockSourceAchievementIndex,
   toggleUnlockName
 } from './checklist.utils';
 
@@ -68,5 +72,43 @@ describe('checklist.utils', () => {
 
   it('builds empty cell indices from count', () => {
     expect(buildEmptyCellIndices(3)).toEqual([0, 1, 2]);
+  });
+
+  it('resolves unlock source rows for tainted rowspan coverage', () => {
+    expect(getUnlockSourceAchievementIndex(2, true)).toBe(1);
+    expect(getUnlockSourceAchievementIndex(5, true)).toBe(5);
+  });
+
+  it('builds character unlock cells with trailing empty slots', () => {
+    expect(
+      buildCharacterUnlockCells(achievements[0], 0, false, 4)
+    ).toEqual([
+      achievements[0].unlocks[0],
+      achievements[0].unlocks[1],
+      null,
+      null
+    ]);
+  });
+
+  it('returns unlocks by character index', () => {
+    expect(getUnlockForCharacterIndex(achievements, 0, 0, false, 4)).toEqual(
+      achievements[0].unlocks[0]
+    );
+    expect(getUnlockForCharacterIndex(achievements, 0, 3, false, 4)).toBeNull();
+  });
+
+  it('counts unlock progress for a character column', () => {
+    expect(countCharacterUnlockProgress(achievements, 0, false, 4, ['Lost Baby'])).toEqual({
+      achieved: 1,
+      total: 1
+    });
+    expect(countCharacterUnlockProgress(achievements, 1, false, 4, [])).toEqual({
+      achieved: 0,
+      total: 1
+    });
+    expect(countCharacterUnlockProgress(achievements, 3, false, 4, [])).toEqual({
+      achieved: 0,
+      total: 0
+    });
   });
 });
