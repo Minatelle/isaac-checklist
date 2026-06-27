@@ -6,7 +6,7 @@ import {
 import { Achievement, Unlock } from '../models/checklist.model';
 
 export function buildImagePath(folder: string, icon: string): string {
-  return `${ICON_BASE_PATH}/${folder}/${icon}.png`;
+  return `${ICON_BASE_PATH}/${folder}/${icon}.webp`;
 }
 
 export function formatBossList(bosses: readonly string[]): string {
