@@ -10,3 +10,9 @@ export const TAINTED_ROW_SPANS: Readonly<Record<number, number>> = {
 export const ICON_BASE_PATH = '/assets/icons' as const;
 
 export const MOBILE_BREAKPOINT = '(max-width: 768px)' as const;
+
+export const REDUCED_MOTION_QUERY = '(prefers-reduced-motion: reduce)' as const;
+
+export const SLIDE_TRANSITION_MS = 340 as const;
+
+export const ROW_PULSE_MS = 400 as const;

@@ -10,7 +10,7 @@
           <th>
             @if (character.icon) {
               <img
-                [src]="getImagePath('characters', character.icon)"
+                [src]="character.icon | imagePath:'characters'"
                 width="20"
                 height="20"
                 [alt]="character.name"
@@ -28,14 +28,29 @@
           <td>{{ achievement.name }}</td>
           @if (achievement.icon.hard) {
             <td class="completion-mark">
-              <img [src]="getImagePath('marks', achievement.icon.normal)" width="50" height="50" [alt]="achievement.name + ' completion mark'" />
+              <img
+                [src]="achievement.icon.normal | imagePath:'marks'"
+                width="50"
+                height="50"
+                [alt]="achievement.name + ' completion mark'"
+              />
             </td>
             <td class="completion-mark">
-              <img [src]="getImagePath('marks', achievement.icon.hard)" width="50" height="50" [alt]="achievement.name + ' hard mode completion mark'" />
+              <img
+                [src]="achievement.icon.hard | imagePath:'marks'"
+                width="50"
+                height="50"
+                [alt]="achievement.name + ' hard mode completion mark'"
+              />
             </td>
           } @else {
             <td class="completion-mark" colspan="2">
-              <img [src]="getImagePath('marks', achievement.icon.normal)" width="50" height="50" [alt]="achievement.name + ' completion mark'" />
+              <img
+                [src]="achievement.icon.normal | imagePath:'marks'"
+                width="50"
+                height="50"
+                [alt]="achievement.name + ' completion mark'"
+              />
             </td>
           }
           <td>
@@ -55,7 +70,7 @@
                   @if (unlock.tier != null) {
                     <img
                       class="tier"
-                      [src]="getImagePath('quality', unlock.tier.toString())"
+                      [src]="unlock.tier.toString() | imagePath:'quality'"
                       width="18"
                       height="18"
                       [alt]="'Quality tier ' + unlock.tier"
@@ -64,7 +79,7 @@
                   @if (unlock.icon) {
                     <img
                       [class.unlock]="unlock.tier != null"
-                      [src]="getImagePath('achievements', unlock.icon)"
+                      [src]="unlock.icon | imagePath:'achievements'"
                       width="45"
                       height="45"
                       [alt]="unlock.name"

@@ -9,6 +9,15 @@ export function buildImagePath(folder: string, icon: string): string {
   return `${ICON_BASE_PATH}/${folder}/${icon}.png`;
 }
 
+export function formatBossList(bosses: readonly string[]): string {
+  return bosses.join(' · ');
+}
+
+export function buildUnlockAriaLabel(unlockName: string, isUnlocked: boolean): string {
+  const state = isUnlocked ? 'completed' : 'not completed';
+  return `${unlockName}, ${state}`;
+}
+
 export function extractUnlockNames(achievements: readonly Achievement[]): string[] {
   return achievements.flatMap(achievement => achievement.unlocks.map(unlock => unlock.name));
 }

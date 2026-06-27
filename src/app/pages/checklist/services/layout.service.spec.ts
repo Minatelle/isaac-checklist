@@ -14,6 +14,12 @@ describe('LayoutService', () => {
     expect(service.isMobile()).toBe(window.matchMedia('(max-width: 768px)').matches);
   });
 
+  it('reflects the current reduced motion preference', () => {
+    expect(service.prefersReducedMotion()).toBe(
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    );
+  });
+
   it('updates isMobile when the media query changes', () => {
     service.isMobile.set(true);
     expect(service.isMobile()).toBe(true);

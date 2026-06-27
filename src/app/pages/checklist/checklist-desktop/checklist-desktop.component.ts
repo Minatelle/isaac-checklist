@@ -1,24 +1,17 @@
 import { Component, inject } from '@angular/core';
 
+import { ImagePathPipe } from '../pipes/image-path.pipe';
 import { ChecklistStore } from '../services/checklist.store';
-import {
-  buildEmptyCellIndices,
-  buildImagePath,
-  getExtraCellCount,
-  getRowSpan
-} from '../utils/checklist.utils';
+import { buildEmptyCellIndices, getExtraCellCount, getRowSpan } from '../utils/checklist.utils';
 
 @Component({
   selector: 'app-checklist-desktop',
+  imports: [ImagePathPipe],
   templateUrl: './checklist-desktop.component.html',
   styleUrl: './checklist-desktop.component.scss'
 })
 export class ChecklistDesktopComponent {
   protected readonly store = inject(ChecklistStore);
-
-  protected getImagePath(folder: string, icon: string): string {
-    return buildImagePath(folder, icon);
-  }
 
   protected getRowSpan(achievementIndex: number): number {
     return getRowSpan(achievementIndex, this.store.isTainted());

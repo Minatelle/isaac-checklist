@@ -1,0 +1,143 @@
+@use '../../../../assets/styles/colors.scss';
+@use '../../../../assets/styles/motion';
+
+:host {
+  display: block;
+  flex-shrink: 0;
+}
+
+:host.checklist-header--mobile {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 8px 8px 6px;
+  background: colors.$background;
+  border-bottom: 1px solid colors.$border;
+}
+
+:host:not(.checklist-header--mobile) .checklist-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  margin-top: 8px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 8px;
+  background-color: colors.$header;
+  color: colors.$white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'sans-serif', 'Roboto', monospace;
+  border: 1px solid colors.$border;
+  border-bottom: solid 2px colors.$header;
+}
+
+.tab.active {
+  color: colors.$active;
+  border-bottom: solid 2px colors.$active;
+}
+
+.percent {
+  color: colors.$white;
+  font-family: 'sans-serif', 'Roboto', monospace;
+}
+
+.segmented-control {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3px;
+  margin-bottom: 8px;
+  border: 1px solid colors.$border;
+  border-radius: 10px;
+  background: colors.$header;
+}
+
+.segmented-control__thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: calc((100% - 6px) / 2);
+  height: calc(100% - 6px);
+  border: 1px solid colors.$active;
+  border-radius: 8px;
+  background: colors.$background;
+  @include motion.motion-transition(transform);
+  pointer-events: none;
+}
+
+.segmented-control__thumb--tainted {
+  transform: translateX(100%);
+}
+
+.segment {
+  position: relative;
+  z-index: 1;
+  padding: 10px 8px;
+  border: none;
+  background: transparent;
+  color: colors.$white;
+  font-family: 'sans-serif', 'Roboto', monospace;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color motion.$motion-slide-duration motion.$motion-slide-easing, transform 0.15s ease;
+}
+
+.segment:focus-visible {
+  outline: 2px solid colors.$active;
+  outline-offset: 1px;
+}
+
+.segment:active {
+  transform: scale(0.97);
+}
+
+.segment.active {
+  color: colors.$active;
+}
+
+.progress {
+  height: 6px;
+  border-radius: 3px;
+  background: colors.$header;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.progress__bar {
+  height: 100%;
+  background: colors.$active;
+  @include motion.motion-transition(width);
+}
+
+.progress__label {
+  display: block;
+  font-size: 12px;
+  color: colors.$white;
+  font-family: 'sans-serif', 'Roboto', monospace;
+  text-align: right;
+  @include motion.motion-transition(opacity);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .segmented-control__thumb,
+  .segment,
+  .progress__bar,
+  .progress__label {
+    transition: none;
+  }
+
+  .segment:active {
+    transform: none;
+  }
+}

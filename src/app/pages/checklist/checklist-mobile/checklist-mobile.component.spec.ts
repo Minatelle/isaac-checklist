@@ -3,12 +3,12 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import checklistData from '../checklist-data.json';
 import { ChecklistMobileComponent } from './checklist-mobile.component';
 import { ChecklistStore } from '../services/checklist.store';
+import { LayoutService } from '../services/layout.service';
 
 describe('ChecklistMobileComponent', () => {
   let fixture: ComponentFixture<ChecklistMobileComponent>;
   let store: ChecklistStore;
   let view: ChecklistMobileComponent & {
-    getImagePath(folder: string, icon: string): string;
     getUnlockForCharacter(achievementIndex: number): { name: string } | null;
     selectPreviousCharacter(): void;
     selectNextCharacter(): void;
@@ -22,8 +22,8 @@ describe('ChecklistMobileComponent', () => {
     slidePhase(): 'idle' | 'enter';
     pulseRowName(): string | null;
     toggleUnlock(unlock: { name: string }): void;
-    formatBossNames(bosses: readonly string[]): string;
-    getUnlockAriaLabel(unlock: { name: string }): string;
+    formatBossList(bosses: readonly string[]): string;
+    buildUnlockAriaLabel(unlockName: string, isUnlocked: boolean): string;
   };
 
   beforeEach(async () => {
@@ -44,11 +44,8 @@ describe('ChecklistMobileComponent', () => {
   });
 
   afterEach(() => {
+    jest.useRealTimers();
     localStorage.clear();
-  });
-
-  it('builds image asset paths', () => {
-    expect(view.getImagePath('marks', 'Platinum_God')).toBe('/assets/icons/marks/Platinum_God.png');
   });
 
   it('returns the unlock for the selected character column', () => {
@@ -94,7 +91,6 @@ describe('ChecklistMobileComponent', () => {
 
     jest.advanceTimersByTime(400);
     expect(view.pulseRowName()).toBeNull();
-    jest.useRealTimers();
   });
 
   it('animates character changes with the same timing as the picker sheet', () => {
@@ -108,7 +104,6 @@ describe('ChecklistMobileComponent', () => {
     jest.advanceTimersByTime(340);
     expect(view.slidePhase()).toBe('idle');
     expect(view.slideDirection()).toBeNull();
-    jest.useRealTimers();
   });
 
   it('ignores rapid character changes while the slide animation is running', () => {
@@ -119,7 +114,6 @@ describe('ChecklistMobileComponent', () => {
     expect(store.selectedCharacterIndex()).toBe(1);
 
     jest.advanceTimersByTime(340);
-    jest.useRealTimers();
   });
 
   it('ignores external character changes during the slide animation', () => {
@@ -133,7 +127,6 @@ describe('ChecklistMobileComponent', () => {
     expect(view.getUnlockForCharacter(0)).toEqual(expectedUnlock);
 
     jest.advanceTimersByTime(340);
-    jest.useRealTimers();
   });
 
   it('does not animate when selecting the same character from the picker', () => {
@@ -153,7 +146,6 @@ describe('ChecklistMobileComponent', () => {
     view.toggleUnlock(unlock);
     jest.advanceTimersByTime(400);
     expect(view.pulseRowName()).toBeNull();
-    jest.useRealTimers();
   });
 
   it('slides backward when picking an earlier character', () => {
@@ -166,16 +158,15 @@ describe('ChecklistMobileComponent', () => {
     jest.advanceTimersByTime(340);
     expect(store.selectedCharacterIndex()).toBe(0);
     expect(view.slideDirection()).toBeNull();
-    jest.useRealTimers();
   });
 
   it('describes unlock state in the row aria label', () => {
     const unlock = checklistData.achievements[0].unlocks[0];
 
-    expect(view.getUnlockAriaLabel(unlock)).toBe(`${unlock.name}, not completed`);
+    expect(view.buildUnlockAriaLabel(unlock.name, false)).toBe(`${unlock.name}, not completed`);
 
     store.toggleUnlock(unlock.name);
-    expect(view.getUnlockAriaLabel(unlock)).toBe(`${unlock.name}, completed`);
+    expect(view.buildUnlockAriaLabel(unlock.name, true)).toBe(`${unlock.name}, completed`);
   });
 
   it('navigates characters with previous and next controls', () => {
@@ -193,8 +184,6 @@ describe('ChecklistMobileComponent', () => {
     view.selectPreviousCharacter();
     jest.advanceTimersByTime(340);
     expect(store.selectedCharacterIndex()).toBe(0);
-
-    jest.useRealTimers();
   });
 
   it('opens and closes the character picker sheet', () => {
@@ -221,7 +210,6 @@ describe('ChecklistMobileComponent', () => {
 
     jest.advanceTimersByTime(340);
     expect(store.selectedCharacterIndex()).toBe(2);
-    jest.useRealTimers();
   });
 
   it('does not move past the first or last character', () => {
@@ -263,23 +251,15 @@ describe('ChecklistMobileComponent', () => {
   });
 
   it('changes character instantly when reduced motion is preferred', () => {
-    const matchMedia = jest.spyOn(globalThis, 'matchMedia').mockImplementation((query: string) => ({
-      matches: query === '(prefers-reduced-motion: reduce)',
-      media: query,
-      addEventListener: jest.fn(),
-      removeEventListener: jest.fn(),
-      addListener: jest.fn(),
-      removeListener: jest.fn(),
-      dispatchEvent: jest.fn()
-    }));
+    TestBed.inject(LayoutService).prefersReducedMotion.set(true);
 
     view.selectNextCharacter();
 
     expect(store.selectedCharacterIndex()).toBe(1);
-    matchMedia.mockRestore();
+    expect(view.slidePhase()).toBe('idle');
   });
 
   it('formats boss names on one line', () => {
-    expect(view.formatBossNames(["Mom's Heart", 'It Lives!'])).toBe("Mom's Heart · It Lives!");
+    expect(view.formatBossList(["Mom's Heart", 'It Lives!'])).toBe("Mom's Heart · It Lives!");
   });
 });

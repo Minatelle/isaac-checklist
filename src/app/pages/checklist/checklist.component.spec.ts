@@ -29,6 +29,8 @@ describe('ChecklistComponent', () => {
 
   afterEach(() => {
     jest.useRealTimers();
+    const layout = TestBed.inject(LayoutService);
+    layout.prefersReducedMotion.set(false);
     (window.matchMedia as jest.Mock).mockImplementation((query: string) => ({
       matches: false,
       media: query,
@@ -50,9 +52,9 @@ describe('ChecklistComponent', () => {
     fixture.detectChanges();
 
     expect(fixture.nativeElement.querySelector('app-checklist-mobile')).toBeTruthy();
-    expect(fixture.nativeElement.querySelector('.segmented-control')).toBeTruthy();
-    expect(fixture.nativeElement.querySelector('.segmented-control__thumb')).toBeTruthy();
-    expect(fixture.nativeElement.querySelector('.progress__bar')).toBeTruthy();
+    expect(fixture.nativeElement.querySelector('app-checklist-header .segmented-control')).toBeTruthy();
+    expect(fixture.nativeElement.querySelector('app-checklist-header .segmented-control__thumb')).toBeTruthy();
+    expect(fixture.nativeElement.querySelector('app-checklist-header .progress__bar')).toBeTruthy();
     expect(fixture.nativeElement.querySelector('app-checklist-desktop')).toBeFalsy();
     expect(view.isMobileShell).toBe(true);
   });
@@ -127,16 +129,7 @@ describe('ChecklistComponent', () => {
   });
 
   it('switches mode instantly when reduced motion is preferred', () => {
-    const matchMedia = window.matchMedia as jest.Mock;
-    matchMedia.mockImplementation((query: string) => ({
-      matches: query === '(prefers-reduced-motion: reduce)',
-      media: query,
-      addEventListener: jest.fn(),
-      removeEventListener: jest.fn(),
-      addListener: jest.fn(),
-      removeListener: jest.fn(),
-      dispatchEvent: jest.fn()
-    }));
+    TestBed.inject(LayoutService).prefersReducedMotion.set(true);
 
     view.setTainted(true);
 
@@ -150,13 +143,13 @@ describe('ChecklistComponent', () => {
     TestBed.inject(LayoutService).isMobile.set(true);
     fixture.detectChanges();
 
-    const taintedButton = fixture.nativeElement.querySelectorAll('.segment')[1] as HTMLButtonElement;
+    const taintedButton = fixture.nativeElement.querySelectorAll('app-checklist-header .segment')[1] as HTMLButtonElement;
     taintedButton.click();
     fixture.detectChanges();
 
     expect(store.isTainted()).toBe(true);
 
-    const thumb = fixture.nativeElement.querySelector('.segmented-control__thumb');
+    const thumb = fixture.nativeElement.querySelector('app-checklist-header .segmented-control__thumb');
     expect(thumb.classList.contains('segmented-control__thumb--tainted')).toBe(true);
   });
 });

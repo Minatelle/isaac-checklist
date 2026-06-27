@@ -20,7 +20,7 @@
     @if (selectedCharacter().icon; as icon) {
       <img
         class="character-nav__icon"
-        [src]="getImagePath('characters', icon)"
+        [src]="icon | imagePath:'characters'"
         width="32"
         height="32"
         [alt]="selectedCharacter().name"
@@ -81,7 +81,7 @@
         >
           @if (character.icon; as icon) {
             <img
-              [src]="getImagePath('characters', icon)"
+              [src]="icon | imagePath:'characters'"
               width="36"
               height="36"
               [alt]="character.name"
@@ -106,89 +106,76 @@
   [class.achievement-pages--prev]="slideDirection() === 'prev'"
 >
   <section #achievementList class="achievement-list">
-  @for (achievement of store.achievements(); track achievement.name; let i = $index) {
-    @let unlock = getUnlockForCharacter(i);
-    @if (unlock) {
-      <button
-        type="button"
-        class="achievement-row"
-        [class.unlocked]="store.isUnlocked(unlock.name)"
-        [class.achievement-row--pulse]="pulseRowName() === unlock.name"
-        (click)="toggleUnlock(unlock)"
-        [attr.aria-label]="getUnlockAriaLabel(unlock)"
-      >
-        <div class="achievement-row__marks">
+    <ng-template #achievementMarks let-achievement="achievement">
+      <div class="achievement-row__marks">
+        <img
+          [src]="achievement.icon.normal | imagePath:'marks'"
+          width="40"
+          height="40"
+          [alt]="achievement.name + ' completion mark'"
+        />
+        @if (achievement.icon.hard) {
           <img
-            [src]="getImagePath('marks', achievement.icon.normal)"
+            [src]="achievement.icon.hard | imagePath:'marks'"
             width="40"
             height="40"
-            [alt]="achievement.name + ' completion mark'"
+            [alt]="achievement.name + ' hard mode completion mark'"
           />
-          @if (achievement.icon.hard) {
-            <img
-              [src]="getImagePath('marks', achievement.icon.hard)"
-              width="40"
-              height="40"
-              [alt]="achievement.name + ' hard mode completion mark'"
-            />
-          }
-        </div>
-
-        <div class="achievement-row__info">
-          <span class="achievement-row__name">{{ achievement.name }}</span>
-          <span class="achievement-row__boss">{{ formatBossNames(achievement.boss) }}</span>
-        </div>
-
-        <div class="achievement-row__unlock">
-          @if (unlock.tier != null) {
-            <img
-              class="achievement-row__tier"
-              [src]="getImagePath('quality', unlock.tier.toString())"
-              width="16"
-              height="16"
-              [alt]="'Quality tier ' + unlock.tier"
-            />
-          }
-          @if (unlock.icon) {
-            <img
-              class="achievement-row__unlock-icon"
-              [src]="getImagePath('achievements', unlock.icon)"
-              width="52"
-              height="52"
-              [alt]="unlock.name"
-            />
-          } @else {
-            <span class="achievement-row__unlock-fallback">{{ unlock.name }}</span>
-          }
-        </div>
-      </button>
-    } @else {
-      <div class="achievement-row achievement-row--empty">
-        <div class="achievement-row__marks">
-          <img
-            [src]="getImagePath('marks', achievement.icon.normal)"
-            width="40"
-            height="40"
-            [alt]="achievement.name + ' completion mark'"
-          />
-          @if (achievement.icon.hard) {
-            <img
-              [src]="getImagePath('marks', achievement.icon.hard)"
-              width="40"
-              height="40"
-              [alt]="achievement.name + ' hard mode completion mark'"
-            />
-          }
-        </div>
-
-        <div class="achievement-row__info">
-          <span class="achievement-row__name">{{ achievement.name }}</span>
-          <span class="achievement-row__boss">{{ formatBossNames(achievement.boss) }}</span>
-        </div>
-
-        <span class="achievement-row__empty-label">None</span>
+        }
       </div>
+    </ng-template>
+
+    <ng-template #achievementInfo let-achievement="achievement">
+      <div class="achievement-row__info">
+        <span class="achievement-row__name">{{ achievement.name }}</span>
+        <span class="achievement-row__boss">{{ formatBossList(achievement.boss) }}</span>
+      </div>
+    </ng-template>
+
+    @for (achievement of store.achievements(); track achievement.name; let i = $index) {
+      @let unlock = getUnlockForCharacter(i);
+      @if (unlock) {
+        <button
+          type="button"
+          class="achievement-row"
+          [class.unlocked]="store.isUnlocked(unlock.name)"
+          [class.achievement-row--pulse]="pulseRowName() === unlock.name"
+          (click)="toggleUnlock(unlock)"
+          [attr.aria-label]="buildUnlockAriaLabel(unlock.name, store.isUnlocked(unlock.name))"
+        >
+          <ng-container *ngTemplateOutlet="achievementMarks; context: { achievement }" />
+          <ng-container *ngTemplateOutlet="achievementInfo; context: { achievement }" />
+
+          <div class="achievement-row__unlock">
+            @if (unlock.tier != null) {
+              <img
+                class="achievement-row__tier"
+                [src]="unlock.tier.toString() | imagePath:'quality'"
+                width="16"
+                height="16"
+                [alt]="'Quality tier ' + unlock.tier"
+              />
+            }
+            @if (unlock.icon) {
+              <img
+                class="achievement-row__unlock-icon"
+                [src]="unlock.icon | imagePath:'achievements'"
+                width="52"
+                height="52"
+                [alt]="unlock.name"
+              />
+            } @else {
+              <span class="achievement-row__unlock-fallback">{{ unlock.name }}</span>
+            }
+          </div>
+        </button>
+      } @else {
+        <div class="achievement-row achievement-row--empty">
+          <ng-container *ngTemplateOutlet="achievementMarks; context: { achievement }" />
+          <ng-container *ngTemplateOutlet="achievementInfo; context: { achievement }" />
+          <span class="achievement-row__empty-label">None</span>
+        </div>
+      }
     }
-  }
   </section>
 </div>

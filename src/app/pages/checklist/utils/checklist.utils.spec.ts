@@ -2,10 +2,12 @@ import {
   buildCharacterUnlockCells,
   buildEmptyCellIndices,
   buildImagePath,
+  buildUnlockAriaLabel,
   countAchievedUnlocks,
   countCharacterUnlockProgress,
   extractUnlockNames,
   formatAchievedPercent,
+  formatBossList,
   getExtraCellCount,
   getRowSpan,
   getUnlockForCharacterIndex,
@@ -28,6 +30,15 @@ describe('checklist.utils', () => {
 
   it('builds image asset paths', () => {
     expect(buildImagePath('marks', 'Platinum_God')).toBe('/assets/icons/marks/Platinum_God.png');
+  });
+
+  it('formats boss names on one line', () => {
+    expect(formatBossList(["Mom's Heart", 'It Lives!'])).toBe("Mom's Heart · It Lives!");
+  });
+
+  it('describes unlock state in aria labels', () => {
+    expect(buildUnlockAriaLabel('Lost Baby', false)).toBe('Lost Baby, not completed');
+    expect(buildUnlockAriaLabel('Lost Baby', true)).toBe('Lost Baby, completed');
   });
 
   it('extracts unlock names from achievements', () => {

@@ -1,7 +1,5 @@
 @use '../../../../assets/styles/colors.scss';
-
-$motion-slide-duration: 0.34s;
-$motion-slide-easing: cubic-bezier(0.22, 1, 0.36, 1);
+@use '../../../../assets/styles/motion';
 
 :host {
   display: flex;
@@ -162,7 +160,7 @@ $motion-slide-easing: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .character-sheet[open] .character-sheet__panel {
-  animation: sheet-panel-in $motion-slide-duration $motion-slide-easing;
+  animation: sheet-panel-in motion.$motion-slide-duration motion.$motion-slide-easing;
 }
 
 .character-sheet__header {
@@ -279,11 +277,11 @@ $motion-slide-easing: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .achievement-pages--enter.achievement-pages--next .achievement-list {
-  animation: page-slide-in-next $motion-slide-duration $motion-slide-easing;
+  @include motion.slide-in-next-animation;
 }
 
 .achievement-pages--enter.achievement-pages--prev .achievement-list {
-  animation: page-slide-in-prev $motion-slide-duration $motion-slide-easing;
+  @include motion.slide-in-prev-animation;
 }
 
 .achievement-list {
@@ -428,30 +426,6 @@ $motion-slide-easing: cubic-bezier(0.22, 1, 0.36, 1);
   font-size: 11px;
   text-align: center;
   color: colors.$accent;
-}
-
-@keyframes page-slide-in-next {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes page-slide-in-prev {
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 @keyframes row-toggle {

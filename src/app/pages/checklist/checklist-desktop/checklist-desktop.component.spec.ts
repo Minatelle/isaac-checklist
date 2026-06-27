@@ -7,7 +7,6 @@ describe('ChecklistDesktopComponent', () => {
   let fixture: ComponentFixture<ChecklistDesktopComponent>;
   let store: ChecklistStore;
   let view: ChecklistDesktopComponent & {
-    getImagePath(folder: string, icon: string): string;
     getRowSpan(index: number): number;
     getEmptyCellIndices(achievementsLength: number, achievementIndex: number): number[];
   };
@@ -28,10 +27,6 @@ describe('ChecklistDesktopComponent', () => {
 
   afterEach(() => {
     localStorage.clear();
-  });
-
-  it('builds image asset paths', () => {
-    expect(view.getImagePath('marks', 'Platinum_God')).toBe('/assets/icons/marks/Platinum_God.png');
   });
 
   it.each([

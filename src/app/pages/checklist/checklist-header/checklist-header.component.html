@@ -1,0 +1,49 @@
+<header class="checklist-header">
+  @if (layout.isMobile()) {
+    <div class="segmented-control" role="tablist" aria-label="Character type">
+      <span
+        class="segmented-control__thumb"
+        [class.segmented-control__thumb--tainted]="store.isTainted()"
+        aria-hidden="true"
+      ></span>
+      <button
+        type="button"
+        class="segment"
+        role="tab"
+        [class.active]="!store.isTainted()"
+        [attr.aria-selected]="!store.isTainted()"
+        (click)="taintedChange.emit(false)"
+      >
+        Regular
+      </button>
+      <button
+        type="button"
+        class="segment"
+        role="tab"
+        [class.active]="store.isTainted()"
+        [attr.aria-selected]="store.isTainted()"
+        (click)="taintedChange.emit(true)"
+      >
+        Tainted
+      </button>
+    </div>
+    <div class="progress">
+      <div class="progress__bar" [style.width.%]="store.achievedPercent()"></div>
+    </div>
+    <span class="progress__label">
+      {{ store.achievedUnlocks() }}/{{ store.totalUnlocks() }} ({{ store.achievedPercent() }}%)
+    </span>
+  } @else {
+    <div class="tabs">
+      <button class="tab" [class.active]="!store.isTainted()" (click)="taintedChange.emit(false)">
+        Regular Characters
+      </button>
+      <button class="tab" [class.active]="store.isTainted()" (click)="taintedChange.emit(true)">
+        Tainted Characters
+      </button>
+    </div>
+    <span class="percent">
+      {{ store.achievedUnlocks() }}/{{ store.totalUnlocks() }} achieved ({{ store.achievedPercent() }}%)
+    </span>
+  }
+</header>
