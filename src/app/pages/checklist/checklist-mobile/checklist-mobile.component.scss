@@ -219,12 +219,7 @@
 
 .character-sheet[open] .character-sheet__option {
   animation: sheet-option-in 0.36s ease backwards;
-}
-
-@for $i from 1 through 20 {
-  .character-sheet[open] .character-sheet__option:nth-child(#{$i}) {
-    animation-delay: #{0.04 + ($i * 0.02)}s;
-  }
+  animation-delay: calc(0.04s + 0.02s * var(--stagger-index, 0));
 }
 
 .character-sheet__option.active {
@@ -426,72 +421,6 @@
   font-size: 11px;
   text-align: center;
   color: colors.$accent;
-}
-
-@keyframes row-toggle {
-  0% {
-    transform: scale(1);
-  }
-
-  35% {
-    transform: scale(0.97);
-  }
-
-  70% {
-    transform: scale(1.01);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes unlock-pop {
-  0% {
-    transform: scale(1);
-  }
-
-  40% {
-    transform: scale(1.12);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes sheet-backdrop-in {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes sheet-panel-in {
-  from {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes sheet-option-in {
-  from {
-    opacity: 0;
-    transform: translateY(12px) scale(0.96);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

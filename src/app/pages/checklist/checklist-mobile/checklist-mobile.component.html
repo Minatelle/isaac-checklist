@@ -77,6 +77,7 @@
           type="button"
           class="character-sheet__option"
           [class.active]="store.selectedCharacterIndex() === i"
+          [style.--stagger-index]="i"
           (click)="selectCharacter(i)"
         >
           @if (character.icon; as icon) {
