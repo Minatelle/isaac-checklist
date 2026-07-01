@@ -1,6 +1,6 @@
 import { setupZonelessTestEnv } from 'jest-preset-angular/setup-env/zoneless';
 
-Object.defineProperty(window, 'matchMedia', {
+Object.defineProperty(globalThis, 'matchMedia', {
   writable: true,
   value: jest.fn().mockImplementation((query: string) => ({
     matches: false,

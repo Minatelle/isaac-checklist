@@ -98,7 +98,7 @@ export function buildCharacterUnlockCells(
     characterCount
   );
 
-  return [...achievement.unlocks, ...Array<null>(emptyCellCount).fill(null)];
+  return [...achievement.unlocks, ...new Array<null>(emptyCellCount).fill(null)];
 }
 
 export function getUnlockForCharacterIndex(

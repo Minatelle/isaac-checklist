@@ -31,7 +31,7 @@ describe('ChecklistComponent', () => {
     jest.useRealTimers();
     const layout = TestBed.inject(LayoutService);
     layout.prefersReducedMotion.set(false);
-    (window.matchMedia as jest.Mock).mockImplementation((query: string) => ({
+    (globalThis.matchMedia as jest.Mock).mockImplementation((query: string) => ({
       matches: false,
       media: query,
       addEventListener: jest.fn(),
