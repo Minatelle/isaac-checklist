@@ -15,7 +15,7 @@ export class LayoutService {
   }
 
   private watchMediaQuery(query: string, onChange: (matches: boolean) => void): void {
-    const mediaQuery = window.matchMedia(query);
+    const mediaQuery = globalThis.matchMedia(query);
     const listener = () => onChange(mediaQuery.matches);
 
     mediaQuery.addEventListener('change', listener);
@@ -23,6 +23,6 @@ export class LayoutService {
   }
 
   private readMediaQuery(query: string): boolean {
-    return window.matchMedia(query).matches;
+    return globalThis.matchMedia(query).matches;
   }
 }
