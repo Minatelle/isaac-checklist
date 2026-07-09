@@ -1,0 +1,59 @@
+<dialog
+  #tutorialDialog
+  class="tutorial-dialog"
+  aria-label="Tutorial"
+  (close)="onDialogClosed()"
+>
+  <button
+    type="button"
+    class="tutorial-dialog__backdrop"
+    (click)="close()"
+    aria-label="Close tutorial"
+  ></button>
+
+  <div class="tutorial-dialog__panel">
+    <header class="tutorial-dialog__header">
+      <h2 class="tutorial-dialog__title">Welcome to Isaac Checklist</h2>
+      <button type="button" class="tutorial-dialog__close" (click)="close()" aria-label="Close">
+        ×
+      </button>
+    </header>
+
+    <div class="tutorial-dialog__content">
+      <p>
+        This is a personal progress tracker for <em>The Binding of Isaac: Repentance</em> completion
+        marks. Each row is a completion mark and shows which unlock you still need for every
+        character.
+      </p>
+
+      <h3 class="tutorial-dialog__section-title">Getting started</h3>
+      <ul>
+        <li>Switch between <strong>Regular</strong> and <strong>Tainted</strong> characters at the top.</li>
+        <li>Your overall progress is shown in the header.</li>
+        <li>Progress is saved automatically in your browser.</li>
+      </ul>
+
+      @if (layout.isMobile()) {
+        <h3 class="tutorial-dialog__section-title">On mobile</h3>
+        <ul>
+          <li>Use the arrows or tap the character name to switch characters.</li>
+          <li>Tap an achievement row to mark or unmark its unlock.</li>
+        </ul>
+      } @else {
+        <h3 class="tutorial-dialog__section-title">On desktop</h3>
+        <ul>
+          <li>Browse the wiki-style table with every character visible at once.</li>
+          <li>Click any unlock cell to toggle it on or off.</li>
+        </ul>
+      }
+
+      <p class="tutorial-dialog__footer">
+        Tap the <strong>?</strong> button anytime to view this guide again.
+      </p>
+    </div>
+
+    <footer class="tutorial-dialog__actions">
+      <button type="button" class="tutorial-dialog__confirm" (click)="close()">Got it</button>
+    </footer>
+  </div>
+</dialog>

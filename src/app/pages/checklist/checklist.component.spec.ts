@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ChecklistComponent } from './checklist.component';
 import { ChecklistStore } from './services/checklist.store';
 import { LayoutService } from './services/layout.service';
+import { TutorialStorageService } from './services/tutorial-storage.service';
 
 describe('ChecklistComponent', () => {
   let fixture: ComponentFixture<ChecklistComponent>;
@@ -64,6 +65,7 @@ describe('ChecklistComponent', () => {
     fixture.detectChanges();
 
     expect(fixture.nativeElement.querySelector('app-checklist-desktop')).toBeTruthy();
+    expect(fixture.nativeElement.querySelector('app-checklist-header .progress__bar')).toBeTruthy();
     expect(fixture.nativeElement.querySelector('app-checklist-mobile')).toBeFalsy();
     expect(view.isMobileShell).toBe(false);
   });
@@ -151,5 +153,49 @@ describe('ChecklistComponent', () => {
 
     const thumb = fixture.nativeElement.querySelector('app-checklist-header .segmented-control__thumb');
     expect(thumb.classList.contains('segmented-control__thumb--tainted')).toBe(true);
+  });
+
+  it('auto-opens the tutorial on first visit', () => {
+    jest.useFakeTimers();
+
+    const localFixture = TestBed.createComponent(ChecklistComponent);
+    localFixture.detectChanges();
+
+    const tutorialDialog = localFixture.nativeElement.querySelector('app-tutorial-dialog dialog') as HTMLDialogElement;
+    const showModal = jest.spyOn(tutorialDialog, 'showModal');
+
+    jest.advanceTimersByTime(0);
+    localFixture.detectChanges();
+
+    expect(showModal).toHaveBeenCalled();
+  });
+
+  it('does not auto-open the tutorial when it has already been seen', () => {
+    jest.useFakeTimers();
+    TestBed.inject(TutorialStorageService).markSeen();
+
+    fixture = TestBed.createComponent(ChecklistComponent);
+    fixture.detectChanges();
+
+    const tutorialDialog = fixture.nativeElement.querySelector('app-tutorial-dialog dialog') as HTMLDialogElement;
+    const showModal = jest.spyOn(tutorialDialog, 'showModal');
+
+    jest.advanceTimersByTime(0);
+    fixture.detectChanges();
+
+    expect(showModal).not.toHaveBeenCalled();
+  });
+
+  it('reopens the tutorial when help button is clicked', () => {
+    TestBed.inject(TutorialStorageService).markSeen();
+    fixture.detectChanges();
+
+    const tutorialDialog = fixture.nativeElement.querySelector('app-tutorial-dialog dialog') as HTMLDialogElement;
+    const showModal = jest.spyOn(tutorialDialog, 'showModal');
+
+    const helpButton = fixture.nativeElement.querySelector('app-checklist-header .help-button') as HTMLButtonElement;
+    helpButton.click();
+
+    expect(showModal).toHaveBeenCalled();
   });
 });

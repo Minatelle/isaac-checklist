@@ -1,0 +1,199 @@
+@use '../../../../assets/styles/colors.scss';
+@use '../../../../assets/styles/motion';
+
+:host {
+  display: contents;
+}
+
+.tutorial-dialog {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  overflow: visible;
+}
+
+.tutorial-dialog[open] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:host.tutorial-dialog--mobile .tutorial-dialog[open] {
+  align-items: flex-end;
+}
+
+.tutorial-dialog[open]::backdrop {
+  animation: sheet-backdrop-in 0.28s ease-out;
+}
+
+.tutorial-dialog::backdrop {
+  background: rgb(0 0 0 / 55%);
+}
+
+.tutorial-dialog__backdrop {
+  position: fixed;
+  inset: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.tutorial-dialog__panel {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 480px);
+  max-height: min(75dvh, 560px);
+  margin: 16px;
+  border: 1px solid colors.$border;
+  border-radius: 16px;
+  background: colors.$background;
+  overflow: hidden;
+}
+
+:host.tutorial-dialog--mobile .tutorial-dialog__panel {
+  width: 100%;
+  max-height: 75dvh;
+  margin: 0;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 16px 16px 0 0;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.tutorial-dialog[open] .tutorial-dialog__panel {
+  animation: tutorial-panel-in motion.$motion-slide-duration motion.$motion-slide-easing;
+}
+
+:host.tutorial-dialog--mobile .tutorial-dialog[open] .tutorial-dialog__panel {
+  animation: sheet-panel-in motion.$motion-slide-duration motion.$motion-slide-easing;
+}
+
+.tutorial-dialog__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 12px 0;
+}
+
+.tutorial-dialog__title {
+  margin: 0;
+  font-family: 'sans-serif', 'Roboto', monospace;
+  font-size: 16px;
+  font-weight: bold;
+  color: colors.$active;
+}
+
+.tutorial-dialog__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid colors.$border;
+  border-radius: 8px;
+  background: colors.$header;
+  color: colors.$white;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.tutorial-dialog__close:focus-visible,
+.tutorial-dialog__confirm:focus-visible {
+  outline: 2px solid colors.$active;
+  outline-offset: 1px;
+}
+
+.tutorial-dialog__content {
+  flex: 1;
+  min-height: 0;
+  padding: 12px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  color: colors.$white;
+  font-family: 'sans-serif', 'Roboto', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.tutorial-dialog__content p {
+  margin: 0 0 12px;
+}
+
+.tutorial-dialog__content ul {
+  margin: 0 0 12px;
+  padding-left: 20px;
+}
+
+.tutorial-dialog__content li + li {
+  margin-top: 6px;
+}
+
+.tutorial-dialog__section-title {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: colors.$active;
+}
+
+.tutorial-dialog__footer {
+  margin-bottom: 0;
+}
+
+.tutorial-dialog__actions {
+  display: flex;
+  justify-content: center;
+  padding: 8px 12px 12px;
+}
+
+.tutorial-dialog__confirm {
+  cursor: pointer;
+  min-width: 140px;
+  padding: 10px 20px;
+  background-color: colors.$header;
+  color: colors.$active;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'sans-serif', 'Roboto', monospace;
+  border: 1px solid colors.$border;
+  border-radius: 8px;
+}
+
+.tutorial-dialog__confirm:active {
+  transform: scale(0.97);
+}
+
+@keyframes tutorial-panel-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tutorial-dialog[open]::backdrop,
+  .tutorial-dialog[open] .tutorial-dialog__panel {
+    animation: none;
+  }
+
+  .tutorial-dialog__confirm:active {
+    transform: none;
+  }
+}

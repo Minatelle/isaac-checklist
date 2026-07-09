@@ -1,4 +1,4 @@
-<app-checklist-header (taintedChange)="setTainted($event)" />
+<app-checklist-header (taintedChange)="setTainted($event)" (helpClick)="openTutorial()" />
 
 <div
   class="checklist-body"
@@ -12,3 +12,5 @@
     <app-checklist-desktop />
   }
 </div>
+
+<app-tutorial-dialog />

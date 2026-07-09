@@ -13,6 +13,7 @@ export class ChecklistHeaderComponent {
   protected readonly layout = inject(LayoutService);
 
   readonly taintedChange = output<boolean>();
+  readonly helpClick = output<void>();
 
   @HostBinding('class.checklist-header--mobile')
   protected get isMobileHeader(): boolean {

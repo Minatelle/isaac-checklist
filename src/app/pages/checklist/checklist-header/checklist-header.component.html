@@ -27,12 +27,23 @@
         Tainted
       </button>
     </div>
-    <div class="progress">
-      <div class="progress__bar" [style.width.%]="store.achievedPercent()"></div>
+    <div class="progress-row">
+      <div class="progress">
+        <div class="progress__bar" [style.width.%]="store.achievedPercent()"></div>
+      </div>
+      <span class="progress__label">
+        {{ store.achievedUnlocks() }}/{{ store.totalUnlocks() }} ({{ store.achievedPercent() }}%)
+      </span>
+      <button
+        type="button"
+        class="help-button"
+        (click)="helpClick.emit()"
+        aria-label="Open tutorial"
+        aria-haspopup="dialog"
+      >
+        ?
+      </button>
     </div>
-    <span class="progress__label">
-      {{ store.achievedUnlocks() }}/{{ store.totalUnlocks() }} ({{ store.achievedPercent() }}%)
-    </span>
   } @else {
     <div class="tabs">
       <button class="tab" [class.active]="!store.isTainted()" (click)="taintedChange.emit(false)">
@@ -42,8 +53,22 @@
         Tainted Characters
       </button>
     </div>
-    <span class="percent">
-      {{ store.achievedUnlocks() }}/{{ store.totalUnlocks() }} achieved ({{ store.achievedPercent() }}%)
-    </span>
+    <div class="progress-row">
+      <div class="progress">
+        <div class="progress__bar" [style.width.%]="store.achievedPercent()"></div>
+      </div>
+      <span class="progress__label">
+        {{ store.achievedUnlocks() }}/{{ store.totalUnlocks() }} achieved ({{ store.achievedPercent() }}%)
+      </span>
+      <button
+        type="button"
+        class="help-button"
+        (click)="helpClick.emit()"
+        aria-label="Open tutorial"
+        aria-haspopup="dialog"
+      >
+        ?
+      </button>
+    </div>
   }
 </header>

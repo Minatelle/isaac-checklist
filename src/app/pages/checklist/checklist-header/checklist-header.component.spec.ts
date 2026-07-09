@@ -39,6 +39,7 @@ describe('ChecklistHeaderComponent', () => {
     fixture.detectChanges();
 
     expect(fixture.nativeElement.querySelector('.tabs')).toBeTruthy();
+    expect(fixture.nativeElement.querySelector('.progress__bar')).toBeTruthy();
     expect(fixture.nativeElement.querySelector('.segmented-control')).toBeFalsy();
   });
 
@@ -53,5 +54,34 @@ describe('ChecklistHeaderComponent', () => {
     taintedButton.click();
 
     expect(emit).toHaveBeenCalledWith(true);
+  });
+
+  it('renders help button on mobile and emits helpClick', () => {
+    TestBed.inject(LayoutService).isMobile.set(true);
+    fixture.detectChanges();
+
+    const helpButton = fixture.nativeElement.querySelector('.help-button') as HTMLButtonElement;
+    expect(helpButton).toBeTruthy();
+    expect(helpButton.getAttribute('aria-label')).toBe('Open tutorial');
+
+    const emit = jest.fn();
+    fixture.componentInstance.helpClick.subscribe(emit);
+    helpButton.click();
+
+    expect(emit).toHaveBeenCalled();
+  });
+
+  it('renders help button on desktop and emits helpClick', () => {
+    TestBed.inject(LayoutService).isMobile.set(false);
+    fixture.detectChanges();
+
+    const helpButton = fixture.nativeElement.querySelector('.help-button') as HTMLButtonElement;
+    expect(helpButton).toBeTruthy();
+
+    const emit = jest.fn();
+    fixture.componentInstance.helpClick.subscribe(emit);
+    helpButton.click();
+
+    expect(emit).toHaveBeenCalled();
   });
 });
