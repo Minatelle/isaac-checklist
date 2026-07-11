@@ -3,7 +3,7 @@ import {
   extractSteamId64,
   getPublicOrigin,
   validateSteamOpenId
-} from '../_lib/steam';
+} from '../_lib/steam.js';
 
 export async function GET(request: Request): Promise<Response> {
   try {

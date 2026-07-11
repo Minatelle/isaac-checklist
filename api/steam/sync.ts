@@ -2,7 +2,7 @@ import {
   fetchUnlockedSteamIds,
   jsonResponse,
   readSteamIdCookie
-} from '../_lib/steam';
+} from '../_lib/steam.js';
 
 export async function GET(request: Request): Promise<Response> {
   const steamId = readSteamIdCookie(request);

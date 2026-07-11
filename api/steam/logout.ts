@@ -1,4 +1,4 @@
-import { clearSteamIdCookie, jsonResponse } from '../_lib/steam';
+import { clearSteamIdCookie, jsonResponse } from '../_lib/steam.js';
 
 export function POST(): Response {
   const headers = new Headers();

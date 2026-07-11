@@ -1,6 +1,7 @@
 {
   "name": "isaac",
   "version": "2.1.2",
+  "type": "module",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

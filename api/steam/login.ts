@@ -1,4 +1,4 @@
-import { buildSteamLoginUrl, getPublicOrigin } from '../_lib/steam';
+import { buildSteamLoginUrl, getPublicOrigin } from '../_lib/steam.js';
 
 export function GET(request: Request): Response {
   try {
