@@ -1,8 +1,11 @@
+import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClientTesting } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ChecklistComponent } from './checklist.component';
 import { ChecklistStore } from './services/checklist.store';
 import { LayoutService } from './services/layout.service';
+import { SteamAuthService } from './services/steam-auth.service';
 import { TutorialStorageService } from './services/tutorial-storage.service';
 
 describe('ChecklistComponent', () => {
@@ -19,8 +22,11 @@ describe('ChecklistComponent', () => {
     localStorage.clear();
 
     await TestBed.configureTestingModule({
-      imports: [ChecklistComponent]
+      imports: [ChecklistComponent],
+      providers: [provideHttpClient(), provideHttpClientTesting()]
     }).compileComponents();
+
+    jest.spyOn(TestBed.inject(SteamAuthService), 'handleReturnFromSteam').mockResolvedValue();
 
     fixture = TestBed.createComponent(ChecklistComponent);
     store = TestBed.inject(ChecklistStore);

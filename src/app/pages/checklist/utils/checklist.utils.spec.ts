@@ -12,6 +12,8 @@ import {
   getRowSpan,
   getUnlockForCharacterIndex,
   getUnlockSourceAchievementIndex,
+  mergeSteamIds,
+  parseAchievementApiName,
   toggleSteamId
 } from './checklist.utils';
 
@@ -59,6 +61,23 @@ describe('checklist.utils', () => {
   it('toggles steam ids immutably', () => {
     expect([...toggleSteamId(new Set(), 167)]).toEqual([167]);
     expect([...toggleSteamId(new Set([167]), 167)]).toEqual([]);
+  });
+
+  it('merges steam ids without removing existing ones', () => {
+    expect([...mergeSteamIds(new Set([167]), [168, 167, 0, -1, 1.5])].sort((a, b) => a - b)).toEqual([
+      167, 168
+    ]);
+  });
+
+  it.each([
+    { apiName: '167', expected: 167 },
+    { apiName: 'achievement_167', expected: 167 },
+    { apiName: 'ACHIEVEMENT-168', expected: 168 },
+    { apiName: '  169  ', expected: 169 },
+    { apiName: 'not-an-id', expected: null },
+    { apiName: '', expected: null }
+  ])('parseAchievementApiName($apiName) => $expected', ({ apiName, expected }) => {
+    expect(parseAchievementApiName(apiName)).toBe(expected);
   });
 
   it.each([

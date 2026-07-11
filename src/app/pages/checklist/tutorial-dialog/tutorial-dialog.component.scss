@@ -119,31 +119,31 @@
 .tutorial-dialog__content {
   flex: 1;
   min-height: 0;
-  padding: 12px;
+  padding: 10px 12px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   color: colors.$white;
   font-family: 'sans-serif', 'Roboto', monospace;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 .tutorial-dialog__content p {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
 }
 
 .tutorial-dialog__content ul {
-  margin: 0 0 12px;
-  padding-left: 20px;
+  margin: 0 0 10px;
+  padding-left: 18px;
 }
 
 .tutorial-dialog__content li + li {
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 .tutorial-dialog__section-title {
-  margin: 0 0 8px;
-  font-size: 14px;
+  margin: 0 0 6px;
+  font-size: 13px;
   font-weight: bold;
   color: colors.$active;
 }

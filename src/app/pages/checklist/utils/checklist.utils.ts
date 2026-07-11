@@ -62,6 +62,31 @@ export function toggleSteamId(unlocked: ReadonlySet<number>, steamId: number): S
   return next;
 }
 
+export function mergeSteamIds(
+  unlocked: ReadonlySet<number>,
+  steamIds: Iterable<number>
+): Set<number> {
+  const next = new Set(unlocked);
+
+  for (const steamId of steamIds) {
+    if (Number.isInteger(steamId) && steamId > 0) {
+      next.add(steamId);
+    }
+  }
+
+  return next;
+}
+
+export function parseAchievementApiName(apiName: string): number | null {
+  const trimmed = apiName.trim();
+  if (/^\d+$/.test(trimmed)) {
+    return Number(trimmed);
+  }
+
+  const prefixed = /^achievement[_\s-]?(\d+)$/i.exec(trimmed);
+  return prefixed?.[1] != null ? Number(prefixed[1]) : null;
+}
+
 export function getRowSpan(achievementIndex: number, isTainted: boolean): number {
   if (!isTainted) {
     return 1;
@@ -159,7 +184,7 @@ export function countCharacterUnlockProgress(
       characterCount
     );
 
-    if (!unlock || unlock.steamId == null) {
+    if (unlock?.steamId == null) {
       continue;
     }
 

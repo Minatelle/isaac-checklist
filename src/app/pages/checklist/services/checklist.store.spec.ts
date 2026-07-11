@@ -94,4 +94,18 @@ describe('ChecklistStore', () => {
     expect(store.achievedUnlocks()).toBe(1);
     expect(store.achievedPercent()).toBe(((1 / total) * 100).toFixed(1));
   });
+
+  it('imports steam unlocks as a union and persists them', () => {
+    store.initialize();
+    const first = checklistData.achievements[0].unlocks[0].steamId!;
+    const second = checklistData.achievements[0].unlocks[1].steamId!;
+
+    store.toggleUnlock(store.achievements()[0].unlocks[0]);
+
+    const added = store.importSteamUnlocks([first, second, second, 0]);
+    expect(added).toBe(1);
+    expect(store.unlockedSteamIds().has(first)).toBe(true);
+    expect(store.unlockedSteamIds().has(second)).toBe(true);
+    expect(JSON.parse(localStorage.getItem('unlockedSteamIds')!)).toEqual([first, second]);
+  });
 });

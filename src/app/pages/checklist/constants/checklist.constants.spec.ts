@@ -1,6 +1,8 @@
 import {
   ICON_BASE_PATH,
   MOBILE_BREAKPOINT,
+  STEAM_CONNECTED_STORAGE_KEY,
+  STEAM_TOAST_MS,
   TAINTED_FULL_ROW_INDICES,
   TAINTED_ROW_SPANS,
   UNLOCKS_STORAGE_KEY
@@ -9,6 +11,14 @@ import {
 describe('checklist.constants', () => {
   it('defines the storage key', () => {
     expect(UNLOCKS_STORAGE_KEY).toBe('unlockedSteamIds');
+  });
+
+  it('defines the steam connected storage key', () => {
+    expect(STEAM_CONNECTED_STORAGE_KEY).toBe('steamConnected');
+  });
+
+  it('defines the steam toast duration', () => {
+    expect(STEAM_TOAST_MS).toBe(4000);
   });
 
   it('defines tainted row layout values', () => {

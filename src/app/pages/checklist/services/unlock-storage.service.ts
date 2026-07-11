@@ -26,7 +26,7 @@ export class UnlockStorageService {
     return [
       ...new Set(
         value
-          .map(item => Number(item))
+          .map(Number)
           .filter(id => Number.isInteger(id) && id > 0)
       )
     ].sort((a, b) => a - b);

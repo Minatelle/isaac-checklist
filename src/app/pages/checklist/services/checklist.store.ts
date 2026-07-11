@@ -5,6 +5,7 @@ import {
   countAchievedUnlocks,
   extractSteamIds,
   formatAchievedPercent,
+  mergeSteamIds,
   toggleSteamId
 } from '../utils/checklist.utils';
 import { ChecklistDataService } from './checklist-data.service';
@@ -59,5 +60,13 @@ export class ChecklistStore {
     const updated = toggleSteamId(this.unlockedSteamIds(), unlock.steamId);
     this.unlockedSteamIds.set(updated);
     this.storage.save(updated);
+  }
+
+  importSteamUnlocks(steamIds: Iterable<number>): number {
+    const before = this.unlockedSteamIds().size;
+    const updated = mergeSteamIds(this.unlockedSteamIds(), steamIds);
+    this.unlockedSteamIds.set(updated);
+    this.storage.save(updated);
+    return updated.size - before;
   }
 }

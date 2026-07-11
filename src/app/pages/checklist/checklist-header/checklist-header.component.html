@@ -27,23 +27,6 @@
         Tainted
       </button>
     </div>
-    <div class="progress-row">
-      <div class="progress">
-        <div class="progress__bar" [style.width.%]="store.achievedPercent()"></div>
-      </div>
-      <span class="progress__label">
-        {{ store.achievedUnlocks() }}/{{ store.totalUnlocks() }} ({{ store.achievedPercent() }}%)
-      </span>
-      <button
-        type="button"
-        class="help-button"
-        (click)="helpClick.emit()"
-        aria-label="Open tutorial"
-        aria-haspopup="dialog"
-      >
-        ?
-      </button>
-    </div>
   } @else {
     <div class="tabs">
       <button class="tab" [class.active]="!store.isTainted()" (click)="taintedChange.emit(false)">
@@ -53,22 +36,55 @@
         Tainted Characters
       </button>
     </div>
-    <div class="progress-row">
-      <div class="progress">
-        <div class="progress__bar" [style.width.%]="store.achievedPercent()"></div>
-      </div>
-      <span class="progress__label">
-        {{ store.achievedUnlocks() }}/{{ store.totalUnlocks() }} achieved ({{ store.achievedPercent() }}%)
-      </span>
+  }
+
+  <div class="progress-row">
+    <div class="progress">
+      <div class="progress__bar" [style.width.%]="store.achievedPercent()"></div>
+    </div>
+    <span class="progress__label">{{ progressLabel() }}</span>
+    <button
+      type="button"
+      class="steam-button"
+      [class.steam-button--with-icon]="steamAuth.connected()"
+      [disabled]="steamAuth.status() === 'loading'"
+      [attr.aria-busy]="steamAuth.status() === 'loading'"
+      (click)="onSteamClick()"
+    >
+      @if (steamAuth.connected()) {
+        <span class="material-symbols-outlined" aria-hidden="true">sync</span>
+      }
+      {{ steamButtonLabel() }}
+    </button>
+    @if (steamAuth.connected()) {
       <button
         type="button"
-        class="help-button"
-        (click)="helpClick.emit()"
-        aria-label="Open tutorial"
-        aria-haspopup="dialog"
+        class="steam-button steam-button--logout"
+        [disabled]="steamAuth.status() === 'loading'"
+        aria-label="Logout from Steam"
+        (click)="onLogoutClick()"
       >
-        ?
+        <span class="material-symbols-outlined" aria-hidden="true">logout</span>
       </button>
-    </div>
-  }
+    }
+    <button
+      type="button"
+      class="help-button"
+      (click)="helpClick.emit()"
+      aria-label="Open tutorial"
+      aria-haspopup="dialog"
+    >
+      <span class="material-symbols-outlined" aria-hidden="true">help</span>
+    </button>
+  </div>
 </header>
+
+@if (steamAuth.toast(); as toast) {
+  <output
+    class="steam-toast"
+    [class.steam-toast--error]="toast.kind === 'error'"
+    aria-live="polite"
+  >
+    {{ toast.message }}
+  </output>
+}

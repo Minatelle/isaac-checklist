@@ -6,6 +6,7 @@ import { ChecklistMobileComponent } from './checklist-mobile/checklist-mobile.co
 import { TutorialDialogComponent } from './tutorial-dialog/tutorial-dialog.component';
 import { ChecklistStore } from './services/checklist.store';
 import { LayoutService } from './services/layout.service';
+import { SteamAuthService } from './services/steam-auth.service';
 import { TutorialStorageService } from './services/tutorial-storage.service';
 import { SlideTransition } from './utils/slide-transition';
 
@@ -27,6 +28,7 @@ export class ChecklistComponent implements OnInit {
   protected readonly layout = inject(LayoutService);
 
   private readonly destroyRef = inject(DestroyRef);
+  private readonly steamAuth = inject(SteamAuthService);
   private readonly tutorialStorage = inject(TutorialStorageService);
   private readonly tutorialDialog = viewChild.required(TutorialDialogComponent);
   private readonly modeSlide = new SlideTransition<ModeSlideDirection>(
@@ -44,6 +46,7 @@ export class ChecklistComponent implements OnInit {
 
   ngOnInit(): void {
     this.store.initialize();
+    void this.steamAuth.handleReturnFromSteam();
 
     if (!this.tutorialStorage.hasSeen()) {
       setTimeout(() => this.tutorialDialog().open());

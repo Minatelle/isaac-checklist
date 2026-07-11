@@ -72,15 +72,24 @@ describe('TutorialDialogComponent', () => {
     TestBed.inject(LayoutService).isMobile.set(true);
     fixture.detectChanges();
 
-    expect(fixture.nativeElement.textContent).toContain('On mobile');
-    expect(fixture.nativeElement.textContent).not.toContain('On desktop');
+    expect(fixture.nativeElement.textContent).toContain('tap a row');
+    expect(fixture.nativeElement.textContent).not.toContain('click a cell');
   });
 
   it('shows desktop-specific content on desktop layout', () => {
     TestBed.inject(LayoutService).isMobile.set(false);
     fixture.detectChanges();
 
-    expect(fixture.nativeElement.textContent).toContain('On desktop');
-    expect(fixture.nativeElement.textContent).not.toContain('On mobile');
+    expect(fixture.nativeElement.textContent).toContain('click a cell');
+    expect(fixture.nativeElement.textContent).not.toContain('tap a row');
+  });
+
+  it('explains steam sync in the tutorial', () => {
+    fixture.detectChanges();
+
+    expect(fixture.nativeElement.textContent).toContain('Steam sync');
+    expect(fixture.nativeElement.textContent).toContain('Connect Steam');
+    expect(fixture.nativeElement.textContent).toContain('Sync Steam');
+    expect(fixture.nativeElement.textContent).toContain('Game details');
   });
 });

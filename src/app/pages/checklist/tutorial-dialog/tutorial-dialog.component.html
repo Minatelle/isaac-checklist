@@ -21,35 +21,31 @@
 
     <div class="tutorial-dialog__content">
       <p>
-        This is a personal progress tracker for <em>The Binding of Isaac: Repentance</em> completion
-        marks. Each row is a completion mark and shows which unlock you still need for every
-        character.
+        Track <em>Repentance</em> completion marks per character. Progress saves in your browser.
       </p>
 
-      <h3 class="tutorial-dialog__section-title">Getting started</h3>
+      <h3 class="tutorial-dialog__section-title">Basics</h3>
       <ul>
-        <li>Switch between <strong>Regular</strong> and <strong>Tainted</strong> characters at the top.</li>
-        <li>Your overall progress is shown in the header.</li>
-        <li>Progress is saved automatically in your browser.</li>
+        <li>Switch <strong>Regular</strong> / <strong>Tainted</strong> in the header; progress is shown there too.</li>
+        @if (layout.isMobile()) {
+          <li>Change characters with the arrows or name; tap a row to toggle its unlock.</li>
+        } @else {
+          <li>Use the table to browse all characters; click a cell to toggle an unlock.</li>
+        }
       </ul>
 
-      @if (layout.isMobile()) {
-        <h3 class="tutorial-dialog__section-title">On mobile</h3>
-        <ul>
-          <li>Use the arrows or tap the character name to switch characters.</li>
-          <li>Tap an achievement row to mark or unmark its unlock.</li>
-        </ul>
-      } @else {
-        <h3 class="tutorial-dialog__section-title">On desktop</h3>
-        <ul>
-          <li>Browse the wiki-style table with every character visible at once.</li>
-          <li>Click any unlock cell to toggle it on or off.</li>
-        </ul>
-      }
+      <h3 class="tutorial-dialog__section-title">Steam sync</h3>
+      <ul>
+        <li>
+          <strong>Connect Steam</strong> imports earned unlocks;
+          <strong> Sync Steam</strong> refreshes them later. Sync only adds marks — never removes yours.
+        </li>
+        <li>
+          Steam <strong>Game details</strong> must be <strong>Public</strong>. Use the logout icon to disconnect.
+        </li>
+      </ul>
 
-      <p class="tutorial-dialog__footer">
-        Tap the <strong>?</strong> button anytime to view this guide again.
-      </p>
+      <p class="tutorial-dialog__footer">Open the help icon anytime to see this again.</p>
     </div>
 
     <footer class="tutorial-dialog__actions">
