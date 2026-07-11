@@ -73,13 +73,13 @@ describe('ChecklistMobileComponent', () => {
     const unlock = checklistData.achievements[0].unlocks[0];
     const row = fixture.nativeElement.querySelector('button.achievement-row') as HTMLButtonElement;
 
-    expect(store.isUnlocked(unlock.name)).toBe(false);
+    expect(store.isUnlocked(unlock)).toBe(false);
 
     row.click();
-    expect(store.isUnlocked(unlock.name)).toBe(true);
+    expect(store.isUnlocked(unlock)).toBe(true);
 
     row.click();
-    expect(store.isUnlocked(unlock.name)).toBe(false);
+    expect(store.isUnlocked(unlock)).toBe(false);
   });
 
   it('pulses the row briefly when toggling an unlock', () => {
@@ -165,7 +165,7 @@ describe('ChecklistMobileComponent', () => {
 
     expect(view.buildUnlockAriaLabel(unlock.name, false)).toBe(`${unlock.name}, not completed`);
 
-    store.toggleUnlock(unlock.name);
+    store.toggleUnlock(unlock);
     expect(view.buildUnlockAriaLabel(unlock.name, true)).toBe(`${unlock.name}, completed`);
   });
 

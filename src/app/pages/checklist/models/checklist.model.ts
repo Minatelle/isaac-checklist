@@ -5,6 +5,7 @@ export interface Character {
 
 export interface Unlock {
   name: string;
+  steamId?: number;
   tier: number | null;
   icon: string | null;
 }

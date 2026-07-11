@@ -59,11 +59,11 @@
             }
           </td>
           @for (unlock of achievement.unlocks; track unlock.name) {
-            <td [attr.rowspan]="getRowSpan(i)" [class.unlocked]="store.isUnlocked(unlock.name)">
+            <td [attr.rowspan]="getRowSpan(i)" [class.unlocked]="store.isUnlocked(unlock)">
               <button
                 type="button"
                 class="unlock-cell"
-                (click)="store.toggleUnlock(unlock.name)"
+                (click)="store.toggleUnlock(unlock)"
                 [title]="unlock.name"
               >
                 <div class="unlock-container">

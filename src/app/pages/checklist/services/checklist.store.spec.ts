@@ -26,13 +26,13 @@ describe('ChecklistStore', () => {
     expect(store.achievements()[0].name).toBe(checklistData.achievements[0].name);
   });
 
-  it('restores unlocked achievements from storage on initialize', () => {
-    const achievementName = checklistData.achievements[0].unlocks[0].name;
-    localStorage.setItem('unlockedAchievements', JSON.stringify([achievementName]));
+  it('restores unlocked steam ids from storage on initialize', () => {
+    const unlock = checklistData.achievements[0].unlocks[0];
+    localStorage.setItem('unlockedSteamIds', JSON.stringify([unlock.steamId]));
 
     store.initialize();
 
-    expect(store.isUnlocked(achievementName)).toBe(true);
+    expect(store.isUnlocked(unlock)).toBe(true);
     expect(store.achievedUnlocks()).toBe(1);
   });
 
@@ -59,28 +59,38 @@ describe('ChecklistStore', () => {
 
   it('toggles achievement unlock state and persists to storage', () => {
     store.initialize();
-    const achievementName = store.achievements()[0].unlocks[0].name;
+    const unlock = store.achievements()[0].unlocks[0];
 
-    expect(store.isUnlocked(achievementName)).toBe(false);
+    expect(store.isUnlocked(unlock)).toBe(false);
 
-    store.toggleUnlock(achievementName);
-    expect(store.isUnlocked(achievementName)).toBe(true);
-    expect(localStorage.getItem('unlockedAchievements')).toContain(achievementName);
+    store.toggleUnlock(unlock);
+    expect(store.isUnlocked(unlock)).toBe(true);
+    expect(JSON.parse(localStorage.getItem('unlockedSteamIds')!)).toEqual([unlock.steamId]);
 
-    store.toggleUnlock(achievementName);
-    expect(store.isUnlocked(achievementName)).toBe(false);
+    store.toggleUnlock(unlock);
+    expect(store.isUnlocked(unlock)).toBe(false);
+  });
+
+  it('ignores unlocks without a steam id', () => {
+    store.initialize();
+    const unlock = { name: 'Missing', steamId: undefined, tier: null, icon: null };
+
+    expect(store.isUnlocked(unlock)).toBe(false);
+    store.toggleUnlock(unlock);
+    expect(store.unlockedSteamIds().size).toBe(0);
+    expect(localStorage.getItem('unlockedSteamIds')).toBeNull();
   });
 
   it('computes achievement metrics', () => {
     store.initialize();
-    const achievementName = store.achievements()[0].unlocks[0].name;
+    const unlock = store.achievements()[0].unlocks[0];
     const total = store.totalUnlocks();
 
     expect(store.achievedUnlocks()).toBe(0);
     expect(total).toBeGreaterThan(0);
     expect(store.achievedPercent()).toBe('0.0');
 
-    store.toggleUnlock(achievementName);
+    store.toggleUnlock(unlock);
     expect(store.achievedUnlocks()).toBe(1);
     expect(store.achievedPercent()).toBe(((1 / total) * 100).toFixed(1));
   });

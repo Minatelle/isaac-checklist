@@ -84,92 +84,112 @@
         "normal": "Completion_Heart",
         "hard": "Completion_Heart_Hard"
       },
-      "boss": ["Mom's Heart", "It Lives!"],
+      "boss": [
+        "Mom's Heart",
+        "It Lives!"
+      ],
       "unlocks": [
         {
           "name": "Lost Baby",
           "tier": null,
-          "icon": "Lost_Baby"
+          "icon": "Lost_Baby",
+          "steamId": 167
         },
         {
           "name": "Cute Baby",
           "tier": null,
-          "icon": "Cute_Baby"
+          "icon": "Cute_Baby",
+          "steamId": 168
         },
         {
           "name": "Glass Baby",
           "tier": null,
-          "icon": "Glass_Baby"
+          "icon": "Glass_Baby",
+          "steamId": 171
         },
         {
           "name": "Shadow Baby",
           "tier": null,
-          "icon": "Shadow_Baby"
+          "icon": "Shadow_Baby",
+          "steamId": 170
         },
         {
           "name": "Dead Baby",
           "tier": null,
-          "icon": "Dead_Baby"
+          "icon": "Dead_Baby",
+          "steamId": 174
         },
         {
           "name": "Crow Baby",
           "tier": null,
-          "icon": "Crow_Baby"
+          "icon": "Crow_Baby",
+          "steamId": 169
         },
         {
           "name": "Fighting Baby",
           "tier": null,
-          "icon": "Fighting_Baby"
+          "icon": "Fighting_Baby",
+          "steamId": 177
         },
         {
           "name": "Begotten Baby",
           "tier": null,
-          "icon": "Begotten_Baby"
+          "icon": "Begotten_Baby",
+          "steamId": 173
         },
         {
           "name": "Wrapped Baby",
           "tier": null,
-          "icon": "Wrapped_Baby"
+          "icon": "Wrapped_Baby",
+          "steamId": 172
         },
         {
           "name": "Glitch Baby",
           "tier": null,
-          "icon": "Glitch_Baby"
+          "icon": "Glitch_Baby",
+          "steamId": 176
         },
         {
           "name": "-0- Baby",
           "tier": null,
-          "icon": "-0-_Baby"
+          "icon": "-0-_Baby",
+          "steamId": 175
         },
         {
           "name": "Goat Head Baby",
           "tier": null,
-          "icon": "Goat_Head_Baby"
+          "icon": "Goat_Head_Baby",
+          "steamId": 223
         },
         {
           "name": "Super Greed Baby",
           "tier": null,
-          "icon": "Super_Greed_Baby"
+          "icon": "Super_Greed_Baby",
+          "steamId": 241
         },
         {
           "name": "Smelter",
           "tier": 2,
-          "icon": "Smelter"
+          "icon": "Smelter",
+          "steamId": 318
         },
         {
           "name": "Marrow",
           "tier": 1,
-          "icon": "Marrow"
+          "icon": "Marrow",
+          "steamId": 392
         },
         {
           "name": "Wisp Baby",
           "tier": null,
-          "icon": "Wisp_Baby"
+          "icon": "Wisp_Baby",
+          "steamId": 416
         },
         {
           "name": "Double Baby",
           "tier": null,
-          "icon": "Double_Baby"
+          "icon": "Double_Baby",
+          "steamId": 428
         }
       ]
     },
@@ -179,92 +199,111 @@
         "normal": "Completion_Cathedral",
         "hard": "Completion_Cathedral_Hard"
       },
-      "boss": ["Isaac"],
+      "boss": [
+        "Isaac"
+      ],
       "unlocks": [
         {
           "tier": 1,
           "name": "Isaac's Tears",
-          "icon": "Isaacs_Tears"
+          "icon": "Isaacs_Tears",
+          "steamId": 106
         },
         {
           "name": "A Cross",
           "tier": 3,
-          "icon": "A_Cross"
+          "icon": "A_Cross",
+          "steamId": 20
         },
         {
           "name": "A Bag of Pennies",
           "tier": 1,
-          "icon": "A_Bag_of_Pennies"
+          "icon": "A_Bag_of_Pennies",
+          "steamId": 21
         },
         {
           "name": "Guillotine",
           "tier": 0,
-          "icon": "Guillotine"
+          "icon": "Guillotine",
+          "steamId": 107
         },
         {
           "name": "The D6",
           "tier": 4,
-          "icon": "The_D6"
+          "icon": "The_D6",
+          "steamId": 29
         },
         {
           "name": "Eve's Bird Foot",
           "tier": null,
-          "icon": "Eves_Bird_Foot"
+          "icon": "Eves_Bird_Foot",
+          "steamId": 76
         },
         {
           "name": "Bloody Lust",
           "tier": 2,
-          "icon": "Bloody_Lust"
+          "icon": "Bloody_Lust",
+          "steamId": 54
         },
         {
           "name": "Satanic Bible",
           "tier": 3,
-          "icon": "Satanic_Bible"
+          "icon": "Satanic_Bible",
+          "steamId": 126
         },
         {
           "name": "Lazarus' Rags",
           "tier": 1,
-          "icon": "Lazarus_Rags"
+          "icon": "Lazarus_Rags",
+          "steamId": 116
         },
         {
           "name": "Blank Card",
           "tier": 2,
-          "icon": "Blank_Card"
+          "icon": "Blank_Card",
+          "steamId": 121
         },
         {
           "name": "Isaac's Heart",
           "tier": 0,
-          "icon": "Isaacs_Heart"
+          "icon": "Isaacs_Heart",
+          "steamId": 129
         },
         {
           "name": "Rune Bag",
           "tier": 3,
-          "icon": "Rune_Bag"
+          "icon": "Rune_Bag",
+          "steamId": 218
         },
         {
           "name": "Keeper holds Wooden Nickel",
           "tier": null,
-          "icon": "Keeper_holds_Wooden_Nickel"
+          "icon": "Keeper_holds_Wooden_Nickel",
+          "steamId": 236
         },
         {
           "name": "Locust of Wrath",
           "tier": null,
-          "icon": "Locust_of_Wrath"
+          "icon": "Locust_of_Wrath",
+          "steamId": 310
         },
         {
           "name": "Slipped Rib",
           "tier": 1,
-          "icon": "Slipped_Rib"
+          "icon": "Slipped_Rib",
+          "steamId": 393
         },
         {
           "name": "Book of Virtues",
           "tier": 3,
-          "icon": "Book_of_Virtues"
+          "icon": "Book_of_Virtues",
+          "steamId": 417
         },
         {
           "name": "The Stairway",
           "tier": 3,
-          "icon": "The_Stairway"
+          "icon": "The_Stairway",
+          "steamId": 429
         }
       ]
     },
@@ -274,92 +313,111 @@
         "normal": "Completion_Chest",
         "hard": "Completion_Chest_Hard"
       },
-      "boss": ["???"],
+      "boss": [
+        "???"
+      ],
       "unlocks": [
         {
           "name": "The D20",
           "tier": 2,
-          "icon": "The_D20"
+          "icon": "The_D20",
+          "steamId": 49
         },
         {
           "name": "Celtic Cross",
           "tier": 1,
-          "icon": "Celtic_Cross"
+          "icon": "Celtic_Cross",
+          "steamId": 50
         },
         {
           "name": "Cain's Eye",
           "tier": null,
-          "icon": "Cains_Eye"
+          "icon": "Cains_Eye",
+          "steamId": 75
         },
         {
           "name": "The Left Hand",
           "tier": null,
-          "icon": "The_Left_Hand"
+          "icon": "The_Left_Hand",
+          "steamId": 77
         },
         {
           "name": "Fate",
           "tier": 3,
-          "icon": "Fate"
+          "icon": "Fate",
+          "steamId": 113
         },
         {
           "name": "Sacrificial Dagger",
           "tier": 2,
-          "icon": "Sacrificial_Dagger"
+          "icon": "Sacrificial_Dagger",
+          "steamId": 53
         },
         {
           "name": "Blood Penny",
           "tier": null,
-          "icon": "Blood_Penny"
+          "icon": "Blood_Penny",
+          "steamId": 55
         },
         {
           "name": "Abaddon",
           "tier": 3,
-          "icon": "Abaddon"
+          "icon": "Abaddon",
+          "steamId": 128
         },
         {
           "name": "Store Credit",
           "tier": null,
-          "icon": "Store_Credit"
+          "icon": "Store_Credit",
+          "steamId": 118
         },
         {
           "name": "Mysterious Paper",
           "tier": null,
-          "icon": "Mysterious_Paper"
+          "icon": "Mysterious_Paper",
+          "steamId": 123
         },
         {
           "name": "The Body",
           "tier": 3,
-          "icon": "The_Body"
+          "icon": "The_Body",
+          "steamId": 131
         },
         {
           "name": "Cambion Conception",
           "tier": 1,
-          "icon": "Cambion_Conception"
+          "icon": "Cambion_Conception",
+          "steamId": 219
         },
         {
           "name": "Deep Pockets",
           "tier": 2,
-          "icon": "Deep_Pockets"
+          "icon": "Deep_Pockets",
+          "steamId": 238
         },
         {
           "name": "Locust of Famine",
           "tier": null,
-          "icon": "Locust_of_Famine"
+          "icon": "Locust_of_Famine",
+          "steamId": 312
         },
         {
           "name": "Jaw Bone",
           "tier": 1,
-          "icon": "Jaw_Bone"
+          "icon": "Jaw_Bone",
+          "steamId": 395
         },
         {
           "name": "Blessed Penny",
           "tier": null,
-          "icon": "Blessed_Penny"
+          "icon": "Blessed_Penny",
+          "steamId": 419
         },
         {
           "name": "Birthright",
           "tier": 3,
-          "icon": "Birthright"
+          "icon": "Birthright",
+          "steamId": 431
         }
       ]
     },
@@ -369,92 +427,111 @@
         "normal": "Completion_Sheol",
         "hard": "Completion_Sheol_Hard"
       },
-      "boss": ["Satan"],
+      "boss": [
+        "Satan"
+      ],
       "unlocks": [
         {
           "name": "Mom's Knife",
           "tier": 4,
-          "icon": "Moms_Knife"
+          "icon": "Moms_Knife",
+          "steamId": 43
         },
         {
           "name": "Guardian Angel",
           "tier": 1,
-          "icon": "Guardian_Angel"
+          "icon": "Guardian_Angel",
+          "steamId": 45
         },
         {
           "name": "A Bag of Bombs",
           "tier": 1,
-          "icon": "A_Bag_of_Bombs"
+          "icon": "A_Bag_of_Bombs",
+          "steamId": 46
         },
         {
           "name": "Judas' Tongue",
           "tier": null,
-          "icon": "Judas_Tongue"
+          "icon": "Judas_Tongue",
+          "steamId": 72
         },
         {
           "name": "Forget Me Now",
           "tier": 3,
-          "icon": "Forget_Me_Now"
+          "icon": "Forget_Me_Now",
+          "steamId": 48
         },
         {
           "name": "The Razor",
           "tier": 0,
-          "icon": "The_Razor"
+          "icon": "The_Razor",
+          "steamId": 44
         },
         {
           "name": "Blood Rights",
           "tier": 0,
-          "icon": "Blood_Rights"
+          "icon": "Blood_Rights",
+          "steamId": 56
         },
         {
           "name": "Daemon's Tail",
           "tier": null,
-          "icon": "Daemons_Tail"
+          "icon": "Daemons_Tail",
+          "steamId": 127
         },
         {
           "name": "Broken Ankh",
           "tier": null,
-          "icon": "Broken_Ankh"
+          "icon": "Broken_Ankh",
+          "steamId": 117
         },
         {
           "name": "Book of Secrets",
           "tier": 0,
-          "icon": "Book_of_Secrets"
+          "icon": "Book_of_Secrets",
+          "steamId": 122
         },
         {
           "name": "The Mind",
           "tier": 3,
-          "icon": "The_Mind"
+          "icon": "The_Mind",
+          "steamId": 130
         },
         {
           "name": "Serpent's Kiss",
           "tier": 2,
-          "icon": "Serpents_Kiss"
+          "icon": "Serpents_Kiss",
+          "steamId": 220
         },
         {
           "name": "Keeper holds Store Key",
           "tier": null,
-          "icon": "Keeper_holds_Store_Key"
+          "icon": "Keeper_holds_Store_Key",
+          "steamId": 237
         },
         {
           "name": "Locust of Pestilence",
           "tier": null,
-          "icon": "Locust_of_Pestilence"
+          "icon": "Locust_of_Pestilence",
+          "steamId": 311
         },
         {
           "name": "Pointy Rib",
           "tier": 1,
-          "icon": "Pointy_Rib"
+          "icon": "Pointy_Rib",
+          "steamId": 394
         },
         {
           "name": "Urn of Souls",
           "tier": 3,
-          "icon": "Urn_of_Souls"
+          "icon": "Urn_of_Souls",
+          "steamId": 418
         },
         {
           "name": "Red Stew",
           "tier": 2,
-          "icon": "Red_Stew"
+          "icon": "Red_Stew",
+          "steamId": 430
         }
       ]
     },
@@ -464,92 +541,111 @@
         "normal": "Completion_DarkRoom",
         "hard": "Completion_DarkRoom_Hard"
       },
-      "boss": ["The Lamb"],
+      "boss": [
+        "The Lamb"
+      ],
       "unlocks": [
         {
           "name": "Missing Poster",
           "tier": null,
-          "icon": "Missing_Poster"
+          "icon": "Missing_Poster",
+          "steamId": 149
         },
         {
           "name": "Maggy's Faith",
           "tier": null,
-          "icon": "Maggys_Faith"
+          "icon": "Maggys_Faith",
+          "steamId": 71
         },
         {
           "name": "Abel",
           "tier": 0,
-          "icon": "Abel"
+          "icon": "Abel",
+          "steamId": 51
         },
         {
           "name": "Curved Horn",
           "tier": null,
-          "icon": "Curved_Horn"
+          "icon": "Curved_Horn",
+          "steamId": 52
         },
         {
           "name": "???'s Soul",
           "tier": null,
-          "icon": "Blue_Babys_Soul"
+          "icon": "Blue_Babys_Soul",
+          "steamId": 73
         },
         {
           "name": "Black Lipstick",
           "tier": null,
-          "icon": "Black_Lipstick"
+          "icon": "Black_Lipstick",
+          "steamId": 111
         },
         {
           "name": "Samson's Lock",
           "tier": null,
-          "icon": "Samsons_Lock"
+          "icon": "Samsons_Lock",
+          "steamId": 74
         },
         {
           "name": "Demon Baby",
           "tier": 1,
-          "icon": "Demon_Baby"
+          "icon": "Demon_Baby",
+          "steamId": 47
         },
         {
           "name": "Pandora's Box",
           "tier": 2,
-          "icon": "Pandoras_Box"
+          "icon": "Pandoras_Box",
+          "steamId": 119
         },
         {
           "name": "Mystery Sack",
           "tier": 2,
-          "icon": "Mystery_Sack"
+          "icon": "Mystery_Sack",
+          "steamId": 124
         },
         {
           "name": "The Soul",
           "tier": 3,
-          "icon": "The_Soul"
+          "icon": "The_Soul",
+          "steamId": 132
         },
         {
           "name": "Succubus",
           "tier": 3,
-          "icon": "Succubus"
+          "icon": "Succubus",
+          "steamId": 221
         },
         {
           "name": "Karma",
           "tier": null,
-          "icon": "Karma"
+          "icon": "Karma",
+          "steamId": 239
         },
         {
           "name": "Locust of Death",
           "tier": null,
-          "icon": "Locust_of_Death"
+          "icon": "Locust_of_Death",
+          "steamId": 313
         },
         {
           "name": "Brittle Bones",
           "tier": 3,
-          "icon": "Brittle_Bones"
+          "icon": "Brittle_Bones",
+          "steamId": 396
         },
         {
           "name": "Alabaster Box",
           "tier": 1,
-          "icon": "Alabaster_Box"
+          "icon": "Alabaster_Box",
+          "steamId": 420
         },
         {
           "name": "Damocles",
           "tier": 3,
-          "icon": "Damocles"
+          "icon": "Damocles",
+          "steamId": 432
         }
       ]
     },
@@ -559,97 +655,117 @@
         "normal": "Completion_Brimstone",
         "hard": "Completion_Brimstone_Hard"
       },
-      "boss": ["Mega Satan"],
+      "boss": [
+        "Mega Satan"
+      ],
       "unlocks": [
         {
           "name": "Cry Baby",
           "tier": null,
-          "icon": "Cry_Baby"
+          "icon": "Cry_Baby",
+          "steamId": 205
         },
         {
           "name": "Red Baby",
           "tier": null,
-          "icon": "Red_Baby"
+          "icon": "Red_Baby",
+          "steamId": 206
         },
         {
           "name": "Green Baby",
           "tier": null,
-          "icon": "Green_Baby"
+          "icon": "Green_Baby",
+          "steamId": 207
         },
         {
           "name": "Brown Baby",
           "tier": null,
-          "icon": "Brown_Baby"
+          "icon": "Brown_Baby",
+          "steamId": 208
         },
         {
           "name": "Blue Baby",
           "tier": null,
-          "icon": "Blue_Baby"
+          "icon": "Blue_Baby",
+          "steamId": 209
         },
         {
           "name": "Lil' Baby",
           "tier": null,
-          "icon": "Lil_Baby"
+          "icon": "Lil_Baby",
+          "steamId": 210
         },
         {
           "name": "Rage Baby",
           "tier": null,
-          "icon": "Rage_Baby"
+          "icon": "Rage_Baby",
+          "steamId": 211
         },
         {
           "name": "Black Baby",
           "tier": null,
-          "icon": "Black_Baby"
+          "icon": "Black_Baby",
+          "steamId": 212
         },
         {
           "name": "Long Baby",
           "tier": null,
-          "icon": "Long_Baby"
+          "icon": "Long_Baby",
+          "steamId": 213
         },
         {
           "name": "Yellow Baby",
           "tier": null,
-          "icon": "Yellow_Baby"
+          "icon": "Yellow_Baby",
+          "steamId": 214
         },
         {
           "name": "White Baby",
           "tier": null,
-          "icon": "White_Baby"
+          "icon": "White_Baby",
+          "steamId": 215
         },
         {
           "name": "Big Baby",
           "tier": null,
-          "icon": "Big_Baby"
+          "icon": "Big_Baby",
+          "steamId": 216
         },
         {
           "name": "Noose Baby",
           "tier": null,
-          "icon": "Noose_Baby"
+          "icon": "Noose_Baby",
+          "steamId": 217
         },
         {
           "name": "Mort Baby",
           "tier": null,
-          "icon": "Mort_Baby"
+          "icon": "Mort_Baby",
+          "steamId": 317
         },
         {
           "name": "Bound Baby",
           "tier": null,
-          "icon": "Bound_Baby"
+          "icon": "Bound_Baby",
+          "steamId": 403
         },
         {
           "name": "Glowing Baby",
           "tier": null,
-          "icon": "Glowing_Baby"
+          "icon": "Glowing_Baby",
+          "steamId": 427
         },
         {
           "name": "Illusion Baby",
           "tier": null,
-          "icon": "Illusion_Baby"
+          "icon": "Illusion_Baby",
+          "steamId": 439
         },
         {
           "name": "Mega",
           "tier": 4,
-          "icon": "Mega"
+          "icon": "Mega",
+          "steamId": 276
         }
       ]
     },
@@ -659,92 +775,111 @@
         "normal": "Completion_BossRush",
         "hard": "Completion_BossRush_Hard"
       },
-      "boss": ["Boss Rush"],
+      "boss": [
+        "Boss Rush"
+      ],
       "unlocks": [
         {
           "name": "Isaac's Head",
           "tier": null,
-          "icon": "Isaacs_Head"
+          "icon": "Isaacs_Head",
+          "steamId": 70
         },
         {
           "name": "Maggy's Bow",
           "tier": 2,
-          "icon": "Maggys_Bow"
+          "icon": "Maggys_Bow",
+          "steamId": 109
         },
         {
           "name": "Cain's Other Eye",
           "tier": 2,
-          "icon": "Cains_Other_Eye"
+          "icon": "Cains_Other_Eye",
+          "steamId": 110
         },
         {
           "name": "Judas' Shadow",
           "tier": 3,
-          "icon": "Judas_Shadow"
+          "icon": "Judas_Shadow",
+          "steamId": 108
         },
         {
           "name": "???'s Only Friend",
           "tier": 1,
-          "icon": "Blue_Babys_Only_Friend"
+          "icon": "Blue_Babys_Only_Friend",
+          "steamId": 114
         },
         {
           "name": "Eve's Mascara",
           "tier": 3,
-          "icon": "Eves_Mascara"
+          "icon": "Eves_Mascara",
+          "steamId": 112
         },
         {
           "name": "Samson's Chains",
           "tier": 1,
-          "icon": "Samsons_Chains"
+          "icon": "Samsons_Chains",
+          "steamId": 115
         },
         {
           "name": "The Nail",
           "tier": 2,
-          "icon": "The_Nail"
+          "icon": "The_Nail",
+          "steamId": 9
         },
         {
           "name": "Missing No.",
           "tier": 0,
-          "icon": "Missing_No"
+          "icon": "Missing_No",
+          "steamId": 105
         },
         {
           "name": "Undefined",
           "tier": 1,
-          "icon": "Undefined"
+          "icon": "Undefined",
+          "steamId": 125
         },
         {
           "name": "The D100",
           "tier": 1,
-          "icon": "The_D100"
+          "icon": "The_D100",
+          "steamId": 133
         },
         {
           "name": "Immaculate Conception",
           "tier": 1,
-          "icon": "Immaculate_Conception"
+          "icon": "Immaculate_Conception",
+          "steamId": 222
         },
         {
           "name": "Sticky Nickels",
           "tier": null,
-          "icon": "Sticky_Nickels"
+          "icon": "Sticky_Nickels",
+          "steamId": 240
         },
         {
           "name": "Locust of Conquest",
           "tier": null,
-          "icon": "Locust_of_Conquest"
+          "icon": "Locust_of_Conquest",
+          "steamId": 314
         },
         {
           "name": "Divorce Papers",
           "tier": 3,
-          "icon": "Divorce_Papers"
+          "icon": "Divorce_Papers",
+          "steamId": 397
         },
         {
           "name": "Beth's Faith",
           "tier": null,
-          "icon": "Beths_Faith"
+          "icon": "Beths_Faith",
+          "steamId": 421
         },
         {
           "name": "Rock Bottom",
           "tier": 4,
-          "icon": "Rock_Bottom"
+          "icon": "Rock_Bottom",
+          "steamId": 433
         }
       ]
     },
@@ -754,92 +889,111 @@
         "normal": "Completion_BlueWomb",
         "hard": "Completion_BlueWomb_Hard"
       },
-      "boss": ["Hush"],
+      "boss": [
+        "Hush"
+      ],
       "unlocks": [
         {
           "name": "Fart Baby",
           "tier": 1,
-          "icon": "Fart_Baby"
+          "icon": "Fart_Baby",
+          "steamId": 179
         },
         {
           "name": "Purity",
           "tier": 3,
-          "icon": "Purity"
+          "icon": "Purity",
+          "steamId": 180
         },
         {
           "name": "D12",
           "tier": 1,
-          "icon": "D12"
+          "icon": "D12",
+          "steamId": 181
         },
         {
           "name": "Betrayal",
           "tier": 1,
-          "icon": "Betrayal"
+          "icon": "Betrayal",
+          "steamId": 182
         },
         {
           "name": "Fate's Reward",
           "tier": 2,
-          "icon": "Fates_Reward"
+          "icon": "Fates_Reward",
+          "steamId": 183
         },
         {
           "name": "Athame",
           "tier": 3,
-          "icon": "Athame"
+          "icon": "Athame",
+          "steamId": 184
         },
         {
           "name": "Blind Rage",
           "tier": null,
-          "icon": "Blind_Rage"
+          "icon": "Blind_Rage",
+          "steamId": 185
         },
         {
           "name": "Maw of the Void",
           "tier": 3,
-          "icon": "Maw_of_the_Void"
+          "icon": "Maw_of_the_Void",
+          "steamId": 186
         },
         {
           "name": "Empty Vessel",
           "tier": 2,
-          "icon": "Empty_Vessel"
+          "icon": "Empty_Vessel",
+          "steamId": 187
         },
         {
           "name": "Eden's Blessing",
           "tier": 3,
-          "icon": "Edens_Blessing"
+          "icon": "Edens_Blessing",
+          "steamId": 188
         },
         {
           "name": "Sworn Protector",
           "tier": 2,
-          "icon": "Sworn_Protector"
+          "icon": "Sworn_Protector",
+          "steamId": 189
         },
         {
           "name": "Incubus",
           "tier": 4,
-          "icon": "Incubus"
+          "icon": "Incubus",
+          "steamId": 190
         },
         {
           "name": "Keeper now holds... A Penny!",
           "tier": null,
-          "icon": "Keeper_holds_A_Penny"
+          "icon": "Keeper_holds_A_Penny",
+          "steamId": 191
         },
         {
           "name": "Hushy",
           "tier": 0,
-          "icon": "Hushy"
+          "icon": "Hushy",
+          "steamId": 315
         },
         {
           "name": "Hallowed Ground",
           "tier": 1,
-          "icon": "Hallowed_Ground"
+          "icon": "Hallowed_Ground",
+          "steamId": 398
         },
         {
           "name": "Divine Intervention",
           "tier": 1,
-          "icon": "Divine_Intervention"
+          "icon": "Divine_Intervention",
+          "steamId": 423
         },
         {
           "name": "Vanishing Twin",
           "tier": 1,
-          "icon": "Vanishing_Twin"
+          "icon": "Vanishing_Twin",
+          "steamId": 435
         }
       ]
     },
@@ -849,92 +1003,111 @@
         "normal": "Completion_Greed",
         "hard": null
       },
-      "boss": ["Ultra Greed"],
+      "boss": [
+        "Ultra Greed"
+      ],
       "unlocks": [
         {
           "name": "Lil' Chest",
           "tier": 2,
-          "icon": "Lil_Chest"
+          "icon": "Lil_Chest",
+          "steamId": 192
         },
         {
           "name": "Censer",
           "tier": 2,
-          "icon": "Censer"
+          "icon": "Censer",
+          "steamId": 193
         },
         {
           "name": "Evil Eye",
           "tier": 2,
-          "icon": "Evil_Eye"
+          "icon": "Evil_Eye",
+          "steamId": 194
         },
         {
           "name": "My Shadow",
           "tier": 1,
-          "icon": "My_Shadow"
+          "icon": "My_Shadow",
+          "steamId": 195
         },
         {
           "name": "Cracked Dice",
           "tier": null,
-          "icon": "Cracked_Dice"
+          "icon": "Cracked_Dice",
+          "steamId": 196
         },
         {
           "name": "Black Feather",
           "tier": null,
-          "icon": "Black_Feather"
+          "icon": "Black_Feather",
+          "steamId": 197
         },
         {
           "name": "Lusty Blood",
           "tier": 3,
-          "icon": "Lusty_Blood"
+          "icon": "Lusty_Blood",
+          "steamId": 198
         },
         {
           "name": "Lilith",
           "tier": null,
-          "icon": "Lilith"
+          "icon": "Lilith",
+          "steamId": 199
         },
         {
           "name": "Key Bum",
           "tier": 0,
-          "icon": "Key_Bum"
+          "icon": "Key_Bum",
+          "steamId": 200
         },
         {
           "name": "GB Bug",
           "tier": 1,
-          "icon": "GB_Bug"
+          "icon": "GB_Bug",
+          "steamId": 201
         },
         {
           "name": "Zodiac",
           "tier": 1,
-          "icon": "Zodiac"
+          "icon": "Zodiac",
+          "steamId": 202
         },
         {
           "name": "Box of Friends",
           "tier": 1,
-          "icon": "Box_of_Friends"
+          "icon": "Box_of_Friends",
+          "steamId": 203
         },
         {
           "name": "Rib of Greed",
           "tier": null,
-          "icon": "Rib_of_Greed"
+          "icon": "Rib_of_Greed",
+          "steamId": 204
         },
         {
           "name": "Brown Nugget",
           "tier": 0,
-          "icon": "Brown_Nugget"
+          "icon": "Brown_Nugget",
+          "steamId": 316
         },
         {
           "name": "Finger Bone",
           "tier": null,
-          "icon": "Finger_Bone"
+          "icon": "Finger_Bone",
+          "steamId": 399
         },
         {
           "name": "Soul Locket",
           "tier": 1,
-          "icon": "Soul_Locket"
+          "icon": "Soul_Locket",
+          "steamId": 422
         },
         {
           "name": "Inner Child",
           "tier": 2,
-          "icon": "Inner_Child"
+          "icon": "Inner_Child",
+          "steamId": 434
         }
       ]
     },
@@ -944,92 +1117,111 @@
         "normal": "Completion_Greed_Hard",
         "hard": null
       },
-      "boss": ["Ultra Greedier"],
+      "boss": [
+        "Ultra Greedier"
+      ],
       "unlocks": [
         {
           "name": "D1",
           "tier": 2,
-          "icon": "D1"
+          "icon": "D1",
+          "steamId": 296
         },
         {
           "name": "Glyph of Balance",
           "tier": 2,
-          "icon": "Glyph_of_Balance"
+          "icon": "Glyph_of_Balance",
+          "steamId": 297
         },
         {
           "name": "Sack of Sacks",
           "tier": 2,
-          "icon": "Sack_of_Sacks"
+          "icon": "Sack_of_Sacks",
+          "steamId": 298
         },
         {
           "name": "Eye of Belial",
           "tier": 3,
-          "icon": "Eye_of_Belial"
+          "icon": "Eye_of_Belial",
+          "steamId": 299
         },
         {
           "name": "Meconium",
           "tier": null,
-          "icon": "Meconium"
+          "icon": "Meconium",
+          "steamId": 300
         },
         {
           "name": "Crow Heart",
           "tier": null,
-          "icon": "Crow_Heart"
+          "icon": "Crow_Heart",
+          "steamId": 302
         },
         {
           "name": "Stem Cell",
           "tier": null,
-          "icon": "Stem_Cell"
+          "icon": "Stem_Cell",
+          "steamId": 301
         },
         {
           "name": "Bat Wing",
           "tier": null,
-          "icon": "Bat_Wing"
+          "icon": "Bat_Wing",
+          "steamId": 304
         },
         {
           "name": "Plan C",
           "tier": 0,
-          "icon": "Plan_C"
+          "icon": "Plan_C",
+          "steamId": 305
         },
         {
           "name": "Metronome",
           "tier": 1,
-          "icon": "Metronome"
+          "icon": "Metronome",
+          "steamId": 303
         },
         {
           "name": "Dad's Lost Coin",
           "tier": 1,
-          "icon": "Dads_Lost_Coin"
+          "icon": "Dads_Lost_Coin",
+          "steamId": 307
         },
         {
           "name": "Duality",
           "tier": 1,
-          "icon": "Duality"
+          "icon": "Duality",
+          "steamId": 306
         },
         {
           "name": "Eye of Greed",
           "tier": 2,
-          "icon": "Eye_of_Greed"
+          "icon": "Eye_of_Greed",
+          "steamId": 308
         },
         {
           "name": "Black Rune",
           "tier": null,
-          "icon": "Black_Rune"
+          "icon": "Black_Rune",
+          "steamId": 309
         },
         {
           "name": "Dad's Ring",
           "tier": 2,
-          "icon": "Dads_Ring"
+          "icon": "Dads_Ring",
+          "steamId": 400
         },
         {
           "name": "Vade Retro",
           "tier": 1,
-          "icon": "Vade_Retro"
+          "icon": "Vade_Retro",
+          "steamId": 424
         },
         {
           "name": "Genesis",
           "tier": 2,
-          "icon": "Genesis"
+          "icon": "Genesis",
+          "steamId": 436
         }
       ]
     },
@@ -1039,92 +1231,111 @@
         "normal": "Completion_Void",
         "hard": "Completion_Void_Hard"
       },
-      "boss": ["Delirium"],
+      "boss": [
+        "Delirium"
+      ],
       "unlocks": [
         {
           "name": "D infinity",
           "tier": 4,
-          "icon": "D_infinity"
+          "icon": "D_infinity",
+          "steamId": 282
         },
         {
           "name": "Eucharist",
           "tier": 3,
-          "icon": "Eucharist"
+          "icon": "Eucharist",
+          "steamId": 283
         },
         {
           "name": "Silver Dollar",
           "tier": null,
-          "icon": "Silver_Dollar"
+          "icon": "Silver_Dollar",
+          "steamId": 284
         },
         {
           "name": "Shade",
           "tier": 0,
-          "icon": "Shade"
+          "icon": "Shade",
+          "steamId": 285
         },
         {
           "name": "King Baby",
           "tier": 1,
-          "icon": "King_Baby"
+          "icon": "King_Baby",
+          "steamId": 286
         },
         {
           "name": "Dull Razor",
           "tier": 0,
-          "icon": "Dull_Razor"
+          "icon": "Dull_Razor",
+          "steamId": 288
         },
         {
           "name": "Bloody Crown",
           "tier": null,
-          "icon": "Bloody_Crown"
+          "icon": "Bloody_Crown",
+          "steamId": 287
         },
         {
           "name": "Dark Prince's Crown",
           "tier": 1,
-          "icon": "Dark_Princes_Crown"
+          "icon": "Dark_Princes_Crown",
+          "steamId": 290
         },
         {
           "name": "Compound Fracture",
           "tier": 3,
-          "icon": "Compound_Fracture"
+          "icon": "Compound_Fracture",
+          "steamId": 291
         },
         {
           "name": "Eden's Soul",
           "tier": 2,
-          "icon": "Edens_Soul"
+          "icon": "Edens_Soul",
+          "steamId": 289
         },
         {
           "name": "Holy Card",
           "tier": null,
-          "icon": "Holy_Card"
+          "icon": "Holy_Card",
+          "steamId": 293
         },
         {
           "name": "Euthanasia",
           "tier": 3,
-          "icon": "Euthanasia"
+          "icon": "Euthanasia",
+          "steamId": 292
         },
         {
           "name": "Crooked Penny",
           "tier": 2,
-          "icon": "Crooked_Penny"
+          "icon": "Crooked_Penny",
+          "steamId": 294
         },
         {
           "name": "Void",
           "tier": 3,
-          "icon": "Void"
+          "icon": "Void",
+          "steamId": 295
         },
         {
           "name": "Book of the Dead",
           "tier": 2,
-          "icon": "Book_of_the_Dead"
+          "icon": "Book_of_the_Dead",
+          "steamId": 401
         },
         {
           "name": "Star of Bethlehem",
           "tier": 3,
-          "icon": "Star_of_Bethlehem"
+          "icon": "Star_of_Bethlehem",
+          "steamId": 425
         },
         {
           "name": "Suplex!",
           "tier": 1,
-          "icon": "Suplex"
+          "icon": "Suplex",
+          "steamId": 437
         }
       ]
     },
@@ -1134,92 +1345,111 @@
         "normal": "Completion_Mother",
         "hard": "Completion_Mother_Hard"
       },
-      "boss": ["Mother"],
+      "boss": [
+        "Mother"
+      ],
       "unlocks": [
         {
           "name": "Meat Cleaver",
           "tier": 0,
-          "icon": "Meat_Cleaver"
+          "icon": "Meat_Cleaver",
+          "steamId": 440
         },
         {
           "name": "Yuck Heart",
           "tier": 1,
-          "icon": "Yuck_Heart"
+          "icon": "Yuck_Heart",
+          "steamId": 442
         },
         {
           "name": "Guppy's Eye",
           "tier": 2,
-          "icon": "Guppys_Eye"
+          "icon": "Guppys_Eye",
+          "steamId": 444
         },
         {
           "name": "Akeldama",
           "tier": 1,
-          "icon": "Akeldama"
+          "icon": "Akeldama",
+          "steamId": 446
         },
         {
           "name": "Eternal D6",
           "tier": 3,
-          "icon": "Eternal_D6"
+          "icon": "Eternal_D6",
+          "steamId": 448
         },
         {
           "name": "Bird Cage",
           "tier": 0,
-          "icon": "Bird_Cage"
+          "icon": "Bird_Cage",
+          "steamId": 450
         },
         {
           "name": "Bloody Gust",
           "tier": 2,
-          "icon": "Bloody_Gust"
+          "icon": "Bloody_Gust",
+          "steamId": 452
         },
         {
           "name": "Devil's Crown",
           "tier": null,
-          "icon": "Devils_Crown"
+          "icon": "Devils_Crown",
+          "steamId": 454
         },
         {
           "name": "Tinytoma",
           "tier": 1,
-          "icon": "Tinytoma"
+          "icon": "Tinytoma",
+          "steamId": 456
         },
         {
           "name": "'M",
           "tier": null,
-          "icon": "M"
+          "icon": "M",
+          "steamId": 458
         },
         {
           "name": "Lost Soul",
           "tier": 1,
-          "icon": "Lost_Soul"
+          "icon": "Lost_Soul",
+          "steamId": 460
         },
         {
           "name": "Blood Puppy",
           "tier": 1,
-          "icon": "Blood_Puppy"
+          "icon": "Blood_Puppy",
+          "steamId": 462
         },
         {
           "name": "Keeper's Sack",
           "tier": 3,
-          "icon": "Keepers_Sack"
+          "icon": "Keepers_Sack",
+          "steamId": 464
         },
         {
           "name": "Lil Portal",
           "tier": 0,
-          "icon": "Lil_Portal"
+          "icon": "Lil_Portal",
+          "steamId": 466
         },
         {
           "name": "Bone Spurs",
           "tier": 2,
-          "icon": "Bone_Spurs"
+          "icon": "Bone_Spurs",
+          "steamId": 468
         },
         {
           "name": "Revelation",
           "tier": 4,
-          "icon": "Revelation"
+          "icon": "Revelation",
+          "steamId": 470
         },
         {
           "name": "Magic Skin",
           "tier": 2,
-          "icon": "Magic_Skin"
+          "icon": "Magic_Skin",
+          "steamId": 472
         }
       ]
     },
@@ -1229,92 +1459,111 @@
         "normal": "Completion_Beast",
         "hard": "Completion_Beast_Hard"
       },
-      "boss": ["The Beast"],
+      "boss": [
+        "The Beast"
+      ],
       "unlocks": [
         {
           "name": "Options?",
           "tier": 2,
-          "icon": "Options"
+          "icon": "Options",
+          "steamId": 441
         },
         {
           "name": "Candy Heart",
           "tier": 1,
-          "icon": "Candy_Heart"
+          "icon": "Candy_Heart",
+          "steamId": 443
         },
         {
           "name": "A Pound of Flesh",
           "tier": 0,
-          "icon": "A_Pound_of_Flesh"
+          "icon": "A_Pound_of_Flesh",
+          "steamId": 445
         },
         {
           "name": "Redemption",
           "tier": 2,
-          "icon": "Redemption"
+          "icon": "Redemption",
+          "steamId": 447
         },
         {
           "name": "Montezuma's Revenge",
           "tier": 2,
-          "icon": "Montezumas_Revenge"
+          "icon": "Montezumas_Revenge",
+          "steamId": 449
         },
         {
           "name": "Cracked Orb",
           "tier": 1,
-          "icon": "Cracked_Orb"
+          "icon": "Cracked_Orb",
+          "steamId": 451
         },
         {
           "name": "Empty Heart",
           "tier": 1,
-          "icon": "Empty_Heart"
+          "icon": "Empty_Heart",
+          "steamId": 453
         },
         {
           "name": "Lil Abaddon",
           "tier": 2,
-          "icon": "Lil_Abaddon"
+          "icon": "Lil_Abaddon",
+          "steamId": 455
         },
         {
           "name": "Astral Projection",
           "tier": 1,
-          "icon": "Astral_Projection"
+          "icon": "Astral_Projection",
+          "steamId": 457
         },
         {
           "name": "Everything Jar",
           "tier": 2,
-          "icon": "Everything_Jar"
+          "icon": "Everything_Jar",
+          "steamId": 459
         },
         {
           "name": "Hungry Soul",
           "tier": 2,
-          "icon": "Hungry_Soul"
+          "icon": "Hungry_Soul",
+          "steamId": 461
         },
         {
           "name": "C Section",
           "tier": 4,
-          "icon": "C_Section"
+          "icon": "C_Section",
+          "steamId": 463
         },
         {
           "name": "Keeper's Box",
           "tier": 1,
-          "icon": "Keepers_Box"
+          "icon": "Keepers_Box",
+          "steamId": 465
         },
         {
           "name": "Worm Friend",
           "tier": 3,
-          "icon": "Worm_Friend"
+          "icon": "Worm_Friend",
+          "steamId": 467
         },
         {
           "name": "Spirit Shackles",
           "tier": 1,
-          "icon": "Spirit_Shackles"
+          "icon": "Spirit_Shackles",
+          "steamId": 469
         },
         {
           "name": "Jar of Wisps",
           "tier": 1,
-          "icon": "Jar_of_Wisps"
+          "icon": "Jar_of_Wisps",
+          "steamId": 471
         },
         {
           "name": "Friend Finder",
           "tier": 2,
-          "icon": "Friend_Finder"
+          "icon": "Friend_Finder",
+          "steamId": 473
         }
       ]
     },
@@ -1324,102 +1573,123 @@
         "normal": "Completion_Marks",
         "hard": null
       },
-      "boss": ["(All Above)"],
+      "boss": [
+        "(All Above)"
+      ],
       "unlocks": [
         {
-          "name": "Budy Baby",
+          "name": "Buddy Baby",
           "tier": null,
-          "icon": "Buddy_Baby"
+          "icon": "Buddy_Baby",
+          "steamId": 253
         },
         {
           "name": "Colorful Baby",
           "tier": null,
-          "icon": "Colorful_Baby"
+          "icon": "Colorful_Baby",
+          "steamId": 254
         },
         {
           "name": "Picky Baby",
           "tier": null,
-          "icon": "Picky_Baby"
+          "icon": "Picky_Baby",
+          "steamId": 261
         },
         {
           "name": "Belial Baby",
           "tier": null,
-          "icon": "Belial_Baby"
+          "icon": "Belial_Baby",
+          "steamId": 263
         },
         {
           "name": "Hive Baby",
           "tier": null,
-          "icon": "Hive_Baby"
+          "icon": "Hive_Baby",
+          "steamId": 252
         },
         {
           "name": "Whore Baby",
           "tier": null,
-          "icon": "Whore_Baby"
+          "icon": "Whore_Baby",
+          "steamId": 255
         },
         {
           "name": "Revenge Baby",
           "tier": null,
-          "icon": "Revenge_Baby"
+          "icon": "Revenge_Baby",
+          "steamId": 262
         },
         {
           "name": "Sucky Baby",
           "tier": null,
-          "icon": "Sucky_Baby"
+          "icon": "Sucky_Baby",
+          "steamId": 259
         },
         {
           "name": "Dripping Baby",
           "tier": null,
-          "icon": "Dripping_Baby"
+          "icon": "Dripping_Baby",
+          "steamId": 257
         },
         {
           "name": "Cracked Baby",
           "tier": null,
-          "icon": "Cracked_Baby"
+          "icon": "Cracked_Baby",
+          "steamId": 256
         },
         {
           "name": "Godhead",
           "tier": 4,
-          "icon": "Godhead"
+          "icon": "Godhead",
+          "steamId": 156
         },
         {
           "name": "Dark Baby",
           "tier": null,
-          "icon": "Dark_Baby"
+          "icon": "Dark_Baby",
+          "steamId": 260
         },
         {
           "name": "Sale Baby",
           "tier": null,
-          "icon": "Sale_Baby"
+          "icon": "Sale_Baby",
+          "steamId": 264
         },
         {
           "name": "Apollyon Baby",
           "tier": null,
-          "icon": "Apollyon_Baby"
+          "icon": "Apollyon_Baby",
+          "steamId": 319
         },
         {
           "name": "Bone Baby",
           "tier": null,
-          "icon": "Bone_Baby"
+          "icon": "Bone_Baby",
+          "steamId": 402
         },
         {
           "name": "Hope Baby",
           "tier": null,
-          "icon": "Hope_Baby"
+          "icon": "Hope_Baby",
+          "steamId": 426
         },
         {
           "name": "Solomon's Baby",
           "tier": null,
-          "icon": "Solomons_Baby"
+          "icon": "Solomons_Baby",
+          "steamId": 438
         },
         {
           "name": "Mega Mush",
           "tier": 4,
-          "icon": "Mega_Mush"
+          "icon": "Mega_Mush",
+          "steamId": 547
         },
         {
           "name": "Death Certificate",
           "tier": 4,
-          "icon": "Death_Certificate"
+          "icon": "Death_Certificate",
+          "steamId": 636
         }
       ]
     }

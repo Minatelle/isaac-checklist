@@ -139,10 +139,10 @@
         <button
           type="button"
           class="achievement-row"
-          [class.unlocked]="store.isUnlocked(unlock.name)"
+          [class.unlocked]="store.isUnlocked(unlock)"
           [class.achievement-row--pulse]="pulseRowName() === unlock.name"
           (click)="toggleUnlock(unlock)"
-          [attr.aria-label]="buildUnlockAriaLabel(unlock.name, store.isUnlocked(unlock.name))"
+          [attr.aria-label]="buildUnlockAriaLabel(unlock.name, store.isUnlocked(unlock))"
         >
           <ng-container *ngTemplateOutlet="achievementMarks; context: { achievement }" />
           <ng-container *ngTemplateOutlet="achievementInfo; context: { achievement }" />

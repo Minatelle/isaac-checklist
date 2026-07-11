@@ -5,14 +5,14 @@ import {
   buildUnlockAriaLabel,
   countAchievedUnlocks,
   countCharacterUnlockProgress,
-  extractUnlockNames,
+  extractSteamIds,
   formatAchievedPercent,
   formatBossList,
   getExtraCellCount,
   getRowSpan,
   getUnlockForCharacterIndex,
   getUnlockSourceAchievementIndex,
-  toggleUnlockName
+  toggleSteamId
 } from './checklist.utils';
 
 describe('checklist.utils', () => {
@@ -22,8 +22,8 @@ describe('checklist.utils', () => {
       icon: { normal: 'Completion_Heart', hard: 'Completion_Heart_Hard' },
       boss: ["Mom's Heart"],
       unlocks: [
-        { name: 'Lost Baby', tier: null, icon: 'Lost_Baby' },
-        { name: 'Cute Baby', tier: null, icon: 'Cute_Baby' }
+        { name: 'Lost Baby', steamId: 167, tier: null, icon: 'Lost_Baby' },
+        { name: 'Cute Baby', steamId: 168, tier: null, icon: 'Cute_Baby' }
       ]
     }
   ] as const;
@@ -41,12 +41,12 @@ describe('checklist.utils', () => {
     expect(buildUnlockAriaLabel('Lost Baby', true)).toBe('Lost Baby, completed');
   });
 
-  it('extracts unlock names from achievements', () => {
-    expect(extractUnlockNames(achievements)).toEqual(['Lost Baby', 'Cute Baby']);
+  it('extracts steam ids from achievements', () => {
+    expect(extractSteamIds(achievements)).toEqual([167, 168]);
   });
 
-  it('counts achieved unlocks against valid names only', () => {
-    expect(countAchievedUnlocks(['Lost Baby', 'Invalid'], ['Lost Baby', 'Cute Baby'])).toBe(1);
+  it('counts achieved unlocks against valid steam ids only', () => {
+    expect(countAchievedUnlocks(new Set([167, 999]), [167, 168])).toBe(1);
   });
 
   it.each([
@@ -56,9 +56,9 @@ describe('checklist.utils', () => {
     expect(formatAchievedPercent(achieved, total)).toBe(expected);
   });
 
-  it('toggles unlock names immutably', () => {
-    expect(toggleUnlockName([], 'Lost Baby')).toEqual(['Lost Baby']);
-    expect(toggleUnlockName(['Lost Baby'], 'Lost Baby')).toEqual([]);
+  it('toggles steam ids immutably', () => {
+    expect([...toggleSteamId(new Set(), 167)]).toEqual([167]);
+    expect([...toggleSteamId(new Set([167]), 167)]).toEqual([]);
   });
 
   it.each([
@@ -91,9 +91,7 @@ describe('checklist.utils', () => {
   });
 
   it('builds character unlock cells with trailing empty slots', () => {
-    expect(
-      buildCharacterUnlockCells(achievements[0], 0, false, 4)
-    ).toEqual([
+    expect(buildCharacterUnlockCells(achievements[0], 0, false, 4)).toEqual([
       achievements[0].unlocks[0],
       achievements[0].unlocks[1],
       null,
@@ -109,15 +107,15 @@ describe('checklist.utils', () => {
   });
 
   it('counts unlock progress for a character column', () => {
-    expect(countCharacterUnlockProgress(achievements, 0, false, 4, ['Lost Baby'])).toEqual({
+    expect(countCharacterUnlockProgress(achievements, 0, false, 4, new Set([167]))).toEqual({
       achieved: 1,
       total: 1
     });
-    expect(countCharacterUnlockProgress(achievements, 1, false, 4, [])).toEqual({
+    expect(countCharacterUnlockProgress(achievements, 1, false, 4, new Set())).toEqual({
       achieved: 0,
       total: 1
     });
-    expect(countCharacterUnlockProgress(achievements, 3, false, 4, [])).toEqual({
+    expect(countCharacterUnlockProgress(achievements, 3, false, 4, new Set())).toEqual({
       achieved: 0,
       total: 0
     });

@@ -90,7 +90,7 @@ export class ChecklistMobileComponent {
       characterIndex,
       this.store.isTainted(),
       this.store.characters().length,
-      this.store.unlockedAchievements()
+      this.store.unlockedSteamIds()
     );
   }
 
@@ -111,7 +111,7 @@ export class ChecklistMobileComponent {
   }
 
   protected toggleUnlock(unlock: Unlock): void {
-    this.store.toggleUnlock(unlock.name);
+    this.store.toggleUnlock(unlock);
     this.pulseRow.trigger(unlock.name);
   }
 

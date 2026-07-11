@@ -1,4 +1,4 @@
-export const UNLOCKS_STORAGE_KEY = 'unlockedAchievements' as const;
+export const UNLOCKS_STORAGE_KEY = 'unlockedSteamIds' as const;
 
 export const TUTORIAL_SEEN_KEY = 'tutorialSeen' as const;
 

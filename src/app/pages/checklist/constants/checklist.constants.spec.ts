@@ -8,7 +8,7 @@ import {
 
 describe('checklist.constants', () => {
   it('defines the storage key', () => {
-    expect(UNLOCKS_STORAGE_KEY).toBe('unlockedAchievements');
+    expect(UNLOCKS_STORAGE_KEY).toBe('unlockedSteamIds');
   });
 
   it('defines tainted row layout values', () => {

@@ -18,16 +18,28 @@ export function buildUnlockAriaLabel(unlockName: string, isUnlocked: boolean): s
   return `${unlockName}, ${state}`;
 }
 
-export function extractUnlockNames(achievements: readonly Achievement[]): string[] {
-  return achievements.flatMap(achievement => achievement.unlocks.map(unlock => unlock.name));
+export function extractSteamIds(achievements: readonly Achievement[]): number[] {
+  return achievements.flatMap(achievement =>
+    achievement.unlocks
+      .map(unlock => unlock.steamId)
+      .filter((steamId): steamId is number => steamId != null)
+  );
 }
 
 export function countAchievedUnlocks(
-  unlocked: readonly string[],
-  validNames: readonly string[]
+  unlocked: ReadonlySet<number>,
+  validSteamIds: readonly number[]
 ): number {
-  const valid = new Set(validNames);
-  return unlocked.filter(name => valid.has(name)).length;
+  const valid = new Set(validSteamIds);
+  let achieved = 0;
+
+  for (const steamId of unlocked) {
+    if (valid.has(steamId)) {
+      achieved++;
+    }
+  }
+
+  return achieved;
 }
 
 export function formatAchievedPercent(achieved: number, total: number): string {
@@ -38,8 +50,16 @@ export function formatAchievedPercent(achieved: number, total: number): string {
   return ((achieved / total) * 100).toFixed(1);
 }
 
-export function toggleUnlockName(list: readonly string[], name: string): string[] {
-  return list.includes(name) ? list.filter(item => item !== name) : [...list, name];
+export function toggleSteamId(unlocked: ReadonlySet<number>, steamId: number): Set<number> {
+  const next = new Set(unlocked);
+
+  if (next.has(steamId)) {
+    next.delete(steamId);
+  } else {
+    next.add(steamId);
+  }
+
+  return next;
 }
 
 export function getRowSpan(achievementIndex: number, isTainted: boolean): number {
@@ -125,7 +145,7 @@ export function countCharacterUnlockProgress(
   characterIndex: number,
   isTainted: boolean,
   characterCount: number,
-  unlocked: readonly string[]
+  unlocked: ReadonlySet<number>
 ): { achieved: number; total: number } {
   let achieved = 0;
   let total = 0;
@@ -139,13 +159,13 @@ export function countCharacterUnlockProgress(
       characterCount
     );
 
-    if (!unlock) {
+    if (!unlock || unlock.steamId == null) {
       continue;
     }
 
     total++;
 
-    if (unlocked.includes(unlock.name)) {
+    if (unlocked.has(unlock.steamId)) {
       achieved++;
     }
   }

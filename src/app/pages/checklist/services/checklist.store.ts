@@ -1,10 +1,11 @@
 import { computed, inject, Injectable, signal } from '@angular/core';
 
+import { Unlock } from '../models/checklist.model';
 import {
   countAchievedUnlocks,
-  extractUnlockNames,
+  extractSteamIds,
   formatAchievedPercent,
-  toggleUnlockName
+  toggleSteamId
 } from '../utils/checklist.utils';
 import { ChecklistDataService } from './checklist-data.service';
 import { UnlockStorageService } from './unlock-storage.service';
@@ -15,26 +16,26 @@ export class ChecklistStore {
   private readonly storage = inject(UnlockStorageService);
 
   readonly isTainted = signal(false);
-  readonly unlockedAchievements = signal<string[]>([]);
+  readonly unlockedSteamIds = signal<ReadonlySet<number>>(new Set());
   readonly selectedCharacterIndex = signal(0);
 
   readonly characters = computed(() => this.dataService.getData(this.isTainted()).characters);
   readonly achievements = computed(() => this.dataService.getData(this.isTainted()).achievements);
 
-  private readonly allUnlockNames = computed(() => extractUnlockNames(this.achievements()));
+  private readonly allSteamIds = computed(() => extractSteamIds(this.achievements()));
 
   readonly achievedUnlocks = computed(() =>
-    countAchievedUnlocks(this.unlockedAchievements(), this.allUnlockNames())
+    countAchievedUnlocks(this.unlockedSteamIds(), this.allSteamIds())
   );
 
-  readonly totalUnlocks = computed(() => this.allUnlockNames().length);
+  readonly totalUnlocks = computed(() => this.allSteamIds().length);
 
   readonly achievedPercent = computed(() =>
     formatAchievedPercent(this.achievedUnlocks(), this.totalUnlocks())
   );
 
   initialize(): void {
-    this.unlockedAchievements.set(this.storage.load());
+    this.unlockedSteamIds.set(new Set(this.storage.load()));
   }
 
   setTainted(isTainted: boolean): void {
@@ -46,13 +47,17 @@ export class ChecklistStore {
     this.selectedCharacterIndex.set(characterIndex);
   }
 
-  isUnlocked(achievementName: string): boolean {
-    return this.unlockedAchievements().includes(achievementName);
+  isUnlocked(unlock: Unlock): boolean {
+    return unlock.steamId != null && this.unlockedSteamIds().has(unlock.steamId);
   }
 
-  toggleUnlock(achievementName: string): void {
-    const updated = toggleUnlockName(this.unlockedAchievements(), achievementName);
-    this.unlockedAchievements.set(updated);
+  toggleUnlock(unlock: Unlock): void {
+    if (unlock.steamId == null) {
+      return;
+    }
+
+    const updated = toggleSteamId(this.unlockedSteamIds(), unlock.steamId);
+    this.unlockedSteamIds.set(updated);
     this.storage.save(updated);
   }
 }
