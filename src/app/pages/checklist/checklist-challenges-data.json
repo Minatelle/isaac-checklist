@@ -1,0 +1,820 @@
+{
+  "characters": [
+    {
+      "name": "Unlock",
+      "icon": null
+    }
+  ],
+  "achievements": [
+    {
+      "name": "1. Pitch Black",
+      "icon": {
+        "normal": "Rune_of_Hagalaz",
+        "hard": null
+      },
+      "boss": [
+        "Mom"
+      ],
+      "unlocks": [
+        {
+          "name": "Rune of Hagalaz",
+          "tier": null,
+          "icon": "Rune_of_Hagalaz",
+          "steamId": 89
+        }
+      ]
+    },
+    {
+      "name": "2. High Brow",
+      "icon": {
+        "normal": "Rune_of_Jera",
+        "hard": null
+      },
+      "boss": [
+        "Mom"
+      ],
+      "unlocks": [
+        {
+          "name": "Rune of Jera",
+          "tier": null,
+          "icon": "Rune_of_Jera",
+          "steamId": 90
+        }
+      ]
+    },
+    {
+      "name": "3. Head Trauma",
+      "icon": {
+        "normal": "Rune_of_Ehwaz",
+        "hard": null
+      },
+      "boss": [
+        "Mom"
+      ],
+      "unlocks": [
+        {
+          "name": "Rune of Ehwaz",
+          "tier": null,
+          "icon": "Rune_of_Ehwaz",
+          "steamId": 91
+        }
+      ]
+    },
+    {
+      "name": "4. Darkness Falls",
+      "icon": {
+        "normal": "Rune_of_Dagaz",
+        "hard": null
+      },
+      "boss": [
+        "Satan"
+      ],
+      "unlocks": [
+        {
+          "name": "Rune of Dagaz",
+          "tier": null,
+          "icon": "Rune_of_Dagaz",
+          "steamId": 92
+        }
+      ]
+    },
+    {
+      "name": "5. The Tank",
+      "icon": {
+        "normal": "Rune_of_Ansuz",
+        "hard": null
+      },
+      "boss": [
+        "Mom"
+      ],
+      "unlocks": [
+        {
+          "name": "Rune of Ansuz",
+          "tier": null,
+          "icon": "Rune_of_Ansuz",
+          "steamId": 93
+        }
+      ]
+    },
+    {
+      "name": "6. Solar System",
+      "icon": {
+        "normal": "Rune_of_Perthro",
+        "hard": null
+      },
+      "boss": [
+        "Mom's Heart"
+      ],
+      "unlocks": [
+        {
+          "name": "Rune of Perthro",
+          "tier": null,
+          "icon": "Rune_of_Perthro",
+          "steamId": 94
+        }
+      ]
+    },
+    {
+      "name": "7. Suicide King",
+      "icon": {
+        "normal": "Suicide_King",
+        "hard": null
+      },
+      "boss": [
+        "Isaac"
+      ],
+      "unlocks": [
+        {
+          "name": "Suicide King",
+          "tier": null,
+          "icon": "Suicide_King",
+          "steamId": 120
+        }
+      ]
+    },
+    {
+      "name": "8. Cat Got Your Tongue",
+      "icon": {
+        "normal": "Rune_of_Algiz",
+        "hard": null
+      },
+      "boss": [
+        "Mom"
+      ],
+      "unlocks": [
+        {
+          "name": "Rune of Algiz",
+          "tier": null,
+          "icon": "Rune_of_Algiz",
+          "steamId": 96
+        }
+      ]
+    },
+    {
+      "name": "9. Demo Man",
+      "icon": {
+        "normal": "Chaos_Card",
+        "hard": null
+      },
+      "boss": [
+        "Mom's Heart"
+      ],
+      "unlocks": [
+        {
+          "name": "Chaos Card",
+          "tier": null,
+          "icon": "Chaos_Card",
+          "steamId": 97
+        }
+      ]
+    },
+    {
+      "name": "10. Cursed!",
+      "icon": {
+        "normal": "Credit_Card",
+        "hard": null
+      },
+      "boss": [
+        "Mom"
+      ],
+      "unlocks": [
+        {
+          "name": "Credit Card",
+          "tier": null,
+          "icon": "Credit_Card",
+          "steamId": 98
+        }
+      ]
+    },
+    {
+      "name": "11. Glass Cannon",
+      "icon": {
+        "normal": "Rules_Card",
+        "hard": null
+      },
+      "boss": [
+        "Satan"
+      ],
+      "unlocks": [
+        {
+          "name": "Rules Card",
+          "tier": null,
+          "icon": "Rules_Card",
+          "steamId": 99
+        }
+      ]
+    },
+    {
+      "name": "12. When Life Gives You Lemons",
+      "icon": {
+        "normal": "Card_Against_Humanity",
+        "hard": null
+      },
+      "boss": [
+        "Mom"
+      ],
+      "unlocks": [
+        {
+          "name": "Card Against Humanity",
+          "tier": null,
+          "icon": "Card_Against_Humanity",
+          "steamId": 100
+        }
+      ]
+    },
+    {
+      "name": "13. Beans!",
+      "icon": {
+        "normal": "Burnt_Penny",
+        "hard": null
+      },
+      "boss": [
+        "Mom"
+      ],
+      "unlocks": [
+        {
+          "name": "Burnt Penny",
+          "tier": null,
+          "icon": "Burnt_Penny",
+          "steamId": 60
+        }
+      ]
+    },
+    {
+      "name": "14. It's in the Cards",
+      "icon": {
+        "normal": "SMB_Super_Fan",
+        "hard": null
+      },
+      "boss": [
+        "Mom"
+      ],
+      "unlocks": [
+        {
+          "name": "SMB Super Fan",
+          "tier": 3,
+          "icon": "SMB_Super_Fan",
+          "steamId": 63
+        }
+      ]
+    },
+    {
+      "name": "15. Slow Roll",
+      "icon": {
+        "normal": "Swallowed_Penny",
+        "hard": null
+      },
+      "boss": [
+        "Mom"
+      ],
+      "unlocks": [
+        {
+          "name": "Swallowed Penny",
+          "tier": null,
+          "icon": "Swallowed_Penny",
+          "steamId": 101
+        }
+      ]
+    },
+    {
+      "name": "16. Computer Savvy",
+      "icon": {
+        "normal": "Robo-Baby_2.0",
+        "hard": null
+      },
+      "boss": [
+        "Mom"
+      ],
+      "unlocks": [
+        {
+          "name": "Robo-Baby 2.0",
+          "tier": 1,
+          "icon": "Robo-Baby_2.0",
+          "steamId": 102
+        }
+      ]
+    },
+    {
+      "name": "17. Waka Waka",
+      "icon": {
+        "normal": "Deaths_Touch",
+        "hard": null
+      },
+      "boss": [
+        "Mom"
+      ],
+      "unlocks": [
+        {
+          "name": "Death's Touch",
+          "tier": 3,
+          "icon": "Deaths_Touch",
+          "steamId": 103
+        }
+      ]
+    },
+    {
+      "name": "18. The Host",
+      "icon": {
+        "normal": "Technology_.5",
+        "hard": null
+      },
+      "boss": [
+        "Mom"
+      ],
+      "unlocks": [
+        {
+          "name": "Technology .5",
+          "tier": 3,
+          "icon": "Technology_.5",
+          "steamId": 104
+        }
+      ]
+    },
+    {
+      "name": "19. The Family Man",
+      "icon": {
+        "normal": "Epic_Fetus",
+        "hard": null
+      },
+      "boss": [
+        "Isaac"
+      ],
+      "unlocks": [
+        {
+          "name": "Epic Fetus",
+          "tier": 4,
+          "icon": "Epic_Fetus",
+          "steamId": 62
+        }
+      ]
+    },
+    {
+      "name": "20. Purist",
+      "icon": {
+        "normal": "Rune_of_Berkano",
+        "hard": null
+      },
+      "boss": [
+        "Mom's Heart"
+      ],
+      "unlocks": [
+        {
+          "name": "Rune of Berkano",
+          "tier": null,
+          "icon": "Rune_of_Berkano",
+          "steamId": 95
+        }
+      ]
+    },
+    {
+      "name": "21. XXXXXXXXL",
+      "icon": {
+        "normal": "Gold_Heart",
+        "hard": null
+      },
+      "boss": [
+        "Mom's Heart"
+      ],
+      "unlocks": [
+        {
+          "name": "Gold Heart",
+          "tier": null,
+          "icon": "Gold_Heart",
+          "steamId": 224
+        }
+      ]
+    },
+    {
+      "name": "22. SPEED!",
+      "icon": {
+        "normal": "Get_out_of_Jail_Free_Card",
+        "hard": null
+      },
+      "boss": [
+        "Mom's Heart"
+      ],
+      "unlocks": [
+        {
+          "name": "Get out of Jail Free Card",
+          "tier": null,
+          "icon": "Get_out_of_Jail_Free_Card",
+          "steamId": 225
+        }
+      ]
+    },
+    {
+      "name": "23. Blue Bomber",
+      "icon": {
+        "normal": "Gold_Bomb",
+        "hard": null
+      },
+      "boss": [
+        "Satan"
+      ],
+      "unlocks": [
+        {
+          "name": "Gold Bomb",
+          "tier": null,
+          "icon": "Gold_Bomb",
+          "steamId": 226
+        }
+      ]
+    },
+    {
+      "name": "24. PAY TO PLAY",
+      "icon": {
+        "normal": "2_new_pills",
+        "hard": null
+      },
+      "boss": [
+        "Isaac"
+      ],
+      "unlocks": [
+        {
+          "name": "2 new pills",
+          "tier": null,
+          "icon": "2_new_pills",
+          "steamId": 227
+        }
+      ]
+    },
+    {
+      "name": "25. Have a Heart",
+      "icon": {
+        "normal": "2_new_pills_2",
+        "hard": null
+      },
+      "boss": [
+        "Mom's Heart"
+      ],
+      "unlocks": [
+        {
+          "name": "2 new pills 2",
+          "tier": null,
+          "icon": "2_new_pills_2",
+          "steamId": 228
+        }
+      ]
+    },
+    {
+      "name": "26. I RULE!",
+      "icon": {
+        "normal": "Poker_Chip",
+        "hard": null
+      },
+      "boss": [
+        "Mega Satan"
+      ],
+      "unlocks": [
+        {
+          "name": "Poker Chip",
+          "tier": null,
+          "icon": "Poker_Chip",
+          "steamId": 229
+        }
+      ]
+    },
+    {
+      "name": "27. BRAINS!",
+      "icon": {
+        "normal": "Stud_Finder",
+        "hard": null
+      },
+      "boss": [
+        "???"
+      ],
+      "unlocks": [
+        {
+          "name": "Stud Finder",
+          "tier": null,
+          "icon": "Stud_Finder",
+          "steamId": 230
+        }
+      ]
+    },
+    {
+      "name": "28. PRIDE DAY!",
+      "icon": {
+        "normal": "D8",
+        "hard": null
+      },
+      "boss": [
+        "Mom's Heart"
+      ],
+      "unlocks": [
+        {
+          "name": "D8",
+          "tier": 1,
+          "icon": "D8",
+          "steamId": 231
+        }
+      ]
+    },
+    {
+      "name": "29. Onan's Streak",
+      "icon": {
+        "normal": "Kidney_Stone",
+        "hard": null
+      },
+      "boss": [
+        "Isaac"
+      ],
+      "unlocks": [
+        {
+          "name": "Kidney Stone",
+          "tier": 2,
+          "icon": "Kidney_Stone",
+          "steamId": 232
+        }
+      ]
+    },
+    {
+      "name": "30. The Guardian",
+      "icon": {
+        "normal": "Blank_Rune",
+        "hard": null
+      },
+      "boss": [
+        "Mom's Heart"
+      ],
+      "unlocks": [
+        {
+          "name": "Blank Rune",
+          "tier": null,
+          "icon": "Blank_Rune",
+          "steamId": 233
+        }
+      ]
+    },
+    {
+      "name": "31. Backasswards",
+      "icon": {
+        "normal": "Laz_Bleeds_More",
+        "hard": null
+      },
+      "boss": [
+        "Basement / Cellar / Burning Basement I"
+      ],
+      "unlocks": [
+        {
+          "name": "Laz Bleeds More!",
+          "tier": null,
+          "icon": "Laz_Bleeds_More",
+          "steamId": 331
+        }
+      ]
+    },
+    {
+      "name": "32. Aprils Fool",
+      "icon": {
+        "normal": "Maggy_Now_Holds_a_Pill",
+        "hard": null
+      },
+      "boss": [
+        "Mom's Heart"
+      ],
+      "unlocks": [
+        {
+          "name": "Maggy Now Holds a Pill!",
+          "tier": null,
+          "icon": "Maggy_Now_Holds_a_Pill",
+          "steamId": 332
+        }
+      ]
+    },
+    {
+      "name": "33. Pokey Mans",
+      "icon": {
+        "normal": "Charged_Key",
+        "hard": null
+      },
+      "boss": [
+        "Isaac"
+      ],
+      "unlocks": [
+        {
+          "name": "Charged Key",
+          "tier": null,
+          "icon": "Charged_Key",
+          "steamId": 333
+        }
+      ]
+    },
+    {
+      "name": "34. Ultra Hard",
+      "icon": {
+        "normal": "Samson_Feels_Healthy",
+        "hard": null
+      },
+      "boss": [
+        "Mega Satan"
+      ],
+      "unlocks": [
+        {
+          "name": "Samson Feels Healthy!",
+          "tier": null,
+          "icon": "Samson_Feels_Healthy",
+          "steamId": 334
+        }
+      ]
+    },
+    {
+      "name": "35. Pong",
+      "icon": {
+        "normal": "Greeds_Gullet",
+        "hard": null
+      },
+      "boss": [
+        "???"
+      ],
+      "unlocks": [
+        {
+          "name": "Greed's Gullet",
+          "tier": 1,
+          "icon": "Greeds_Gullet",
+          "steamId": 335
+        }
+      ]
+    },
+    {
+      "name": "36. Scat Man",
+      "icon": {
+        "normal": "Dirty_Mind",
+        "hard": null
+      },
+      "boss": [
+        "Mom"
+      ],
+      "unlocks": [
+        {
+          "name": "Dirty Mind",
+          "tier": 1,
+          "icon": "Dirty_Mind",
+          "steamId": 517
+        }
+      ]
+    },
+    {
+      "name": "37. Bloody Mary",
+      "icon": {
+        "normal": "Sigil_of_Baphomet",
+        "hard": null
+      },
+      "boss": [
+        "Satan"
+      ],
+      "unlocks": [
+        {
+          "name": "Sigil of Baphomet",
+          "tier": null,
+          "icon": "Sigil_of_Baphomet",
+          "steamId": 518
+        }
+      ]
+    },
+    {
+      "name": "38. Baptism by Fire",
+      "icon": {
+        "normal": "Purgatory",
+        "hard": null
+      },
+      "boss": [
+        "Isaac"
+      ],
+      "unlocks": [
+        {
+          "name": "Purgatory",
+          "tier": 1,
+          "icon": "Purgatory",
+          "steamId": 519
+        }
+      ]
+    },
+    {
+      "name": "39. Isaac's Awakening",
+      "icon": {
+        "normal": "Spirit_Sword",
+        "hard": null
+      },
+      "boss": [
+        "Mother"
+      ],
+      "unlocks": [
+        {
+          "name": "Spirit Sword",
+          "tier": 3,
+          "icon": "Spirit_Sword",
+          "steamId": 520
+        }
+      ]
+    },
+    {
+      "name": "40. Seeing Double",
+      "icon": {
+        "normal": "Broken_Glasses",
+        "hard": null
+      },
+      "boss": [
+        "Mom's Heart"
+      ],
+      "unlocks": [
+        {
+          "name": "Broken Glasses",
+          "tier": null,
+          "icon": "Broken_Glasses",
+          "steamId": 521
+        }
+      ]
+    },
+    {
+      "name": "41. Pica Run",
+      "icon": {
+        "normal": "Ice_Cube",
+        "hard": null
+      },
+      "boss": [
+        "Isaac"
+      ],
+      "unlocks": [
+        {
+          "name": "Ice Cube",
+          "tier": null,
+          "icon": "Ice_Cube",
+          "steamId": 522
+        }
+      ]
+    },
+    {
+      "name": "42. Hot Potato",
+      "icon": {
+        "normal": "The_Chariot",
+        "hard": null
+      },
+      "boss": [
+        "Satan"
+      ],
+      "unlocks": [
+        {
+          "name": "The Chariot",
+          "tier": null,
+          "icon": "The_Chariot",
+          "steamId": 531
+        }
+      ]
+    },
+    {
+      "name": "43. Cantripped!",
+      "icon": {
+        "normal": "Justice",
+        "hard": null
+      },
+      "boss": [
+        "Mom"
+      ],
+      "unlocks": [
+        {
+          "name": "Justice",
+          "tier": null,
+          "icon": "Justice",
+          "steamId": 532
+        }
+      ]
+    },
+    {
+      "name": "44. Red Redemption",
+      "icon": {
+        "normal": "The_Hermit",
+        "hard": null
+      },
+      "boss": [
+        "Mother"
+      ],
+      "unlocks": [
+        {
+          "name": "The Hermit",
+          "tier": null,
+          "icon": "The_Hermit",
+          "steamId": 533
+        }
+      ]
+    },
+    {
+      "name": "45. DELETE THIS",
+      "icon": {
+        "normal": "Temperance",
+        "hard": null
+      },
+      "boss": [
+        "???"
+      ],
+      "unlocks": [
+        {
+          "name": "Temperance",
+          "tier": null,
+          "icon": "Temperance",
+          "steamId": 538
+        }
+      ]
+    }
+  ]
+}

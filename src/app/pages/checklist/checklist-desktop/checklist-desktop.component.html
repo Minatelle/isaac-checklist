@@ -1,106 +1,165 @@
-<div class="table-scroll">
-  <table class="wiki-table">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Mark</th>
-        <th>Hard Mode</th>
-        <th>Associated Boss</th>
-        @for (character of store.characters(); track character.name) {
-          <th>
-            @if (character.icon) {
+@if (store.isChallenges()) {
+  <div class="challenges-grid" role="list">
+    @for (achievement of store.achievements(); track achievement.name) {
+      @let unlock = achievement.unlocks[0];
+      @let label = parseChallengeName(achievement.name);
+      @let dlc = getChallengeDlc(achievement.name);
+      @let dlcBadge = getChallengeDlcBadgeIcon(dlc);
+      @if (unlock) {
+        <button
+          type="button"
+          class="challenge-card"
+          role="listitem"
+          [class.unlocked]="store.isUnlocked(unlock)"
+          (click)="store.toggleUnlock(unlock)"
+          [attr.aria-label]="
+            buildUnlockAriaLabel(label.title + ': ' + unlock.name, store.isUnlocked(unlock))
+          "
+          [title]="unlock.name"
+        >
+          @if (label.number) {
+            <span class="challenge-card__number">{{ label.number }}</span>
+          }
+          @if (dlcBadge) {
+            <img
+              class="challenge-card__dlc"
+              [src]="dlcBadge | imagePath:'dlc'"
+              height="14"
+              [alt]="getChallengeDlcLabel(dlc)"
+            />
+          }
+          @if (unlock.icon) {
+            <div class="challenge-card__icon-wrap">
+              @if (unlock.tier != null) {
+                <img
+                  class="challenge-card__tier"
+                  [src]="unlock.tier.toString() | imagePath:'quality'"
+                  width="18"
+                  height="18"
+                  [alt]="'Quality tier ' + unlock.tier"
+                />
+              }
               <img
-                [src]="character.icon | imagePath:'characters'"
-                width="20"
-                height="20"
-                [alt]="character.name"
+                class="challenge-card__icon"
+                [src]="unlock.icon | imagePath:'achievements'"
+                width="48"
+                height="48"
+                [alt]="unlock.name"
               />
-            }<br />
-            {{ character.name }}<br />
-            Unlock
-          </th>
-        }
-      </tr>
-    </thead>
-    <tbody>
-      @for (achievement of store.achievements(); track achievement.name; let i = $index) {
+            </div>
+          }
+          <span class="challenge-card__title">{{ label.title }}</span>
+          <span class="challenge-card__unlock">{{ unlock.name }}</span>
+          <span class="challenge-card__goal">{{ formatBossList(achievement.boss) }}</span>
+        </button>
+      }
+    }
+  </div>
+} @else {
+  <div class="table-scroll">
+    <table class="wiki-table">
+      <thead>
         <tr>
-          <td>{{ achievement.name }}</td>
-          @if (achievement.icon.hard) {
-            <td class="completion-mark">
-              <img
-                [src]="achievement.icon.normal | imagePath:'marks'"
-                width="50"
-                height="50"
-                [alt]="achievement.name + ' completion mark'"
-              />
-            </td>
-            <td class="completion-mark">
-              <img
-                [src]="achievement.icon.hard | imagePath:'marks'"
-                width="50"
-                height="50"
-                [alt]="achievement.name + ' hard mode completion mark'"
-              />
-            </td>
-          } @else {
-            <td class="completion-mark" colspan="2">
-              <img
-                [src]="achievement.icon.normal | imagePath:'marks'"
-                width="50"
-                height="50"
-                [alt]="achievement.name + ' completion mark'"
-              />
-            </td>
-          }
-          <td>
-            @for (boss of achievement.boss; track boss) {
-              <p>{{ boss }}</p>
-            }
-          </td>
-          @for (unlock of achievement.unlocks; track unlock.name) {
-            <td [attr.rowspan]="getRowSpan(i)" [class.unlocked]="store.isUnlocked(unlock)">
-              <button
-                type="button"
-                class="unlock-cell"
-                (click)="store.toggleUnlock(unlock)"
-                [title]="unlock.name"
-              >
-                <div class="unlock-container">
-                  @if (unlock.tier != null) {
-                    <img
-                      class="tier"
-                      [src]="unlock.tier.toString() | imagePath:'quality'"
-                      width="18"
-                      height="18"
-                      [alt]="'Quality tier ' + unlock.tier"
-                    />
-                  }
-                  @if (unlock.icon) {
-                    <img
-                      [class.unlock]="unlock.tier != null"
-                      [src]="unlock.icon | imagePath:'achievements'"
-                      width="45"
-                      height="45"
-                      [alt]="unlock.name"
-                    />
-                  }
-                  @if (!unlock.icon) {
-                    <p>{{ unlock.name }}</p>
-                  }
-                </div>
-              </button>
-            </td>
-          }
-          @for (cellIndex of getEmptyCellIndices(achievement.unlocks.length, i); track cellIndex) {
-            <td class="empty-cell">
-              <div class="unlock-container">
-                <p>None</p>
-              </div>
-            </td>
+          <th>Name</th>
+          <th>Mark</th>
+          <th>Hard Mode</th>
+          <th>Associated Boss</th>
+          @for (character of store.characters(); track character.name) {
+            <th>
+              @if (character.icon) {
+                <img
+                  [src]="character.icon | imagePath:'characters'"
+                  width="20"
+                  height="20"
+                  [alt]="character.name"
+                />
+              }<br />
+              {{ character.name }}<br />
+              Unlock
+            </th>
           }
         </tr>
-      }
-    </tbody>
-  </table>
-</div>
+      </thead>
+      <tbody>
+        @for (achievement of store.achievements(); track achievement.name; let i = $index) {
+          <tr>
+            <td>{{ achievement.name }}</td>
+            @if (achievement.icon.hard) {
+              <td class="completion-mark">
+                <img
+                  [src]="achievement.icon.normal | imagePath:'marks'"
+                  width="50"
+                  height="50"
+                  [alt]="achievement.name + ' completion mark'"
+                />
+              </td>
+              <td class="completion-mark">
+                <img
+                  [src]="achievement.icon.hard | imagePath:'marks'"
+                  width="50"
+                  height="50"
+                  [alt]="achievement.name + ' hard mode completion mark'"
+                />
+              </td>
+            } @else {
+              <td class="completion-mark" colspan="2">
+                <img
+                  [src]="achievement.icon.normal | imagePath:'marks'"
+                  width="50"
+                  height="50"
+                  [alt]="achievement.name + ' completion mark'"
+                />
+              </td>
+            }
+            <td>
+              @for (boss of achievement.boss; track boss) {
+                <p>{{ boss }}</p>
+              }
+            </td>
+            @for (unlock of achievement.unlocks; track unlock.name) {
+              <td [attr.rowspan]="getRowSpan(i)" [class.unlocked]="store.isUnlocked(unlock)">
+                <button
+                  type="button"
+                  class="unlock-cell"
+                  (click)="store.toggleUnlock(unlock)"
+                  [title]="unlock.name"
+                >
+                  <div class="unlock-container">
+                    @if (unlock.tier != null) {
+                      <img
+                        class="tier"
+                        [src]="unlock.tier.toString() | imagePath:'quality'"
+                        width="18"
+                        height="18"
+                        [alt]="'Quality tier ' + unlock.tier"
+                      />
+                    }
+                    @if (unlock.icon) {
+                      <img
+                        [class.unlock]="unlock.tier != null"
+                        [src]="unlock.icon | imagePath:'achievements'"
+                        width="45"
+                        height="45"
+                        [alt]="unlock.name"
+                      />
+                    }
+                    @if (!unlock.icon) {
+                      <p>{{ unlock.name }}</p>
+                    }
+                  </div>
+                </button>
+              </td>
+            }
+            @for (cellIndex of getEmptyCellIndices(achievement.unlocks.length, i); track cellIndex) {
+              <td class="empty-cell">
+                <div class="unlock-container">
+                  <p>None</p>
+                </div>
+              </td>
+            }
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+}

@@ -1,18 +1,19 @@
 <header class="checklist-header">
   @if (layout.isMobile()) {
-    <div class="segmented-control" role="tablist" aria-label="Character type">
+    <div class="segmented-control" role="tablist" aria-label="Checklist mode">
       <span
         class="segmented-control__thumb"
-        [class.segmented-control__thumb--tainted]="store.isTainted()"
+        [class.segmented-control__thumb--tainted]="store.mode() === 'tainted'"
+        [class.segmented-control__thumb--challenges]="store.mode() === 'challenges'"
         aria-hidden="true"
       ></span>
       <button
         type="button"
         class="segment"
         role="tab"
-        [class.active]="!store.isTainted()"
-        [attr.aria-selected]="!store.isTainted()"
-        (click)="taintedChange.emit(false)"
+        [class.active]="store.mode() === 'regular'"
+        [attr.aria-selected]="store.mode() === 'regular'"
+        (click)="modeChange.emit('regular')"
       >
         Regular
       </button>
@@ -20,20 +21,37 @@
         type="button"
         class="segment"
         role="tab"
-        [class.active]="store.isTainted()"
-        [attr.aria-selected]="store.isTainted()"
-        (click)="taintedChange.emit(true)"
+        [class.active]="store.mode() === 'tainted'"
+        [attr.aria-selected]="store.mode() === 'tainted'"
+        (click)="modeChange.emit('tainted')"
       >
         Tainted
+      </button>
+      <button
+        type="button"
+        class="segment"
+        role="tab"
+        [class.active]="store.mode() === 'challenges'"
+        [attr.aria-selected]="store.mode() === 'challenges'"
+        (click)="modeChange.emit('challenges')"
+      >
+        Challenges
       </button>
     </div>
   } @else {
     <div class="tabs">
-      <button class="tab" [class.active]="!store.isTainted()" (click)="taintedChange.emit(false)">
+      <button class="tab" [class.active]="store.mode() === 'regular'" (click)="modeChange.emit('regular')">
         Regular Characters
       </button>
-      <button class="tab" [class.active]="store.isTainted()" (click)="taintedChange.emit(true)">
+      <button class="tab" [class.active]="store.mode() === 'tainted'" (click)="modeChange.emit('tainted')">
         Tainted Characters
+      </button>
+      <button
+        class="tab"
+        [class.active]="store.mode() === 'challenges'"
+        (click)="modeChange.emit('challenges')"
+      >
+        Challenges
       </button>
     </div>
   }

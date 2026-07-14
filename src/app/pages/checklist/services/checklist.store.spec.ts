@@ -21,7 +21,9 @@ describe('ChecklistStore', () => {
   it('initializes with regular checklist data', () => {
     store.initialize();
 
+    expect(store.mode()).toBe('regular');
     expect(store.isTainted()).toBe(false);
+    expect(store.isChallenges()).toBe(false);
     expect(store.characters()[0].name).toBe(checklistData.characters[0].name);
     expect(store.achievements()[0].name).toBe(checklistData.achievements[0].name);
   });
@@ -36,17 +38,26 @@ describe('ChecklistStore', () => {
     expect(store.achievedUnlocks()).toBe(1);
   });
 
-  it('switches between regular and tainted datasets', () => {
+  it('switches between regular, tainted and challenges datasets', () => {
     store.initialize();
 
     expect(store.characters()[0].name).toBe('Isaac');
 
     store.setTainted(true);
+    expect(store.mode()).toBe('tainted');
     expect(store.isTainted()).toBe(true);
     expect(store.selectedCharacterIndex()).toBe(0);
     expect(store.characters()[0].name).toBe(checklistTaintedData.characters[0].name);
 
+    store.setMode('challenges');
+    expect(store.mode()).toBe('challenges');
+    expect(store.isChallenges()).toBe(true);
+    expect(store.selectedCharacterIndex()).toBe(0);
+    expect(store.achievements()[0].name).toBe('1. Pitch Black');
+    expect(store.totalUnlocks()).toBe(45);
+
     store.setTainted(false);
+    expect(store.mode()).toBe('regular');
     expect(store.characters()[0].name).toBe(checklistData.characters[0].name);
   });
 

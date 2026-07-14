@@ -13,6 +13,60 @@ export function formatBossList(bosses: readonly string[]): string {
   return bosses.join(' · ');
 }
 
+export function parseChallengeName(name: string): { number: string; title: string } {
+  const match = /^(\d+)\.\s*(.+)$/.exec(name.trim());
+  if (!match) {
+    return { number: '', title: name };
+  }
+
+  return { number: match[1], title: match[2] };
+}
+
+export type ChallengeDlc = 'rebirth' | 'afterbirth' | 'afterbirth_plus' | 'repentance';
+
+export function getChallengeDlcFromNumber(challengeNumber: number): ChallengeDlc {
+  if (challengeNumber <= 20) {
+    return 'rebirth';
+  }
+  if (challengeNumber <= 30) {
+    return 'afterbirth';
+  }
+  if (challengeNumber <= 35) {
+    return 'afterbirth_plus';
+  }
+  return 'repentance';
+}
+
+export function getChallengeDlc(name: string): ChallengeDlc {
+  const challengeNumber = Number(parseChallengeName(name).number);
+  if (!Number.isInteger(challengeNumber) || challengeNumber <= 0) {
+    return 'rebirth';
+  }
+
+  return getChallengeDlcFromNumber(challengeNumber);
+}
+
+export function getChallengeDlcBadgeIcon(dlc: ChallengeDlc): string | null {
+  if (dlc === 'rebirth') {
+    return null;
+  }
+
+  return dlc;
+}
+
+export function getChallengeDlcLabel(dlc: ChallengeDlc): string {
+  switch (dlc) {
+    case 'afterbirth':
+      return 'Afterbirth';
+    case 'afterbirth_plus':
+      return 'Afterbirth †';
+    case 'repentance':
+      return 'Repentance';
+    default:
+      return 'Rebirth';
+  }
+}
+
 export function buildUnlockAriaLabel(unlockName: string, isUnlocked: boolean): string {
   const state = isUnlocked ? 'completed' : 'not completed';
   return `${unlockName}, ${state}`;

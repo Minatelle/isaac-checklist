@@ -69,6 +69,16 @@ describe('ChecklistMobileComponent', () => {
     expect(fixture.nativeElement.querySelector('.achievement-row__unlock-icon')).toBeTruthy();
   });
 
+  it('hides character navigator in challenges mode', () => {
+    store.setMode('challenges');
+    fixture.detectChanges();
+
+    const nav = fixture.nativeElement.querySelector('.character-nav') as HTMLElement;
+    expect(nav.classList.contains('character-nav--hidden')).toBe(true);
+    expect(fixture.nativeElement.querySelectorAll('button.achievement-row').length).toBe(45);
+    expect(fixture.nativeElement.querySelector('.achievement-row__marks')).toBeFalsy();
+  });
+
   it('toggles unlock when the achievement row is clicked', () => {
     const unlock = checklistData.achievements[0].unlocks[0];
     const row = fixture.nativeElement.querySelector('button.achievement-row') as HTMLButtonElement;

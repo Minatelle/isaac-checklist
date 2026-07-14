@@ -1,4 +1,5 @@
 import {
+  CHECKLIST_MODES,
   ICON_BASE_PATH,
   MOBILE_BREAKPOINT,
   STEAM_CONNECTED_STORAGE_KEY,
@@ -19,6 +20,10 @@ describe('checklist.constants', () => {
 
   it('defines the steam toast duration', () => {
     expect(STEAM_TOAST_MS).toBe(4000);
+  });
+
+  it('defines checklist modes', () => {
+    expect(CHECKLIST_MODES).toEqual(['regular', 'tainted', 'challenges']);
   });
 
   it('defines tainted row layout values', () => {

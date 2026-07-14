@@ -18,6 +18,10 @@
   border-bottom: 1px solid colors.$border;
 }
 
+.character-nav--hidden {
+  display: none;
+}
+
 .character-nav__arrow {
   display: flex;
   align-items: center;
@@ -365,11 +369,27 @@
   padding: 8px 10px;
 }
 
+.achievement-row__name-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
 .achievement-row__name {
   font-size: 14px;
   font-weight: bold;
   color: colors.$active;
   line-height: 1.2;
+}
+
+.achievement-row__dlc {
+  flex-shrink: 0;
+  display: block;
+  height: 14px;
+  width: auto;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 85%)) drop-shadow(0 0 1px rgb(0 0 0 / 70%));
 }
 
 .achievement-row__boss {

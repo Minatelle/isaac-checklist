@@ -1,6 +1,6 @@
 import { computed, inject, Injectable, signal } from '@angular/core';
 
-import { Unlock } from '../models/checklist.model';
+import { ChecklistMode, Unlock } from '../models/checklist.model';
 import {
   countAchievedUnlocks,
   extractSteamIds,
@@ -16,12 +16,15 @@ export class ChecklistStore {
   private readonly dataService = inject(ChecklistDataService);
   private readonly storage = inject(UnlockStorageService);
 
-  readonly isTainted = signal(false);
+  readonly mode = signal<ChecklistMode>('regular');
   readonly unlockedSteamIds = signal<ReadonlySet<number>>(new Set());
   readonly selectedCharacterIndex = signal(0);
 
-  readonly characters = computed(() => this.dataService.getData(this.isTainted()).characters);
-  readonly achievements = computed(() => this.dataService.getData(this.isTainted()).achievements);
+  readonly isTainted = computed(() => this.mode() === 'tainted');
+  readonly isChallenges = computed(() => this.mode() === 'challenges');
+
+  readonly characters = computed(() => this.dataService.getData(this.mode()).characters);
+  readonly achievements = computed(() => this.dataService.getData(this.mode()).achievements);
 
   private readonly allSteamIds = computed(() => extractSteamIds(this.achievements()));
 
@@ -39,9 +42,13 @@ export class ChecklistStore {
     this.unlockedSteamIds.set(new Set(this.storage.load()));
   }
 
-  setTainted(isTainted: boolean): void {
-    this.isTainted.set(isTainted);
+  setMode(mode: ChecklistMode): void {
+    this.mode.set(mode);
     this.selectedCharacterIndex.set(0);
+  }
+
+  setTainted(isTainted: boolean): void {
+    this.setMode(isTainted ? 'tainted' : 'regular');
   }
 
   setSelectedCharacter(characterIndex: number): void {

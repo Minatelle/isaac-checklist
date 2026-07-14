@@ -1,5 +1,6 @@
 import { Component, HostBinding, inject, output } from '@angular/core';
 
+import { ChecklistMode } from '../models/checklist.model';
 import { ChecklistStore } from '../services/checklist.store';
 import { LayoutService } from '../services/layout.service';
 import { SteamAuthService } from '../services/steam-auth.service';
@@ -14,7 +15,7 @@ export class ChecklistHeaderComponent {
   protected readonly layout = inject(LayoutService);
   protected readonly steamAuth = inject(SteamAuthService);
 
-  readonly taintedChange = output<boolean>();
+  readonly modeChange = output<ChecklistMode>();
   readonly helpClick = output<void>();
 
   @HostBinding('class.checklist-header--mobile')

@@ -1,8 +1,10 @@
 import { Component, DestroyRef, HostBinding, inject, OnInit, viewChild } from '@angular/core';
 
+import { CHECKLIST_MODES } from './constants/checklist.constants';
 import { ChecklistHeaderComponent } from './checklist-header/checklist-header.component';
 import { ChecklistDesktopComponent } from './checklist-desktop/checklist-desktop.component';
 import { ChecklistMobileComponent } from './checklist-mobile/checklist-mobile.component';
+import { ChecklistMode } from './models/checklist.model';
 import { TutorialDialogComponent } from './tutorial-dialog/tutorial-dialog.component';
 import { ChecklistStore } from './services/checklist.store';
 import { LayoutService } from './services/layout.service';
@@ -10,7 +12,7 @@ import { SteamAuthService } from './services/steam-auth.service';
 import { TutorialStorageService } from './services/tutorial-storage.service';
 import { SlideTransition } from './utils/slide-transition';
 
-type ModeSlideDirection = 'to-regular' | 'to-tainted';
+type ModeSlideDirection = 'to-next' | 'to-prev';
 
 @Component({
   selector: 'app-checklist',
@@ -57,12 +59,14 @@ export class ChecklistComponent implements OnInit {
     this.tutorialDialog().open();
   }
 
-  protected setTainted(isTainted: boolean): void {
-    if (this.store.isTainted() === isTainted) {
+  protected setMode(mode: ChecklistMode): void {
+    if (this.store.mode() === mode) {
       return;
     }
 
-    const direction: ModeSlideDirection = isTainted ? 'to-tainted' : 'to-regular';
-    this.modeSlide.run(direction, () => this.store.setTainted(isTainted));
+    const currentIndex = CHECKLIST_MODES.indexOf(this.store.mode());
+    const nextIndex = CHECKLIST_MODES.indexOf(mode);
+    const direction: ModeSlideDirection = nextIndex > currentIndex ? 'to-next' : 'to-prev';
+    this.modeSlide.run(direction, () => this.store.setMode(mode));
   }
 }

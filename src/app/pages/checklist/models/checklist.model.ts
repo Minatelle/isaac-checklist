@@ -1,3 +1,5 @@
+export type ChecklistMode = 'regular' | 'tainted' | 'challenges';
+
 export interface Character {
   name: string;
   icon: string | null;

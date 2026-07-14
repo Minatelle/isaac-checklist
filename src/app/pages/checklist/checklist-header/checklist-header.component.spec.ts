@@ -58,17 +58,19 @@ describe('ChecklistHeaderComponent', () => {
     expect(view.progressLabel()).toContain('achieved');
   });
 
-  it('emits taintedChange when a segment is selected', () => {
+  it('emits modeChange when a segment is selected', () => {
     TestBed.inject(LayoutService).isMobile.set(true);
     fixture.detectChanges();
 
     const emit = jest.fn();
-    fixture.componentInstance.taintedChange.subscribe(emit);
+    fixture.componentInstance.modeChange.subscribe(emit);
 
-    const taintedButton = fixture.nativeElement.querySelectorAll('.segment')[1] as HTMLButtonElement;
-    taintedButton.click();
+    const segments = fixture.nativeElement.querySelectorAll('.segment') as NodeListOf<HTMLButtonElement>;
+    segments[1].click();
+    expect(emit).toHaveBeenCalledWith('tainted');
 
-    expect(emit).toHaveBeenCalledWith(true);
+    segments[2].click();
+    expect(emit).toHaveBeenCalledWith('challenges');
   });
 
   it('renders help button on mobile and emits helpClick', () => {

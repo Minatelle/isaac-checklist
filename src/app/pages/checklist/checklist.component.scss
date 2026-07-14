@@ -17,11 +17,11 @@
   overflow: hidden;
 }
 
-.checklist-body--enter.checklist-body--to-tainted > * {
+.checklist-body--enter.checklist-body--to-next > * {
   @include motion.slide-in-next-animation;
 }
 
-.checklist-body--enter.checklist-body--to-regular > * {
+.checklist-body--enter.checklist-body--to-prev > * {
   @include motion.slide-in-prev-animation;
 }
 

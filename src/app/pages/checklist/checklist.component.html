@@ -1,10 +1,10 @@
-<app-checklist-header (taintedChange)="setTainted($event)" (helpClick)="openTutorial()" />
+<app-checklist-header (modeChange)="setMode($event)" (helpClick)="openTutorial()" />
 
 <div
   class="checklist-body"
   [class.checklist-body--enter]="modeSlidePhase() === 'enter'"
-  [class.checklist-body--to-tainted]="modeSlideDirection() === 'to-tainted'"
-  [class.checklist-body--to-regular]="modeSlideDirection() === 'to-regular'"
+  [class.checklist-body--to-next]="modeSlideDirection() === 'to-next'"
+  [class.checklist-body--to-prev]="modeSlideDirection() === 'to-prev'"
 >
   @if (layout.isMobile()) {
     <app-checklist-mobile />

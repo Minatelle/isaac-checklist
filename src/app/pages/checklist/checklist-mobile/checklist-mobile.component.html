@@ -1,4 +1,7 @@
-<div class="character-nav">
+<div
+  class="character-nav"
+  [class.character-nav--hidden]="store.isChallenges()"
+>
   <button
     type="button"
     class="character-nav__arrow"
@@ -108,27 +111,43 @@
 >
   <section #achievementList class="achievement-list">
     <ng-template #achievementMarks let-achievement="achievement">
-      <div class="achievement-row__marks">
-        <img
-          [src]="achievement.icon.normal | imagePath:'marks'"
-          width="40"
-          height="40"
-          [alt]="achievement.name + ' completion mark'"
-        />
-        @if (achievement.icon.hard) {
+      @if (!store.isChallenges()) {
+        <div class="achievement-row__marks">
           <img
-            [src]="achievement.icon.hard | imagePath:'marks'"
+            [src]="achievement.icon.normal | imagePath:'marks'"
             width="40"
             height="40"
-            [alt]="achievement.name + ' hard mode completion mark'"
+            [alt]="achievement.name + ' completion mark'"
           />
-        }
-      </div>
+          @if (achievement.icon.hard) {
+            <img
+              [src]="achievement.icon.hard | imagePath:'marks'"
+              width="40"
+              height="40"
+              [alt]="achievement.name + ' hard mode completion mark'"
+            />
+          }
+        </div>
+      }
     </ng-template>
 
     <ng-template #achievementInfo let-achievement="achievement">
       <div class="achievement-row__info">
-        <span class="achievement-row__name">{{ achievement.name }}</span>
+        <span class="achievement-row__name-row">
+          <span class="achievement-row__name">{{ achievement.name }}</span>
+          @if (store.isChallenges()) {
+            @let dlc = getChallengeDlc(achievement.name);
+            @let dlcBadge = getChallengeDlcBadgeIcon(dlc);
+            @if (dlcBadge) {
+              <img
+                class="achievement-row__dlc"
+                [src]="dlcBadge | imagePath:'dlc'"
+                height="12"
+                [alt]="getChallengeDlcLabel(dlc)"
+              />
+            }
+          }
+        </span>
         <span class="achievement-row__boss">{{ formatBossList(achievement.boss) }}</span>
       </div>
     </ng-template>

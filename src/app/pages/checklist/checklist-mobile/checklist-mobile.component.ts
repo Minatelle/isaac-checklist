@@ -19,6 +19,9 @@ import {
   buildUnlockAriaLabel,
   countCharacterUnlockProgress,
   formatBossList,
+  getChallengeDlc,
+  getChallengeDlcBadgeIcon,
+  getChallengeDlcLabel,
   getUnlockForCharacterIndex
 } from '../utils/checklist.utils';
 import { SlideTransition } from '../utils/slide-transition';
@@ -37,6 +40,9 @@ export class ChecklistMobileComponent {
   protected readonly layout = inject(LayoutService);
   protected readonly formatBossList = formatBossList;
   protected readonly buildUnlockAriaLabel = buildUnlockAriaLabel;
+  protected readonly getChallengeDlc = getChallengeDlc;
+  protected readonly getChallengeDlcBadgeIcon = getChallengeDlcBadgeIcon;
+  protected readonly getChallengeDlcLabel = getChallengeDlcLabel;
 
   protected readonly pickerOpen = signal(false);
   protected readonly pageCharacterIndex = signal(0);
@@ -66,7 +72,7 @@ export class ChecklistMobileComponent {
   constructor() {
     effect(() => {
       const index = this.store.selectedCharacterIndex();
-      this.store.isTainted();
+      this.store.mode();
 
       if (!this.characterSlide.locked() && this.slidePhase() === 'idle') {
         this.pageCharacterIndex.set(index);

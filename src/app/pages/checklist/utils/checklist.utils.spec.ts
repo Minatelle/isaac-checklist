@@ -14,6 +14,11 @@ import {
   getUnlockSourceAchievementIndex,
   mergeSteamIds,
   parseAchievementApiName,
+  parseChallengeName,
+  getChallengeDlc,
+  getChallengeDlcBadgeIcon,
+  getChallengeDlcFromNumber,
+  getChallengeDlcLabel,
   toggleSteamId
 } from './checklist.utils';
 
@@ -36,6 +41,32 @@ describe('checklist.utils', () => {
 
   it('formats boss names on one line', () => {
     expect(formatBossList(["Mom's Heart", 'It Lives!'])).toBe("Mom's Heart · It Lives!");
+  });
+
+  it('parses numbered challenge names', () => {
+    expect(parseChallengeName('1. Pitch Black')).toEqual({ number: '1', title: 'Pitch Black' });
+    expect(parseChallengeName('45. DELETE THIS')).toEqual({ number: '45', title: 'DELETE THIS' });
+    expect(parseChallengeName('Unnumbered')).toEqual({ number: '', title: 'Unnumbered' });
+  });
+
+  it('maps challenge numbers to dlc tiers', () => {
+    expect(getChallengeDlcFromNumber(1)).toBe('rebirth');
+    expect(getChallengeDlcFromNumber(20)).toBe('rebirth');
+    expect(getChallengeDlcFromNumber(21)).toBe('afterbirth');
+    expect(getChallengeDlcFromNumber(30)).toBe('afterbirth');
+    expect(getChallengeDlcFromNumber(31)).toBe('afterbirth_plus');
+    expect(getChallengeDlcFromNumber(35)).toBe('afterbirth_plus');
+    expect(getChallengeDlcFromNumber(36)).toBe('repentance');
+    expect(getChallengeDlcFromNumber(45)).toBe('repentance');
+  });
+
+  it('resolves dlc badge icons and labels from challenge names', () => {
+    expect(getChallengeDlc('1. Pitch Black')).toBe('rebirth');
+    expect(getChallengeDlcBadgeIcon('rebirth')).toBeNull();
+    expect(getChallengeDlcBadgeIcon(getChallengeDlc('21. XXXXXXXXL'))).toBe('afterbirth');
+    expect(getChallengeDlcBadgeIcon(getChallengeDlc('31. Backasswards'))).toBe('afterbirth_plus');
+    expect(getChallengeDlcBadgeIcon(getChallengeDlc('36. Scat Man'))).toBe('repentance');
+    expect(getChallengeDlcLabel('afterbirth_plus')).toBe('Afterbirth †');
   });
 
   it('describes unlock state in aria labels', () => {
