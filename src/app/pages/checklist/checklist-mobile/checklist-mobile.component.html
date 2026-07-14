@@ -133,8 +133,9 @@
 
     <ng-template #achievementInfo let-achievement="achievement">
       <div class="achievement-row__info">
-        <span class="achievement-row__name-row">
-          <span class="achievement-row__name">{{ achievement.name }}</span>
+        <span class="achievement-row__name">{{ achievement.name }}</span>
+        <span class="achievement-row__boss-row">
+          <span class="achievement-row__boss">{{ formatBossList(achievement.boss) }}</span>
           @if (store.isChallenges()) {
             @let dlc = getChallengeDlc(achievement.name);
             @let dlcBadge = getChallengeDlcBadgeIcon(dlc);
@@ -148,7 +149,6 @@
             }
           }
         </span>
-        <span class="achievement-row__boss">{{ formatBossList(achievement.boss) }}</span>
       </div>
     </ng-template>
 

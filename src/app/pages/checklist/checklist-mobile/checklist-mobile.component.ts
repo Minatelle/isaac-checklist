@@ -33,7 +33,11 @@ type SlideDirection = 'next' | 'prev';
   selector: 'app-checklist-mobile',
   imports: [ImagePathPipe, NgTemplateOutlet],
   templateUrl: './checklist-mobile.component.html',
-  styleUrl: './checklist-mobile.component.scss'
+  styleUrls: [
+    './checklist-mobile.component.scss',
+    './checklist-mobile-sheet.scss',
+    './checklist-mobile-row.scss'
+  ]
 })
 export class ChecklistMobileComponent {
   protected readonly store = inject(ChecklistStore);

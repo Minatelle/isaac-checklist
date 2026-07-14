@@ -146,7 +146,7 @@ td:hover {
   height: 14px;
   width: auto;
   image-rendering: pixelated;
-  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 85%)) drop-shadow(0 0 1px rgb(0 0 0 / 70%));
+  filter: drop-shadow(0 1px 2px #000c);
 }
 
 .challenge-card__icon-wrap {
